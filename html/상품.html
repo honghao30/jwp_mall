@@ -1856,6 +1856,18 @@
                                   <strong>오늘<span>15:00</span>마감</strong>
                                   <span class="delivery_message">내일 도착예정</span>
                                 </button>
+                              <!-- 배송시간 레이어 -->
+                              <div class="layer_delivery_time">
+                                <dl>
+                                  <dt>배송마감시간</dt>
+                                  <dd>
+                                     <p><span>1차 :</span> <strong>12:00</strong></p>
+                                     <p><span>2차 :</span> <strong>16:00</strong></p>
+                                     <p><span>3차 :</span> <strong>17:00</strong></p>
+                                  </dd>
+                                </dl>
+                              </div>
+                              <!-- //배송시간 레이어 -->                                
                               </span>
                               <span class="col3 flex_center">
                                 <img src="./img/common/ico/icon_price_down.png" alt="" />
@@ -1915,6 +1927,18 @@
                                   <strong>오늘<span>15:00</span>마감</strong>
                                   <span class="delivery_message">내일 도착예정</span>
                                 </button>
+                                <!-- 배송시간 레이어 -->
+                                <div class="layer_delivery_time">
+                                  <dl>
+                                    <dt>배송마감시간</dt>
+                                    <dd>
+                                      <p><span>1차 :</span> <strong>12:00</strong></p>
+                                      <p><span>2차 :</span> <strong>16:00</strong></p>
+                                      <p><span>3차 :</span> <strong>17:00</strong></p>
+                                    </dd>
+                                  </dl>
+                                </div>
+                                <!-- //배송시간 레이어 -->                                  
                               </span>
                               <span class="col3 flex_center">
                                 <img src="./img/common/ico/icon_price_up.png" alt="" />
@@ -1974,6 +1998,18 @@
                                   <strong>오늘<span>15:00</span>마감</strong>
                                   <span class="delivery_message">내일 도착예정</span>
                                 </button>
+                                <!-- 배송시간 레이어 -->
+                                <div class="layer_delivery_time">
+                                  <dl>
+                                    <dt>배송마감시간</dt>
+                                    <dd>
+                                      <p><span>1차 :</span> <strong>12:00</strong></p>
+                                      <p><span>2차 :</span> <strong>16:00</strong></p>
+                                      <p><span>3차 :</span> <strong>17:00</strong></p>
+                                    </dd>
+                                  </dl>
+                                </div>
+                                <!-- //배송시간 레이어 -->                                  
                               </span>
                               <span class="col3 flex_center">
                                 <img src="./img/common/ico/icon_price_down.png" alt="" />
@@ -2033,6 +2069,18 @@
                                   <strong>오늘<span>15:00</span>마감</strong>
                                   <span class="delivery_message">내일 도착예정</span>
                                 </button>
+                                <!-- 배송시간 레이어 -->
+                                <div class="layer_delivery_time">
+                                  <dl>
+                                    <dt>배송마감시간</dt>
+                                    <dd>
+                                      <p><span>1차 :</span> <strong>12:00</strong></p>
+                                      <p><span>2차 :</span> <strong>16:00</strong></p>
+                                      <p><span>3차 :</span> <strong>17:00</strong></p>
+                                    </dd>
+                                  </dl>
+                                </div>
+                                <!-- //배송시간 레이어 -->                                  
                               </span>
                               <span class="col3 flex_center">
                                 <img src="./img/common/ico/icon_price_down.png" alt="" />
@@ -2080,8 +2128,8 @@
                       </div>
                         
                     </div>
-
-                    <div class="order_floating_bottom">
+                    <!-- //기본 케이스 -->
+                    <!-- <div class="order_floating_bottom">
                       <div class="order_util_area flex_between">
                         <div class="count_controller_wrap">
                           <div class="count_controller">
@@ -2099,7 +2147,49 @@
                         <button type="button" class="btn_blue_line">장바구니</button>
                         <button type="button" class="btn_blue">바로구매</button>
                       </div>
-                    </div>
+                    </div> -->
+                    <!-- 구매불가 -->
+                    <div class="order_floating_bottom">
+                      <div class="order_util_area flex_between">
+                        <div class="count_controller_wrap">
+                          <div class="count_controller">
+                            <button type="button" class="btn_minus"></button>
+                            <input type="text" title="구매수량" value="1" id="quantityInput">
+                            <button type="button" class="btn_plus"></button>                            
+                          </div>
+                          <div class="order_cout_text">주문단위 : 50개</div> 
+                        </div>
+                        <div class="total_price">
+                          <strong>1,586,000</strong> 원
+                        </div>
+                      </div>
+                      <div class="shortage_message">
+                        주문불가 <strong class="price"><span>-90,705</span> 원</strong> 부족
+                      </div>                      
+                      <div class="button_wrap flex_between">
+                        <button type="button" class="btn_blue_line">장바구니</button>
+                        <button type="button" class="btn_blue" disabled>바로구매</button>
+                      </div>
+                    </div>                     
+
+                    <!-- 품절 -->
+                    <!-- <div class="order_floating_bottom type_soldout">
+                      <div class="order_util_area flex_between">
+                        <div class="count_controller_wrap">
+                          <div class="count_controller">
+                            <button type="button" class="btn_minus"></button>
+                            <input type="text" title="구매수량" value="1" id="quantityInput">
+                            <button type="button" class="btn_plus"></button>                            
+                          </div>
+                        </div>
+                        <div class="total_price">
+                          <strong>품절</strong>
+                        </div>
+                      </div>
+                      <div class="button_wrap flex_between">
+                        <button type="button" class="btn_blue_line">재입고알림 신청</button>                        
+                      </div>
+                    </div>                     -->
 
                   </div>
                   <!-- //right area -->

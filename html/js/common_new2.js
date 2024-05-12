@@ -51,7 +51,8 @@
     const saleAccs = document.querySelectorAll('.btn_open_sale_detail');
     saleAccs && saleAccs.forEach(btn => {
         btn.addEventListener("click", function(e) {
-            btn.closest('.sale_item').classList.toggle('is-active');
+            btn.classList.toggle('is-active');
+            btn.nextElementSibling.classList.toggle('is-active');
         });
     });
 
@@ -71,5 +72,5 @@
         let currentQuantity = parseInt(quantityInput.value);
         quantityInput.value = currentQuantity + 1;
     });
-    
+
 })();
