@@ -194,3 +194,26 @@
 .order_floating_bottom .shortage_message .price span {font-family: 'Montserrat';}
 .order_floating_bottom.type_soldout .btn_blue_line:only-child {width: 100%;}
 .order_floating_bottom.type_soldout .count_controller {opacity: 0.4;}
+
+/* 상품상세 */
+.product_basic_info {gap: 48px;}
+.product_thumbnail_area {width: 540px;}
+
+.product_name_area .name {font-size: 24px;font-weight: 600;line-height: 32px;color:#222;margin-top:4px;}
+.product_information_area {flex:1;}
+.product_information_title {align-items: flex-start;margin-bottom: 24px;}
+.product_information_title .btn_like_heart_on {width:32px;height:32px;background: url('../img/common/ico/ico_heart_on_22.png') no-repeat center;}
+.product_price_area {font-family: 'Montserrat';font-size: 18px;font-weight: 600;line-height: 18px;}
+.product_name_area .cate {font-size: 14px;font-weight: 300;line-height: 14px;color:#222;}
+.product_name_area .cate span {display: inline-block;padding-right: 15px;background: url('../img/common/ico/ico_right_right_12.png') no-repeat right center;}
+
+.product_price_area .sale_percent {color: #FF4949;}
+.product_price_area  .price {display: flex;align-items: center;gap: 8px;}
+.product_price_area  .price .origin_price {font-size: 18px;font-weight: 600;line-height: 18px;color:#AEB7C6;text-decoration: line-through;}
+.product_price_area  .price .origin_price span {font-family: 'Montserrat';}
+.product_price_area  .price .new_price {color:222;font-size: 24px;font-weight: 600;line-height: 24px;}
+
+.product_information_list {margin-top: 16px;border-top: 1px solid #E1E3E9;padding: 16px 0;}
+.product_information_list  li {position: relative;padding-left: 6px; font-size: 14px; font-weight: 300; line-height: 14px; letter-spacing: -0.04em;color:#717B8A; }
+.product_information_list  li::before {content: '';display: block;position: absolute;left:0;top: 5px; width:2px;height:2px;background-color: #717B8A;border-radius: 50%;}
+.product_information_list li+li {margin-top: 8px;}
