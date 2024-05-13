@@ -237,3 +237,11 @@
 .product_detail_tab_menu a.is-active {color:#0072BC;position: relative;border-bottom: 0;}
 .product_detail_tab_menu a.is-active::after {content: '';width:100%;height: 4px;background-color: #0072BC;position: absolute;bottom:0;left:0;}
 .product_detail_tab_cont {margin-top: 32px;}
+
+/* 상세정보 테이블 */
+.product_table_wrap {margin: 16px auto 32px;width: 100%;border-top: 1px solid #E1E3E9;}
+.product_table_wrap table {width: 100%;}
+.product_table_wrap thead th {text-align: center;font-size: 14px;font-weight: 300;line-height: 14px;color:#222;height: 40px;vertical-align: middle; border-bottom: 1px solid #E1E3E9;padding-left: 16px;background-color: #F7F8FA;}
+.product_table_wrap tbody th {text-align: left;font-size: 14px;font-weight: 300;line-height: 14px;color:#222;height: 40px;vertical-align: middle; border-bottom: 1px solid #E1E3E9;padding-left: 16px;background-color: #F7F8FA;}
+.product_table_wrap tbody td {text-align: left;font-size: 14px;font-weight: 300;line-height: 14px;color:#717B8A;height: 40px;vertical-align: middle; border-bottom: 1px solid #E1E3E9;padding-left: 16px;}
+.product_table_wrap tbody td.text-c {text-align: center;padding-left: 0;}
