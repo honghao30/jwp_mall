@@ -261,3 +261,26 @@
 .product_detail_popup_title {font-size: 20px;font-weight: 600;line-height: 20px;color:#222; border-bottom: 1px solid #717B8A;position: relative;padding:6px 0 17px;margin-bottom: 40px;}
 .product_detail_popup_title .btn_close_window {width:32px;height:32px;background: url('../img/common/ico/ico_close_x_black.png') no-repeat center;position: absolute;right: 0;top: 0;}
 .product_detail_popup_wrap .order_button_wrap button {max-width: 240px;}
+
+/* //모달 */
+.modal_n_body.filter_modal {border-radius: 12px;border:1px solid #AEB7C6;overflow: hidden;}
+.modal_n_body.filter_modal .pop_cont {height: 100%;padding: 24px;}
+.modal_n_body.filter_modal .pop_cont .pop_title {font-size: 20px;font-weight: 600;line-height: 20px;border-bottom: 1px solid #717B8A;padding-bottom: 16px;}
+.modal_n_body.filter_modal .pop_cont .btn_close {right: 20px;top: 23px;}
+.modal_n_body.filter_modal .pop_cont .btn_close:before, 
+.modal_n_body.filter_modal .pop_cont .btn_close:after {background-color: #222;}
+.modal_n_body.filter_modal .pop_cont_inner {padding: 40px 0 16px;}
+.modal_n_body.filter_modal .btn-area {margin-top: 40px;border-top: 1px solid #E1E3E9;padding-top: 40px;display: flex;justify-content: center;}
+.modal_n_body.filter_modal .btn-area .btn_blue_line {width: 240px;border: 1px solid #0072BC;color:#0072BC;font-size: 16px;font-weight: 600;line-height: 16px;text-align: center;height: 48px;border-radius: 16px;}
+.tab-menu.filter-option {padding-right: 0;}
+.find_product_area .filter-option .tab-item {margin-right: 4px;padding: 13px 16px;}
+
+/* 필터 */
+.search_input_wrap {position: relative;width: 100%;height: 48px;margin-bottom: 40px; display: flex;align-items: center; justify-content: space-between; border-radius: 24px;border: 1px solid #E1E3E9;padding:3px 10px;}
+.search_input_wrap input {width: calc(100% - 35px);height: 95%;border: 0;font-size: 15px;font-weight: 300;line-height: 15px;}
+.search_input_wrap .btn_search {width: 32px;height: 32px;background: url('../img/common/ico_search.png') no-repeat center;}
+.search_input_wrap.on .auto_complate_wrap {display: block;}
+.auto_complate_wrap {display:none;width: 100%;border-radius: 24px;border: 1px solid #AEB7C6;padding: 16px;background-color: #fff;position: absolute;left:0;top: 56px;box-shadow: 0px 4px 4px 0px #00000033;}
+.auto_complate_wrap li {font-size: 15px;font-weight: 300;line-height: 15px;color:#222;}
+.auto_complate_wrap li+li{margin-top:4px;}
+.auto_complate_wrap li span {color:#FF4949;}

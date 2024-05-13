@@ -1727,6 +1727,146 @@
             </div>
         </div>
 
+        <!-- 모달 -->
+        <section class="modal_new modal_on modal_overlay" id="filter_pop"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
+          <div class="modal_n_wrap">
+              <div class="modal_n_body filter_modal" style="width:640px;">
+                  <div class="pop_cont">
+                      <div class="pop_title">
+                        입점사 선택
+                      </div>
+                      <!--  -->
+                      <!-- popContent -->
+                      <div class="popContent">
+                        <!-- pop-cont -->
+                        <div class="pop_cont_inner">
+                          <div class="search_input_wrap">
+                            <input type="text" placeholder="입점사를 검색해 보세요.">
+                            <button class="btn_search"></button>
+                            <!-- 검색결과 자동완성 -->    
+                            <div class="auto_complate_wrap">
+                              <ul>
+                                <li><span>키워드</span> 검색</li>
+                                <li><span>키워드</span> 검색</li>
+                              </ul>
+                            </div>                      
+                          </div>
+                          <script>
+                            // 검색 input에 포커싱이 되면 search_input에 active 클래스 추가
+                            $(".search_input_wrap input").focus(function () {
+                              if ($(this).val() === "") {
+                                $(".search_input_wrap").addClass("active");
+                              }
+                            });
+                  
+                            // 검색 input에서 포커스가 빠지면 search_input의 active 클래스 제거
+                            $(".search_input_wrap input").blur(function () {
+                              // 입력된 텍스트가 있는지 확인
+                              if ($(this).val() === "") {
+                                $(".search_input_wrap").removeClass("active");
+                                $(".search_input_wrap").removeClass("on");
+                              }
+                            });
+                  
+                            // keydown 이벤트가 발생하면 active 클래스 제거하고 on 클래스 추가
+                            $(".search_input_wrap input").keydown(function () {
+                              $(".search_input_wrap").removeClass("active").addClass("on");
+                            });
+                  
+                            // 입력된 텍스트가 없을 때 on 클래스 제거
+                            $(".search_input_wrap input").keyup(function () {
+                              if ($(this).val() === "") {
+                                $(".search_input_wrap").removeClass("on");
+                              }
+                            });
+                  
+                            // 입력된 텍스트가 없을 때 클릭하면 active 클래스 추가
+                            $(".search_input_wrap input").click(function () {
+                              if ($(this).val() === "") {
+                                $(".search_input_wrap").addClass("active");
+                              }
+                            });
+                  
+                            // 다른 곳을 클릭하면 on 클래스 제거
+                            $(document).on("click", function (event) {
+                              if (!$(event.target).closest(".search_input_wrap").length) {
+                                $(".search_input_wrap").removeClass("on");
+                              }
+                            });// 검색 input에 포커싱이 되면 search_input에 active 클래스 추가
+                            $(".search_input_wrap input").focus(function () {
+                              if ($(this).val() === "") {
+                                $(".search_input_wrap").addClass("active");
+                              }
+                            });
+                  
+                            // 검색 input에서 포커스가 빠지면 search_input의 active 클래스 제거
+                            $(".search_input_wrap input").blur(function () {
+                              // 입력된 텍스트가 있는지 확인
+                              if ($(this).val() === "") {
+                                $(".search_input_wrap").removeClass("active");
+                                $(".search_input_wrap").removeClass("on");
+                              }
+                            });
+                  
+                            // keydown 이벤트가 발생하면 active 클래스 제거하고 on 클래스 추가
+                            $(".search_input_wrap input").keydown(function () {
+                              $(".search_input_wrap").removeClass("active").addClass("on");
+                            });
+                  
+                            // 입력된 텍스트가 없을 때 on 클래스 제거
+                            $(".search_input_wrap input").keyup(function () {
+                              if ($(this).val() === "") {
+                                $(".search_input_wrap").removeClass("on");
+                              }
+                            });
+                  
+                            // 입력된 텍스트가 없을 때 클릭하면 active 클래스 추가
+                            $(".search_input_wrap input").click(function () {
+                              if ($(this).val() === "") {
+                                $(".search_input_wrap").addClass("active");
+                              }
+                            });
+                  
+                            // 다른 곳을 클릭하면 on 클래스 제거
+                            $(document).on("click", function (event) {
+                              if (!$(event.target).closest(".search_input_wrap").length) {
+                                $(".search_input_wrap").removeClass("on");
+                              }
+                            });
+                          </script>  
+                          <div class="find_product_area">
+                            <ul class="tab-menu filter-option" data-target="tab-category">
+                              <li class="tab-item active">내과</li>
+                              <li class="tab-item">정형외과</li>
+                              <li class="tab-item">산부인과</li>
+                              <li class="tab-item">소아과</li>
+                              <li class="tab-item">가정의학과</li>
+                              <li class="tab-item">성형외과</li>
+                              <li class="tab-item">신경과</li>
+                              <li class="tab-item">기타등등</li>
+                              <li class="tab-item">기타등등</li>
+                              <li class="tab-item">기타등등</li>
+                              <li class="tab-item">기타등등</li>
+                              <li class="tab-item">기타등등</li>
+                              <li class="tab-item">기타등등</li>
+                              <li class="tab-item">기타등등</li>
+                              <li class="tab-item">기타등등</li>
+                            </ul>
+                          </div>
+                          <div class="btn-area">                            
+                            <button class="btn btn_blue_line btn-cancel" onclick="modalControl('c')" class="btn_close"><span>필터 적용</span></button>
+                          </div>
+                        </div>
+                        <!-- //pop-cont -->
+                      </div>
+                      <!-- //popContent -->
+                      <!--  -->
+                      <button type="button" onclick="modalControl('c')" class="btn_close"><span class="hidden">닫기</span></button>
+                  </div>
+              </div>
+          </div>
+        </section>        
+        <!-- // 모달 -->
 
         <!-- //컨텐츠 마크업 하는곳 -->
       </div>

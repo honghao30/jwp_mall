@@ -61,14 +61,14 @@
     const btnMinus = document.querySelector('.btn_minus');
     const btnPlus = document.querySelector('.btn_plus');
 
-    btnMinus.addEventListener('click', () => {
+    btnMinus && btnMinus.addEventListener('click', () => {
         let currentQuantity = parseInt(quantityInput.value);
         if (currentQuantity > 1) {
             quantityInput.value = currentQuantity - 1;
         }
     });
 
-    btnPlus.addEventListener('click', () => {
+    btnPlus && btnPlus.addEventListener('click', () => {
         let currentQuantity = parseInt(quantityInput.value);
         quantityInput.value = currentQuantity + 1;
     });
