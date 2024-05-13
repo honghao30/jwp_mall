@@ -82,6 +82,21 @@
 .flex_between {display: flex;justify-content: space-between;align-items: center;}
 .flex_center {display: flex;justify-content: center;align-items: center;}
 
+/* 구매 수량  */
+.count_controller_wrap {display: flex;align-items: center;}
+.count_controller_wrap .order_cout_text {font-size: 14px;font-weight: 300;line-height: 14px;color:#717B8A;}
+.count_controller {width:134px;height:40px;margin-right: 16px; border:1px solid #E1E3E9;border-radius: 20px;display: flex;align-items: center;justify-content: center;padding:0 12px;}
+.count_controller .btn_minus {width:16px;height: 16px;background: url('../img/common/ico/ico_minus_16.png') no-repeat center;}
+.count_controller input {border:0;flex:1;text-align: center;height: 30px;font-family: 'Montserrat';font-size: 20px;font-weight: 600;line-height: 20px;color:#222;}
+.count_controller .btn_plus {width:16px;height: 16px;background: url('../img/common/ico/ico_plus_16.png') no-repeat center;}
+
+/* 구매버튼 */
+.order_button_wrap {gap: 8px;margin-top: 16px;}
+.order_button_wrap button {font-size: 16px;font-weight: 600;line-height: 16px;text-align: center;height: 48px;border-radius: 16px;}
+.order_button_wrap .btn_blue_line {width: 50%;border: 1px solid #0072BC;color:#0072BC;}
+.order_button_wrap .btn_blue {width: 50%;border: 1px solid #0072BC;background-color: #0072BC; color:#fff;}
+.order_button_wrap .btn_blue[disabled] {opacity: 0.5;}
+
 /* // 상품 가격비교 */
 .product_list_wide_wrap {padding-top: 32px;display: flex;justify-content: space-between;gap: 32px;}
 .search_result_left_side {height: 100%;width: 496px;}
@@ -118,6 +133,7 @@
 .search_result_right_side {flex:1;}
 .right_side_top_full {gap: 16px;align-items: flex-start;}
 .product_summary_top {width:268px;}
+
 .tit_ft18 {font-size: 18px;font-weight: 600;line-height: 18px;letter-spacing: -0.04em;color:#222;}
 
 .buy_history {flex:1;}
@@ -176,17 +192,6 @@
 
 /* // 구매 플로팅 박스 */
 .order_floating_bottom {z-index: 20; width: 672px;padding: 24px 32px 24px 32px;border-radius: 24px 24px 0px 0px;border: 2px solid #0072BC; background: #fff;position: absolute;bottom: 0;right:0;}
-.order_floating_bottom .button_wrap {gap: 8px;margin-top: 16px;}
-.order_floating_bottom .button_wrap button {font-size: 16px;font-weight: 600;line-height: 16px;text-align: center;height: 48px;border-radius: 16px;}
-.order_floating_bottom .button_wrap .btn_blue_line {width: 50%;border: 1px solid #0072BC;color:#0072BC;}
-.order_floating_bottom .button_wrap .btn_blue {width: 50%;border: 1px solid #0072BC;background-color: #0072BC; color:#fff;}
-.order_floating_bottom .button_wrap .btn_blue[disabled] {opacity: 0.5;}
-.order_util_area .count_controller_wrap {display: flex;align-items: center;}
-.order_util_area .count_controller_wrap .order_cout_text {font-size: 14px;font-weight: 300;line-height: 14px;color:#717B8A;}
-.order_util_area .count_controller {width:134px;height:40px;margin-right: 16px; border:1px solid #E1E3E9;border-radius: 20px;display: flex;align-items: center;justify-content: center;padding:0 12px;}
-.order_util_area .count_controller .btn_minus {width:16px;height: 16px;background: url('../img/common/ico/ico_minus_16.png') no-repeat center;}
-.order_util_area .count_controller input {border:0;flex:1;text-align: center;height: 30px;font-family: 'Montserrat';font-size: 20px;font-weight: 600;line-height: 20px;color:#222;}
-.order_util_area .count_controller .btn_plus {width:16px;height: 16px;background: url('../img/common/ico/ico_plus_16.png') no-repeat center;}
 .order_util_area .total_price {font-size: 24px;font-weight: 600;line-height: 24px;color:#222;}
 .order_util_area .total_price strong {font-family: 'Montserrat';font-weight: 700;color:#FF4949;}
 .order_floating_bottom .shortage_message {text-align: right;margin-top: 16px;font-size: 14px;font-weight: 300;line-height: 14px;color:#FF4949;}
@@ -195,7 +200,7 @@
 .order_floating_bottom.type_soldout .btn_blue_line:only-child {width: 100%;}
 .order_floating_bottom.type_soldout .count_controller {opacity: 0.4;}
 
-/* 상품상세 */
+/* 상품상세 탑 기본정보 */
 .product_basic_info {gap: 48px;}
 .product_thumbnail_area {width: 540px;}
 
@@ -217,3 +222,18 @@
 .product_information_list  li {position: relative;padding-left: 6px; font-size: 14px; font-weight: 300; line-height: 14px; letter-spacing: -0.04em;color:#717B8A; }
 .product_information_list  li::before {content: '';display: block;position: absolute;left:0;top: 5px; width:2px;height:2px;background-color: #717B8A;border-radius: 50%;}
 .product_information_list li+li {margin-top: 8px;}
+
+.product_order_table {width: 100%;border-top: 1px solid #E1E3E9;}
+.product_order_table tbody th {border-bottom: 1px solid #E1E3E9;font-size: 15px;font-weight: 300;line-height: 15px;vertical-align: middle;text-align: left;color:#222;padding: 16px 0;}
+.product_order_table tbody td {border-bottom: 1px solid #E1E3E9;font-size: 15px;font-weight: 300;line-height: 15px;vertical-align: middle;color:#717B8A;padding: 16px 0 16px 16px;}
+.product_order_table tbody td p+p {margin-top: 8px;}
+.product_order_table tbody td p .sale {color:#FF4949;font-weight: 600;}
+.product_order_table tbody td p .price {font-size: 14px;font-weight: 600;line-height: 14px;color:#717B8A;}
+.product_order_table tbody td p .price span {font-family: 'Montserrat';}
+
+/* 상품 상세 */
+.product_detail_info {margin-top: 40px;}
+.product_detail_tab_menu a {height:55px;border-bottom: 1px solid #E1E3E9;display: block; text-align: center;width: 100%;font-size: 20px;font-weight: 600;line-height: 20px;line-height: 55px;color:#AEB7C6;}
+.product_detail_tab_menu a.is-active {color:#0072BC;position: relative;border-bottom: 0;}
+.product_detail_tab_menu a.is-active::after {content: '';width:100%;height: 4px;background-color: #0072BC;position: absolute;bottom:0;left:0;}
+.product_detail_tab_cont {margin-top: 32px;}

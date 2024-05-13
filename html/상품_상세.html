@@ -1595,7 +1595,7 @@
                     <div class="product_order_table">
                         <table>
                             <colgroup>
-                                <col width="20%" />
+                                <col width="88" />
                                 <col width="" />
                             </colgroup>
                             <tbody>
@@ -1619,20 +1619,41 @@
                                 <tr>
                                     <th scope="row">수량</th>
                                     <td>
-                                        
+                                      <div class="count_controller_wrap">
+                                        <div class="count_controller">
+                                          <button type="button" class="btn_minus"></button>
+                                          <input type="text" title="구매수량" value="1" id="quantityInput">
+                                          <button type="button" class="btn_plus"></button>                            
+                                        </div>
+                                        <div class="order_cout_text">주문단위 : 50개</div> 
+                                      </div>                                        
                                     </td>
                                 </tr>                                                                                                                              
                             </tbody>
                         </table>
                     </div>
 
-                    <div class="button_wrap">
-
+                    <div class="order_button_wrap flex_between">
+                      <button type="button" class="btn_blue_line">장바구니</button>
+                      <button type="button" class="btn_blue">바로구매</button>
                     </div>
                 </div>
 
             </div>
+            <!-- 상품 기본 정보 -->
+            <div class="product_detail_info">
+              <div class="product_detail_tab_menu flex_between">
+                <a href="#" class="is-active">상품 기본정보</a>
+                <a href="#">상품설명</a>
+                <a href="#">배송정보</a>
+                <a href="#">교환/환불정보</a>
+              </div>
+              <div class="product_detail_tab_cont">
+                <div class="tit_ft18">상품 기본정보</div>
+              </div>
+              <!-- 상품 기본 정보 -->
 
+            </div>
         </div>
 
         <!-- //컨텐츠 마크업 하는곳 -->
