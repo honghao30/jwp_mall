@@ -209,7 +209,8 @@
 .product_name_area .name {font-size: 24px;font-weight: 600;line-height: 32px;color:#222;margin-top:4px;}
 .product_information_area {flex:1;}
 .product_information_title {align-items: flex-start;margin-bottom: 24px;}
-.product_information_title .btn_like_heart_on {width:32px;height:32px;background: url('../img/common/ico/ico_heart_on_22.png') no-repeat center;}
+.product_information_title .btnwish {width:32px;height:32px;background: url('../img/common/ico/ico_heart_22.png') no-repeat center;}
+.product_information_title .btnwish.active {background: url('../img/common/ico/ico_heart_on_22.png') no-repeat center;}
 .product_name_area .cate {font-size: 14px;font-weight: 300;line-height: 14px;color:#222;}
 .product_name_area .cate span {display: inline-block;padding-right: 15px;background: url('../img/common/ico/ico_right_right_12.png') no-repeat right center;}
 
