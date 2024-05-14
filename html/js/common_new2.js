@@ -47,6 +47,27 @@
         });
     });
 
+    // tab
+    function showTab(tabIndex) {
+        const tabItems = document.querySelectorAll('.product_detail_tab_menu button');
+        tabItems.forEach((tabItem, index) => {
+            if (index === tabIndex) {
+                tabItem.classList.add('active');
+            } else {
+                tabItem.classList.remove('active');
+            }
+        });
+        
+        const tabContents = document.querySelectorAll('.product_detail_tab_cont');
+        tabContents.forEach((tabContent, index) => {
+            if (index === tabIndex) {
+                tabContent.classList.add('active');
+            } else {
+                tabContent.classList.remove('active');
+            }
+        });
+    }       
+
     // sale acc
     const saleAccs = document.querySelectorAll('.btn_open_sale_detail');
     saleAccs && saleAccs.forEach(btn => {
