@@ -69,13 +69,28 @@
     }       
 
     // sale acc
-    const saleAccs = document.querySelectorAll('.btn_open_sale_detail');
-    saleAccs && saleAccs.forEach(btn => {
-        btn.addEventListener("click", function(e) {
-            btn.classList.toggle('is-active');
-            btn.nextElementSibling.classList.toggle('is-active');
+    const saleAccs = document.querySelectorAll('.sales_info_scroll ul > .sale_item');
+    saleAccs && saleAccs.forEach(acc => {
+        acc.addEventListener("click", function(e) {
+            acc.classList.toggle('is-active');            
         });
     });
+
+    const viewDeliveryTimes = document.querySelectorAll('.btn_open_sale_detail');
+
+    viewDeliveryTimes.forEach(btn => {
+        btn.addEventListener("click", function(e) {
+            e.stopPropagation();
+    
+            btn.classList.toggle('is-active');
+    
+            const nextElement = btn.nextElementSibling;
+            if (nextElement) {
+                nextElement.classList.toggle('is-active');
+            }
+        });
+    });
+    
 
     // 수량 조절
     const quantityInput = document.getElementById('quantityInput');
