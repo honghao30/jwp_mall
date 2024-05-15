@@ -47,27 +47,19 @@
         });
     });
 
-    // tab
-    function showTab(tabIndex) {
-        const tabItems = document.querySelectorAll('.product_detail_tab_menu button');
-        tabItems.forEach((tabItem, index) => {
-            if (index === tabIndex) {
-                tabItem.classList.add('active');
-            } else {
-                tabItem.classList.remove('active');
-            }
+    // product list select tab
+    const tabItems = document.querySelectorAll('.tab-menu-item');
+    tabItems && tabItems.forEach(tab => {
+        tab.addEventListener("click", function(e) {
+            document.querySelector('.tab-menu-item.active').classList.remove('active');
+            tab.classList.toggle('active');
+            const type = tab.getAttribute('view-type');
+            console.log(type);
+            document.querySelector('.product_view_type.active').classList.remove('active');
+            document.querySelector(`#${type}`).classList.add('active');
         });
-        
-        const tabContents = document.querySelectorAll('.product_detail_tab_cont');
-        tabContents.forEach((tabContent, index) => {
-            if (index === tabIndex) {
-                tabContent.classList.add('active');
-            } else {
-                tabContent.classList.remove('active');
-            }
-        });
-    }       
-
+    });
+    
     // sale acc
     const saleAccs = document.querySelectorAll('.sales_info_scroll ul > .sale_item');
     saleAccs && saleAccs.forEach(acc => {
