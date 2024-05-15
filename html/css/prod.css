@@ -47,7 +47,7 @@
 
 .category_list_wrap {margin-top: 32px;}
 .category_list_wrap .product_list_wrap {margin-top: 8px;border-top: 1px solid #222;}
-.category_view_option {display: flex;justify-content: flex-start;gap: 10px;align-items: center;}
+.category_view_option {display: flex;justify-content: flex-start;gap: 10px;align-items: center;position: relative;}
 
 /* 검색결과없음 */
 .no_search_results {background: url('../img/common/banner/img_mascot.png') no-repeat center top;width:fit-content;margin: 112px auto 40px; padding-top: 144px; display: flex;justify-content: center; font-size: 16px;font-weight: 300;line-height: 16px;color:#222;}
@@ -287,3 +287,56 @@
 .auto_complate_wrap li {font-size: 15px;font-weight: 300;line-height: 15px;color:#222;}
 .auto_complate_wrap li+li{margin-top:4px;}
 .auto_complate_wrap li span {color:#FF4949;}
+
+/* 상품 리스트 */
+.find_product_area.goods_list_tab {margin-top: 32px;}
+.find_product_area.goods_list_tab .tab-menu {border-radius: 12px;border: 1px solid #E1E3E9;padding: 24px 200px 0px 24px;height: 100px;}
+.find_product_area.goods_list_tab .more_cont {right: 24px;top:37px;}
+.recommended_products_box {position: relative;margin-top: 53px;}
+
+/* 상품 슬라이드 */
+.recommended_cont {margin-top: 16px;}
+.product_swiper .swiper-slide {position: relative;opacity: 0.5;}
+.product_swiper .product_list .products {height:254px;}
+.product_swiper .product_list .products .img_box {height: 160px;}
+.find_product_area .product_swiper .product_list .edge_tag_box {height: auto !important;}
+.product_swiper .product_list .products .info_box {margin-top: -33px;}
+.find_product_area .product_swiper .product_list {padding-top: 0;}
+.product_swiper .swiper-button-prev, .swiper-rtl .swiper-button-next {left: -53px;}
+.product_swiper .swiper-button-next, .swiper-rtl .swiper-button-prev {right: -53px;}
+.product_swiper .mySwiper  {overflow: visible;}
+
+.product_swiper .swiper-slide-active, 
+.product_swiper .swiper-slide-active+.swiper-slide, 
+.product_swiper .swiper-slide-active+.swiper-slide+.swiper-slide, 
+.product_swiper .swiper-slide-active+.swiper-slide+.swiper-slide+.swiper-slide, 
+.product_swiper .swiper-slide-active+.swiper-slide+.swiper-slide+.swiper-slide+.swiper-slide, 
+.product_swiper .swiper-slide-active+.swiper-slide+.swiper-slide+.swiper-slide+.swiper-slide+.swiper-slide, 
+.product_swiper .swiper-slide-active+.swiper-slide+.swiper-slide+.swiper-slide+.swiper-slide+.swiper-slide+.swiper-slide {opacity: 1;}
+.swiper-pagination.type05 {position: absolute;right: 0;left: auto;top: -40px; width: auto;text-align: right;height: 32px;line-height: 32px;padding: 0 8px;border-radius: 8px; background-color: #F2F5FA;font-size: 15px;font-weight: 500;line-height: 15px;color:#222;display: flex; align-items: center; justify-content: center;  gap: 2px;}
+.swiper-pagination.type05 .swiper-pagination-current {font-weight: 600;}
+
+.product_view_type_button {position: absolute;right:0;top:0;}
+.product_view_type_button .btn_view_list_type {width: 32px;height: 32px;background: url('../img/common/ico/ico_view_type_list.png') no-repeat center;border: 1px solid #717B8A;border-radius: 4px 0px 0px 4px;}
+.product_view_type_button .btn_view_thum_type {width: 32px;height: 32px;background: url('../img/common/ico/ico_view_type_thum.png') no-repeat center;border: 1px solid #E1E3E9;background-color: #F7F8FA; border-radius: 0px 4px 4px 0px;}
+
+.find_product_area .product_list_wrap .product_list {padding-top: 0;}
+
+.pagination { display: flex;align-items: center; justify-content: center;gap: 8px; margin-top: 48px} 
+.pagination a {display: flex;align-items: center; width: 24px; height: 24px; text-decoration: none;font-family: 'Montserrat';font-size: 15px;font-weight: 300;line-height: 15px;color:#222;} 
+.pagination a:hover:not(.active) {color:#0072BC;font-weight: 700; } 
+.pagination a.active { color:#0072BC;font-weight: 700;}
+.btn_pagination_first::before,
+.btn_pagination_prev::before,
+.btn_pagination_next::before,
+.btn_pagination_last::before {content: '';display: block;width: 24px;height: 24px;}
+
+.btn_pagination_last::before,
+.btn_pagination_first::before {background: url('../img/common/ico/ico_left_double.png') no-repeat center;}
+
+.btn_pagination_next::before,
+.btn_pagination_prev::before {background: url('../img/common/ico/ico_left_single.png') no-repeat center;}
+
+.btn_pagination_next::before,
+.btn_pagination_last::before {transform: rotate(180deg);}
+
