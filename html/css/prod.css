@@ -138,6 +138,7 @@
 .product_summary_top {width:268px;}
 
 .tit_ft18 {font-size: 18px;font-weight: 600;line-height: 18px;color:#222;}
+.tit_ft28 {font-size: 28px;font-weight: 600;line-height: 28px;color:#222}
 
 .buy_history {flex:1;}
 .history_tit_area .history_tit {font-size: 16px;font-weight: 600;line-height: 16px;color:#1293E7;}
@@ -366,3 +367,11 @@
 .btn_pagination_next::before,
 .btn_pagination_last::before {transform: rotate(180deg);}
 
+/* 브랜드관 */
+.brand_section {padding: 64px 0;overflow: hidden;}
+.brand_section:nth-child(odd) {background-color: #F7F8FA;}
+.brand_section .tit_ft28 {margin-bottom: 40px;}
+.brand_slide_box {width: 1200px;margin:32px auto 0;padding: 24px 40px 24px 40px;border-radius: 12px;background: #F7F8FA;}
+.brand_slide_box .swiper-slide {display: flex;flex-direction: column;gap: 16px; }
+.brand_slide_box .swiper-slide .logo {background-color: #fff;border-radius: 8px;height: 56px;width: 100%;}
+.brand_slide_box .swiper-slide .name {font-size: 16px;font-weight: 300;line-height: 16px;color:#000;}
