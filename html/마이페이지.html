@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/common_new.css">
   <!-- main_new css -->
   <link rel="stylesheet" href="css/main_new.css">
-  <link rel="stylesheet" href="css/prod.css">
+  <link rel="stylesheet" href="css/mypage.css">
   <!-- mCustomScrollbar css -->
   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.sw.css">
   <!-- REQUIRED SCRIPTS -->
@@ -20,7 +20,7 @@
   <!-- Swiper JS -->
   <script src="js/swiper-bundle.min.js"></script>
   <!-- common.js -->
-  <script src="js/common_new.js"></script>  
+  <script src="js/common_new.js"></script>
   <script src="js/common_new2.js"></script>
 </head>
 <body>
@@ -1473,7 +1473,7 @@
 
     <!-- content_wrap -->
     <div class="content_wrap">
-      <div class="inner mt30 mb80">
+      <div class="inner mt30">
         <!-- 컨텐츠 마크업 하는곳 -->
         <script type="text/javascript">
           //<![CDATA[
@@ -1519,865 +1519,106 @@
           //]]>
         </script>
         <ul id="navi">
-          <li class="home"><a href="https://www.jwpmall.co.kr/main/index.do">HOME</a></li>        
-          <li>
-            <button class="ctg" cate="1635">상품카테고리</button>
-            <div style="display: none;">
-              <ol>
-                <li>
-                  <a href="/goods/main.do?cate=1635" class="on">원내제품</a>
-                  <a href="/goods/main.do?cate=2263" class="">JW중외제약 ETC</a>
-                  <a href="/goods/main.do?cate=1854" class="">JW신약</a>
-                  <a href="/goods/main.do?cate=2245" class="">JW바이오사이언스</a>
-                  <a href="/goods/main.do?cate=2402" class="">JW생활건강</a>
-                  <a href="/goods/main.do?cate=1591" class="">내시경처치구</a>
-                  <a href="/goods/main.do?cate=2090" class="">피부/미용/성형</a>
-                  <a href="/goods/main.do?cate=2253" class="">산부인과제품</a>
-                  <a href="/goods/main.do?cate=1856" class="">비케이헬스케어</a>
-                  <a href="/goods/main.do?cate=1857" class="">구구상사</a>
-                </li>
-                <li>
-                  <a href="/goods/main.do?cate=1859" class="">에스이인터내셔널</a>
-                  <a href="/goods/main.do?cate=1903" class="">기영약품</a>
-                  <a href="/goods/main.do?cate=1905" class="">비케이헬스케어(택배배송)</a>
-                  <a href="/goods/main.do?cate=2237" class="">CMG제약</a>
-                  <a href="/goods/main.do?cate=1932" class="">엘스타</a>
-                  <a href="/goods/main.do?cate=1933" class="">남양약품</a>
-                  <a href="/goods/main.do?cate=1934" class="">해성약품</a>
-                  <a href="/goods/main.do?cate=1935" class="">복산나이스</a>
-                  <a href="/goods/main.do?cate=2137" class="">키트</a>
-                  <a href="/goods/main.do?cate=1662" class="">의료소모품</a>
-                </li>
-                <li class="last">
-                  <a href="/goods/main.do?cate=2281" class="">헬스&amp;라이프</a>
-                  <a href="/goods/main.do?cate=2401" class="">소모품업체</a>
-                </li>
-              </ol>
-            </div>
-          </li>          
-          <li><button class="ctg" cate="1637">의료용품</button></li> 
-          <li><button class="ctg" cate="1635">원내제품</button></li>  
-          <li><button class="ctg" cate="1637">철분주사</button></li>         
+          <li class="home"><a href="https://www.jwpmall.co.kr/main/index.do">HOME</a></li>   
+          <li><button class="ctg" cate="1637">마이페이지</button></li>         
         </ul>
+       
 
-        <!-- 카테고리 타이틀 -->
-        <div class="category_title_area">
-            <div class="category_title">
-                <div class="tit">가전</div>
-                <div class="prod_count"><strong>50</strong> 개의 상품</div>
-            </div>
-            <div class="category_search_wrap">
-                <label for="" id="search">카테고리 내 검색</label>
-                <span class="input_wrap_search">
-                    <input type="text" placeholder="입점사를 검색해 보세요." />
-                    <button type="button" class="btn_search"><span class="ir-text">검색</span></button>
-                </span>
-            </div>
-        </div>
-        <!-- // 카테고리 타이틀 -->
-        <div class="find_product_area goods_list_tab">
-            <div class="tab_list mt20">
-                <div class="tab-group">
-                    <ul class="tab-menu tab_category" data-target="tab-category">
-                        <li class="tab-item active">전문의약품</li>
-                        <li class="tab-item">일반의약품</li>
-                        <li class="tab-item">의료소모품</li>
-                        <li class="tab-item">기타</li>
-                    </ul>
-                    <div class="more_cont">
-                        <a href="#none" class="ico_category">카테고리 펼침</a>
-                    </div>
-                    <div class="tab-content">
-                        <div class="tab-pane active">
-                        <!-- 11111111 -->
-                        <!-- 상품 목록 -->
-                        <div class="category_list_wrap">
-                            <div class="category_view_option">
-                                <div class="dropdown_menu_wrap">
-                                    <button type="button" class="btn-dropdown">판매인기순</button>
-                                    <ul class="dropdown_list">
-                                        <li><button type="button" data-option="판매인기순">판매인기순</button></li>
-                                        <li><button type="button" data-option="제품명">제품명</button></li>
-                                        <li><button type="button" data-option="제조사">제조사</button></li>
-                                    </ul>
-                                </div>
-                                <div class="dropdown_menu_wrap">
-                                    <button type="button" class="btn-dropdown">10개보기</button>
-                                    <ul class="dropdown_list">
-                                        <li><button type="button" data-option="20개보기">20개보기</button></li>
-                                        <li><button type="button" data-option="30개보기">30개보기</button></li>
-                                        <li><button type="button" data-option="50개보기">50개보기</button></li>
-                                    </ul>
-                                </div>   
-                                <button type="button" class="btn_store_info">입점사</button>
-                            </div>
-                            <div class="product_list_wrap">
-                                <div class="product_list_wide_wrap">
-                                    <div class="search_result_left_side">
-                                        <div class="search_tag_wrap">
-                                            <div class="tag_wrap">
-                                                <span class="product_tag">
-                                                JW중외제약 
-                                                <button type="button" class="btn_remove_x"><span class="ir-text">삭제</span></button>
-                                                </span>
-                                                <span class="product_tag">
-                                                JW신약 
-                                                <button type="button" class="btn_remove_x"><span class="ir-text">삭제</span></button>
-                                                </span>                          
-                                            </div>
-                                            <span class="switch_wrap">
-                                                <label for="fillter001">품절제외</label>
-                                                <input type="checkbox" checked id="fillter001" />
-                                            </span>
-                                        </div>
-                    
-                                        <div class="product_list_left_wrap mCustomScrollbar">
-                                            <div class="product_list_item">
-                                            <dl>
-                                                <dt class="item_summary_info">
-                                                <div class="product_thumbnail">
-                                                    <img src="./img/sample/product001.png" alt="상품 사진" />
-                                                </div>
-                                                <div class="product_info">
-                                                    <div class="badge_area">
-                                                    <span class="badge badge_best">베스트</span>
-                                                    <span class="badge badge_md">MD추천</span>
-                                                    <span class="badge badge_new_prod">신상품</span>
-                                                    <span class="badge quantity_discount">수량할인</span>
-                                                    </div>
-                                                    <div class="product_tit">페린젝트주(100mg) 2mLx1V</div>
-                                                    <div class="product_corp">JW중외제약</div>
-                                                    <ul>
-                                                    <li>보험코드 : 657301550</li>
-                                                    <li>규격/단위 : 2MLX1V/BOX(160EA)</li>
-                                                    <li>포장단위 : BOX</li>
-                                                    </ul>
-                                                </div>
-                                                </dt>
-                                                <dd class="items_link_list">
-                                                <button type="button" class="btn_heart is-toggle"><span class="ir-text">좋아요</span></button>
-                                                <div class="name">100mg 2mLx1V</div>
-                                                <div class="price">48,000원~</div>
-                                                <button type="button" class="btn_go_detail">상세보기</button>
-                                                </dd>
-                                                <dd class="items_link_list">
-                                                <button type="button" class="btn_heart is-toggle"><span class="ir-text">좋아요</span></button>
-                                                <div class="name">100mg 2mLx1V</div>
-                                                <div class="price">48,000원~</div>
-                                                <button type="button" class="btn_go_detail">상세보기</button>
-                                                </dd>
-                                                <dd class="items_link_list">
-                                                <button type="button" class="btn_heart is-toggle"><span class="ir-text">좋아요</span></button>
-                                                <div class="name">100mg 2mLx1V</div>
-                                                <div class="price">48,000원~</div>
-                                                <button type="button" class="btn_go_detail">상세보기</button>
-                                                </dd>                                                    
-                                            </dl>
-                                            </div>
-                                            <div class="product_list_item">
-                                            <dl>
-                                                <dt class="item_summary_info">
-                                                <div class="product_thumnail">
-                                                    <img src="./img/sample/product001.png" alt="상품 사진" />
-                                                </div>
-                                                <div class="product_info">
-                                                    <div class="badge_area">
-                                                    <span class="badge badge_best">베스트</span>
-                                                    <span class="badge badge_md">MD추천</span>
-                                                    <span class="badge badge_new_prod">신상품</span>
-                                                    <span class="badge quantity_discount">수량할인</span>
-                                                    </div>
-                                                    <div class="product_tit">페린젝트주(100mg) 2mLx1V</div>
-                                                    <div class="product_corp">JW중외제약</div>
-                                                    <ul>
-                                                    <li>보험코드 : 657301550</li>
-                                                    <li>규격/단위 : 2MLX1V/BOX(160EA)</li>
-                                                    <li>포장단위 : BOX</li>
-                                                    </ul>
-                                                </div>
-                                                </dt>
-                                                <dd class="items_link_list">
-                                                <button type="button" class="btn_heart is-toggle"><span class="ir-text">좋아요</span></button>
-                                                <div class="name">100mg 2mLx1V</div>
-                                                <div class="price">48,000원~</div>
-                                                <button type="button" class="btn_go_detail">상세보기</button>
-                                                </dd>
-                                                <dd class="items_link_list">
-                                                <button type="button" class="btn_heart is-toggle"><span class="ir-text">좋아요</span></button>
-                                                <div class="name">100mg 2mLx1V</div>
-                                                <div class="price">48,000원~</div>
-                                                <button type="button" class="btn_go_detail">상세보기</button>
-                                                </dd>
-                                                <dd class="items_link_list">
-                                                <button type="button" class="btn_heart is-toggle"><span class="ir-text">좋아요</span></button>
-                                                <div class="name">100mg 2mLx1V</div>
-                                                <div class="price">48,000원~</div>
-                                                <button type="button" class="btn_go_detail">상세보기</button>
-                                                </dd>                                                    
-                                            </dl>
-                                            </div>  
-                                            <div class="product_list_item">
-                                            <dl>
-                                                <dt class="item_summary_info">
-                                                <div class="product_thumnail">
-                                                    <img src="./img/sample/product001.png" alt="상품 사진" />
-                                                </div>
-                                                <div class="product_info">
-                                                    <div class="badge_area">
-                                                    <span class="badge badge_best">베스트</span>
-                                                    <span class="badge badge_md">MD추천</span>
-                                                    <span class="badge badge_new_prod">신상품</span>
-                                                    <span class="badge quantity_discount">수량할인</span>
-                                                    </div>
-                                                    <div class="product_tit">페린젝트주(100mg) 2mLx1V</div>
-                                                    <div class="product_corp">JW중외제약</div>
-                                                    <ul>
-                                                    <li>보험코드 : 657301550</li>
-                                                    <li>규격/단위 : 2MLX1V/BOX(160EA)</li>
-                                                    <li>포장단위 : BOX</li>
-                                                    </ul>
-                                                </div>
-                                                </dt>
-                                                <dd class="items_link_list">
-                                                <button type="button" class="btn_heart is-toggle"><span class="ir-text">좋아요</span></button>
-                                                <div class="name">100mg 2mLx1V</div>
-                                                <div class="price">48,000원~</div>
-                                                <button type="button" class="btn_go_detail">상세보기</button>
-                                                </dd>
-                                                <dd class="items_link_list">
-                                                <button type="button" class="btn_heart is-toggle"><span class="ir-text">좋아요</span></button>
-                                                <div class="name">100mg 2mLx1V</div>
-                                                <div class="price">48,000원~</div>
-                                                <button type="button" class="btn_go_detail">상세보기</button>
-                                                </dd>
-                                                <dd class="items_link_list">
-                                                <button type="button" class="btn_heart is-toggle"><span class="ir-text">좋아요</span></button>
-                                                <div class="name">100mg 2mLx1V</div>
-                                                <div class="price">48,000원~</div>
-                                                <button type="button" class="btn_go_detail">상세보기</button>
-                                                </dd>                                                    
-                                            </dl>
-                                            </div>                                            
-                                        </div>
-                                        </div>
-                                        <!-- //left -->
-                                        <div class="search_result_right_side">
-                                        <div class="right_side_top_full flex_between">
-                                            <div class="product_summary_top">
-                                            <div class="tit_ft18">페린젝트주(100mg) 2mLx1V</div>
-                                            <div class="item_summary_info mini-size">
-                                                <div class="product_thumbnail">
-                                                <img src="./img/sample/product001.png" alt="상품 사진" />
-                                                </div>
-                                                <div class="product_info">
-                                                <div class="mini_tit">보험코드 : 657301550</div>
-                                                <ul>
-                                                    <li>규격 : 200EA</li>
-                                                    <li>단위 : 1BOX</li>
-                                                    <li>포장단위 : BOX</li>
-                                                    <li>낱알수량 : 30개</li>
-                                                </ul>
-                                                </div>
-                                            </div>
-                                            </div>
-                    
-                                            <div class="buy_history">
-                                            <div class="history_tit_area flex_between">
-                                                <div class="history_tit">최근 6개월 구매내역</div>
-                                                <div class="history_count">구매수량 : <strong>1</strong> 개</div>
-                                            </div>
-                                            <div class="history_table_scroll mCustomScrollbar">
-                                                <table class="">
-                                                <colgroup>
-                                                    <col width="22%" />
-                                                    <col width="22%" />
-                                                    <col width="21%" />
-                                                    <col width="10%" />
-                                                    <col width="25%" />
-                                                </colgroup>
-                                                <thead>
-                                                    <tr>
-                                                    <th scope="col">구매일</th>
-                                                    <th scope="col">입점사</th>
-                                                    <th scope="col">가격</th>
-                                                    <th scope="col">수량</th>
-                                                    <th scope="col">주문금액</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                    <td>2024-03-12</td>
-                                                    <td>JW중외제약</td>
-                                                    <td class="price"><span>48,000</span>원</td>
-                                                    <td>30</td>
-                                                    <td class="price"><span>48,000</span>원</td>
-                                                    </tr>
-                                                    <tr>
-                                                    <td>2024-03-12</td>
-                                                    <td>JW중외제약</td>
-                                                    <td class="price"><span>48,000</span>원</td>
-                                                    <td>30</td>
-                                                    <td class="price"><span>48,000</span>원</td>
-                                                    </tr>
-                                                    <tr>
-                                                    <td>2024-03-12</td>
-                                                    <td>JW중외제약</td>
-                                                    <td class="price"><span>48,000</span>원</td>
-                                                    <td>30</td>
-                                                    <td class="price"><span>48,000</span>원</td>
-                                                    </tr>
-                                                    <tr>
-                                                    <td>2024-03-12</td>
-                                                    <td>JW중외제약</td>
-                                                    <td class="price"><span>48,000</span>원</td>
-                                                    <td>30</td>
-                                                    <td class="price"><span>48,000</span>원</td>
-                                                    </tr>
-                                                    <tr>
-                                                    <td>2024-03-12</td>
-                                                    <td>JW중외제약</td>
-                                                    <td class="price"><span>48,000</span>원</td>
-                                                    <td>30</td>
-                                                    <td class="price"><span>48,000</span>원</td>
-                                                    </tr>                                                                                                                        
-                                                </tbody>
-                                                </table>
-                                            </div>
-                                            </div>
-                                        </div>
-                    
-                                        <div class="sales_info_list">                      
-                                            <div class="table_rows flex_between">
-                                            <span class="col1">입점사명</span>
-                                            <span class="col2">배송마감시간</span>
-                                            <span class="col3">판매가</span>
-                                            <span class="col4">재고</span>
-                                            </div>
-                                            <div class="sales_info_scroll mCustomScrollbar">
-                                            <ul>
-                                                <li class="sale_item is-active">
-                                                <div class="badge_area">
-                                                    <span class="badge quantity_discount">수량할인</span>
-                                                    <span class="badge spacial_price">특가</span>
-                                                    <span class="badge badge_promotion">프로모션</span>
-                                                    <span class="badge badge_time_sale">타임세일</span>
-                                                    <span class="badge badge_coupon">쿠폰</span>
-                                                    <span class="badge badge_grain">낱알</span>
-                                                </div>
-                                                <div class="table_rows flex_between">
-                                                    <span class="col1">판매처1</span>
-                                                    <span class="col2">
-                                                    <button type="button" class="btn_open_sale_detail">
-                                                        <strong>오늘<span>15:00</span>마감</strong>
-                                                        <span class="delivery_message">내일 도착예정</span>
-                                                    </button>
-                                                    <!-- 배송시간 레이어 -->
-                                                    <div class="layer_delivery_time">
-                                                    <dl>
-                                                        <dt>배송마감시간</dt>
-                                                        <dd>
-                                                        <p><span>1차 :</span> <strong>12:00</strong></p>
-                                                        <p><span>2차 :</span> <strong>16:00</strong></p>
-                                                        <p><span>3차 :</span> <strong>17:00</strong></p>
-                                                        </dd>
-                                                    </dl>
-                                                    </div>
-                                                    <!-- //배송시간 레이어 -->                                
-                                                    </span>
-                                                    <span class="col3 flex_center">
-                                                    <img src="./img/common/ico/icon_price_down.png" alt="" />
-                                                    <strong class="price">48,000</strong> 원
-                                                    </span>
-                                                    <span class="col4">99</span>
-                                                </div>  
-                                                <div class="sales_info_detail">
-                                                    <ul>
-                                                    <li>
-                                                        <div class="detail_title">
-                                                        기획전/이벤트
-                                                        <a href="#" class="btn_arrow_right">자세히 보기</a>
-                                                        </div>
-                                                        <div class="detail_content">
-                                                        <p>봄봄봄 봄이 왔네요! 인기상품을 특가로 만나보세요!</p>
-                                                        <p>묶음상품 할인전</p>
-                                                        <p>타임세일 3차 2024-05-01</p>
-                                                        </div>
-                                                    </li>                                
-                                                    <li>
-                                                        <div class="detail_title">
-                                                        수량할인
-                                                        </div>
-                                                        <div class="detail_content">
-                                                        <p>10개 이상 구매 시 개당 할인 <span class="sale">3%</span> <strong class="price"><span>35,800</span>원</strong></p>
-                                                        <p>20개 이상 구매 시 개당 할인 <span class="sale">3%</span> <strong class="price"><span>35,800</span>원</strong></p>
-                                                        <p>30개 이상 구매 시 개당 할인 <span class="sale">3%</span> <strong class="price"><span>35,800</span>원</strong></p>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="detail_title">
-                                                        배송정보
-                                                        </div>
-                                                        <div class="detail_content">
-                                                        <p>도착예정 시간은 영업일 기준으로, 토/일요일, 공휴일, 전사휴무 제외입니다.</p>
-                                                        <p>최소주문 금액 30,000원 이상 구매 시 무료배송</p>
-                                                        <p>배송방법 : 택배배송 (롯데택배)</p>
-                                                        </div>
-                                                    </li>                                
-                                                    </ul>
-                                                </div>                          
-                                                </li>
-                                                <li class="sale_item">
-                                                <div class="badge_area">
-                                                    <span class="badge quantity_discount">수량할인</span>
-                                                    <span class="badge spacial_price">특가</span>
-                                                    <span class="badge badge_promotion">프로모션</span>
-                                                    <span class="badge badge_time_sale">타임세일</span>
-                                                    <span class="badge badge_coupon">쿠폰</span>
-                                                    <span class="badge badge_grain">낱알</span>
-                                                </div>
-                                                <div class="table_rows flex_between">
-                                                    <span class="col1">판매처1</span>
-                                                    <span class="col2">
-                                                    <button type="button" class="btn_open_sale_detail">
-                                                        <strong>오늘<span>15:00</span>마감</strong>
-                                                        <span class="delivery_message">내일 도착예정</span>
-                                                    </button>
-                                                    <!-- 배송시간 레이어 -->
-                                                    <div class="layer_delivery_time">
-                                                        <dl>
-                                                        <dt>배송마감시간</dt>
-                                                        <dd>
-                                                            <p><span>1차 :</span> <strong>12:00</strong></p>
-                                                            <p><span>2차 :</span> <strong>16:00</strong></p>
-                                                            <p><span>3차 :</span> <strong>17:00</strong></p>
-                                                        </dd>
-                                                        </dl>
-                                                    </div>
-                                                    <!-- //배송시간 레이어 -->                                  
-                                                    </span>
-                                                    <span class="col3 flex_center">
-                                                    <img src="./img/common/ico/icon_price_up.png" alt="" />
-                                                    <strong class="price">48,000</strong> 원
-                                                    </span>
-                                                    <span class="col4">99</span>
-                                                </div>  
-                                                <div class="sales_info_detail">
-                                                    <ul>
-                                                    <li>
-                                                        <div class="detail_title">
-                                                        기획전/이벤트
-                                                        <a href="#" class="btn_arrow_right">자세히 보기</a>
-                                                        </div>
-                                                        <div class="detail_content">
-                                                        <p>봄봄봄 봄이 왔네요! 인기상품을 특가로 만나보세요!</p>
-                                                        <p>묶음상품 할인전</p>
-                                                        <p>타임세일 3차 2024-05-01</p>
-                                                        </div>
-                                                    </li>                                
-                                                    <li>
-                                                        <div class="detail_title">
-                                                        수량할인
-                                                        </div>
-                                                        <div class="detail_content">
-                                                        <p>10개 이상 구매 시 개당 할인 <span class="sale">3%</span> <strong class="price"><span>35,800</span>원</strong></p>
-                                                        <p>20개 이상 구매 시 개당 할인 <span class="sale">3%</span> <strong class="price"><span>35,800</span>원</strong></p>
-                                                        <p>30개 이상 구매 시 개당 할인 <span class="sale">3%</span> <strong class="price"><span>35,800</span>원</strong></p>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="detail_title">
-                                                        배송정보
-                                                        </div>
-                                                        <div class="detail_content">
-                                                        <p>도착예정 시간은 영업일 기준으로, 토/일요일, 공휴일, 전사휴무 제외입니다.</p>
-                                                        <p>최소주문 금액 30,000원 이상 구매 시 무료배송</p>
-                                                        <p>배송방법 : 택배배송 (롯데택배)</p>
-                                                        </div>
-                                                    </li>                                
-                                                    </ul>
-                                                </div>                          
-                                                </li>
-                                                <li  class="sale_item">
-                                                <div class="badge_area">
-                                                    <span class="badge quantity_discount">수량할인</span>
-                                                    <span class="badge spacial_price">특가</span>
-                                                    <span class="badge badge_promotion">프로모션</span>
-                                                    <span class="badge badge_time_sale">타임세일</span>
-                                                    <span class="badge badge_coupon">쿠폰</span>
-                                                    <span class="badge badge_grain">낱알</span>
-                                                </div>
-                                                <div class="table_rows flex_between">
-                                                    <span class="col1">판매처1</span>
-                                                    <span class="col2">
-                                                    <button type="button" class="btn_open_sale_detail">
-                                                        <strong>오늘<span>15:00</span>마감</strong>
-                                                        <span class="delivery_message">내일 도착예정</span>
-                                                    </button>
-                                                    <!-- 배송시간 레이어 -->
-                                                    <div class="layer_delivery_time">
-                                                        <dl>
-                                                        <dt>배송마감시간</dt>
-                                                        <dd>
-                                                            <p><span>1차 :</span> <strong>12:00</strong></p>
-                                                            <p><span>2차 :</span> <strong>16:00</strong></p>
-                                                            <p><span>3차 :</span> <strong>17:00</strong></p>
-                                                        </dd>
-                                                        </dl>
-                                                    </div>
-                                                    <!-- //배송시간 레이어 -->                                  
-                                                    </span>
-                                                    <span class="col3 flex_center">
-                                                    <img src="./img/common/ico/icon_price_down.png" alt="" />
-                                                    <strong class="price">48,000</strong> 원
-                                                    </span>
-                                                    <span class="col4">99</span>
-                                                </div>  
-                                                <div class="sales_info_detail">
-                                                    <ul>
-                                                    <li>
-                                                        <div class="detail_title">
-                                                        기획전/이벤트
-                                                        <a href="#" class="btn_arrow_right">자세히 보기</a>
-                                                        </div>
-                                                        <div class="detail_content">
-                                                        <p>봄봄봄 봄이 왔네요! 인기상품을 특가로 만나보세요!</p>
-                                                        <p>묶음상품 할인전</p>
-                                                        <p>타임세일 3차 2024-05-01</p>
-                                                        </div>
-                                                    </li>                                
-                                                    <li>
-                                                        <div class="detail_title">
-                                                        수량할인
-                                                        </div>
-                                                        <div class="detail_content">
-                                                        <p>10개 이상 구매 시 개당 할인 <span class="sale">3%</span> <strong class="price"><span>35,800</span>원</strong></p>
-                                                        <p>20개 이상 구매 시 개당 할인 <span class="sale">3%</span> <strong class="price"><span>35,800</span>원</strong></p>
-                                                        <p>30개 이상 구매 시 개당 할인 <span class="sale">3%</span> <strong class="price"><span>35,800</span>원</strong></p>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="detail_title">
-                                                        배송정보
-                                                        </div>
-                                                        <div class="detail_content">
-                                                        <p>도착예정 시간은 영업일 기준으로, 토/일요일, 공휴일, 전사휴무 제외입니다.</p>
-                                                        <p>최소주문 금액 30,000원 이상 구매 시 무료배송</p>
-                                                        <p>배송방법 : 택배배송 (롯데택배)</p>
-                                                        </div>
-                                                    </li>                                
-                                                    </ul>
-                                                </div>                          
-                                                </li>     
-                                                <li  class="sale_item">
-                                                <div class="badge_area">
-                                                    <span class="badge quantity_discount">수량할인</span>
-                                                    <span class="badge spacial_price">특가</span>
-                                                    <span class="badge badge_promotion">프로모션</span>
-                                                    <span class="badge badge_time_sale">타임세일</span>
-                                                    <span class="badge badge_coupon">쿠폰</span>
-                                                    <span class="badge badge_grain">낱알</span>
-                                                </div>
-                                                <div class="table_rows flex_between">
-                                                    <span class="col1">판매처1</span>
-                                                    <span class="col2">
-                                                    <button type="button" class="btn_open_sale_detail">
-                                                        <strong>오늘<span>15:00</span>마감</strong>
-                                                        <span class="delivery_message">내일 도착예정</span>
-                                                    </button>
-                                                    <!-- 배송시간 레이어 -->
-                                                    <div class="layer_delivery_time">
-                                                        <dl>
-                                                        <dt>배송마감시간</dt>
-                                                        <dd>
-                                                            <p><span>1차 :</span> <strong>12:00</strong></p>
-                                                            <p><span>2차 :</span> <strong>16:00</strong></p>
-                                                            <p><span>3차 :</span> <strong>17:00</strong></p>
-                                                        </dd>
-                                                        </dl>
-                                                    </div>
-                                                    <!-- //배송시간 레이어 -->                                  
-                                                    </span>
-                                                    <span class="col3 flex_center">
-                                                    <img src="./img/common/ico/icon_price_down.png" alt="" />
-                                                    <strong class="price">48,000</strong> 원
-                                                    </span>
-                                                    <span class="col4">99</span>
-                                                </div>  
-                                                <div class="sales_info_detail">
-                                                    <ul>
-                                                    <li>
-                                                        <div class="detail_title">
-                                                        기획전/이벤트
-                                                        <a href="#" class="btn_arrow_right">자세히 보기</a>
-                                                        </div>
-                                                        <div class="detail_content">
-                                                        <p>봄봄봄 봄이 왔네요! 인기상품을 특가로 만나보세요!</p>
-                                                        <p>묶음상품 할인전</p>
-                                                        <p>타임세일 3차 2024-05-01</p>
-                                                        </div>
-                                                    </li>                                
-                                                    <li>
-                                                        <div class="detail_title">
-                                                        수량할인
-                                                        </div>
-                                                        <div class="detail_content">
-                                                        <p>10개 이상 구매 시 개당 할인 <span class="sale">3%</span> <strong class="price"><span>35,800</span>원</strong></p>
-                                                        <p>20개 이상 구매 시 개당 할인 <span class="sale">3%</span> <strong class="price"><span>35,800</span>원</strong></p>
-                                                        <p>30개 이상 구매 시 개당 할인 <span class="sale">3%</span> <strong class="price"><span>35,800</span>원</strong></p>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="detail_title">
-                                                        배송정보
-                                                        </div>
-                                                        <div class="detail_content">
-                                                        <p>도착예정 시간은 영업일 기준으로, 토/일요일, 공휴일, 전사휴무 제외입니다.</p>
-                                                        <p>최소주문 금액 30,000원 이상 구매 시 무료배송</p>
-                                                        <p>배송방법 : 택배배송 (롯데택배)</p>
-                                                        </div>
-                                                    </li>                                
-                                                    </ul>
-                                                </div>                          
-                                                </li>                                                                          
-                                            </ul>
-                                            </div>
-                                            
-                                        <!-- //기본 케이스 -->
-                                        <!-- <div class="order_floating_bottom">
-                                            <div class="order_util_area flex_between">
-                                            <div class="count_controller_wrap">
-                                                <div class="count_controller">
-                                                <button type="button" class="btn_minus"></button>
-                                                <input type="text" title="구매수량" value="1" id="quantityInput">
-                                                <button type="button" class="btn_plus"></button>                            
-                                                </div>
-                                                <div class="order_cout_text">주문단위 : 50개</div> 
-                                            </div>
-                                            <div class="total_price">
-                                                <strong>1,586,000</strong> 원
-                                            </div>
-                                            </div>
-                                            <div class="order_button_wrap flex_between">
-                                            <button type="button" class="btn_blue_line">장바구니</button>
-                                            <button type="button" class="btn_blue">바로구매</button>
-                                            </div>
-                                        </div> -->
-                                        <!-- 구매불가 -->
-                                        <div class="order_floating_bottom">
-                                            <div class="order_util_area flex_between">
-                                            <div class="count_controller_wrap">
-                                                <div class="count_controller">
-                                                <button type="button" class="btn_minus"></button>
-                                                <input type="text" title="구매수량" value="1" id="quantityInput">
-                                                <button type="button" class="btn_plus"></button>                            
-                                                </div>
-                                                <div class="order_cout_text">주문단위 : 50개</div> 
-                                            </div>
-                                            <div class="total_price">
-                                                <strong>1,586,000</strong> 원
-                                            </div>
-                                            </div>
-                                            <div class="shortage_message">
-                                            주문불가 <strong class="price"><span>-90,705</span> 원</strong> 부족
-                                            </div>                      
-                                            <div class="order_button_wrap flex_between">
-                                            <button type="button" class="btn_blue_line">장바구니</button>
-                                            <button type="button" class="btn_blue" disabled>바로구매</button>
-                                            </div>
-                                        </div>                     
-                    
-                                        <!-- 품절 -->
-                                        <!-- <div class="order_floating_bottom type_soldout">
-                                            <div class="order_util_area flex_between">
-                                            <div class="count_controller_wrap">
-                                                <div class="count_controller">
-                                                <button type="button" class="btn_minus"></button>
-                                                <input type="text" title="구매수량" value="1" id="quantityInput">
-                                                <button type="button" class="btn_plus"></button>                            
-                                                </div>
-                                            </div>
-                                            <div class="total_price">
-                                                <strong>품절</strong>
-                                            </div>
-                                            </div>
-                                            <div class="order_button_wrap flex_between">
-                                            <button type="button" class="btn_blue_line">재입고알림 신청</button>                        
-                                            </div>
-                                        </div>
-                                        -->
-                    
-                                        </div>
-                    
-                                        </div>
-                                        <!-- //right area -->
-                                    </div>
-
-
-
-                            </div>
-                        </div>                        
-                        <!-- //11111111 -->
-                        </div>
-                        <div class="tab-pane">
-                        22222222
-                        </div>
-                        <div class="tab-pane">
-                        333333333
-                        </div>
-                        <div class="tab-pane">
-                        444444444
-                        </div>
-                        <div class="tab-pane">
-                        555555555
-                        </div>
-                    </div>
+            <div class="category_title_area">            
+                <div class="mypage_title">
+                    <div class="tit"><span class="member_level vip"></span><strong>제이더블유중외제약주식회사</strong>님의 쇼핑정보</div>                    
                 </div>
             </div>
-        </div>        
 
-        <!-- 모달 -->
-        <section class="modal_new modal_overlay" id="filter_pop"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
-          <div class="modal_n_wrap">
-              <div class="modal_n_body filter_modal" style="width:640px;">
-                  <div class="pop_cont">
-                      <div class="pop_title">
-                        입점사 선택
-                      </div>
-                      <!--  -->
-                      <!-- popContent -->
-                      <div class="popContent">
-                        <!-- pop-cont -->
-                        <div class="pop_cont_inner">
-                          <div class="search_input_wrap">
-                            <input type="text" placeholder="입점사를 검색해 보세요.">
-                            <button class="btn_search"></button>
-                            <!-- 검색결과 자동완성 -->    
-                            <div class="auto_complate_wrap">
-                              <ul>
-                                <li><span>키워드</span> 검색</li>
-                                <li><span>키워드</span> 검색</li>
-                              </ul>
-                            </div>                      
-                          </div>
-                          <script>
-                            // 검색 input에 포커싱이 되면 search_input에 active 클래스 추가
-                            $(".search_input_wrap input").focus(function () {
-                              if ($(this).val() === "") {
-                                $(".search_input_wrap").addClass("active");
-                              }
-                            });
-                  
-                            // 검색 input에서 포커스가 빠지면 search_input의 active 클래스 제거
-                            $(".search_input_wrap input").blur(function () {
-                              // 입력된 텍스트가 있는지 확인
-                              if ($(this).val() === "") {
-                                $(".search_input_wrap").removeClass("active");
-                                $(".search_input_wrap").removeClass("on");
-                              }
-                            });
-                  
-                            // keydown 이벤트가 발생하면 active 클래스 제거하고 on 클래스 추가
-                            $(".search_input_wrap input").keydown(function () {
-                              $(".search_input_wrap").removeClass("active").addClass("on");
-                            });
-                  
-                            // 입력된 텍스트가 없을 때 on 클래스 제거
-                            $(".search_input_wrap input").keyup(function () {
-                              if ($(this).val() === "") {
-                                $(".search_input_wrap").removeClass("on");
-                              }
-                            });
-                  
-                            // 입력된 텍스트가 없을 때 클릭하면 active 클래스 추가
-                            $(".search_input_wrap input").click(function () {
-                              if ($(this).val() === "") {
-                                $(".search_input_wrap").addClass("active");
-                              }
-                            });
-                  
-                            // 다른 곳을 클릭하면 on 클래스 제거
-                            $(document).on("click", function (event) {
-                              if (!$(event.target).closest(".search_input_wrap").length) {
-                                $(".search_input_wrap").removeClass("on");
-                              }
-                            });// 검색 input에 포커싱이 되면 search_input에 active 클래스 추가
-                            $(".search_input_wrap input").focus(function () {
-                              if ($(this).val() === "") {
-                                $(".search_input_wrap").addClass("active");
-                              }
-                            });
-                  
-                            // 검색 input에서 포커스가 빠지면 search_input의 active 클래스 제거
-                            $(".search_input_wrap input").blur(function () {
-                              // 입력된 텍스트가 있는지 확인
-                              if ($(this).val() === "") {
-                                $(".search_input_wrap").removeClass("active");
-                                $(".search_input_wrap").removeClass("on");
-                              }
-                            });
-                  
-                            // keydown 이벤트가 발생하면 active 클래스 제거하고 on 클래스 추가
-                            $(".search_input_wrap input").keydown(function () {
-                              $(".search_input_wrap").removeClass("active").addClass("on");
-                            });
-                  
-                            // 입력된 텍스트가 없을 때 on 클래스 제거
-                            $(".search_input_wrap input").keyup(function () {
-                              if ($(this).val() === "") {
-                                $(".search_input_wrap").removeClass("on");
-                              }
-                            });
-                  
-                            // 입력된 텍스트가 없을 때 클릭하면 active 클래스 추가
-                            $(".search_input_wrap input").click(function () {
-                              if ($(this).val() === "") {
-                                $(".search_input_wrap").addClass("active");
-                              }
-                            });
-                  
-                            // 다른 곳을 클릭하면 on 클래스 제거
-                            $(document).on("click", function (event) {
-                              if (!$(event.target).closest(".search_input_wrap").length) {
-                                $(".search_input_wrap").removeClass("on");
-                              }
-                            });
-                          </script>  
-                          <div class="find_product_area">
-                            <ul class="tab-menu filter-option" data-target="tab-category">
-                              <li class="tab-item active">내과</li>
-                              <li class="tab-item">정형외과</li>
-                              <li class="tab-item">산부인과</li>
-                              <li class="tab-item">소아과</li>
-                              <li class="tab-item">가정의학과</li>
-                              <li class="tab-item">성형외과</li>
-                              <li class="tab-item">신경과</li>
-                              <li class="tab-item">기타등등</li>
-                              <li class="tab-item">기타등등</li>
-                              <li class="tab-item">기타등등</li>
-                              <li class="tab-item">기타등등</li>
-                              <li class="tab-item">기타등등</li>
-                              <li class="tab-item">기타등등</li>
-                              <li class="tab-item">기타등등</li>
-                              <li class="tab-item">기타등등</li>
-                            </ul>
-                          </div>
-                          <div class="btn-area">                            
-                            <button class="btn btn_blue_line btn-cancel" onclick="modalControl('c')" class="btn_close"><span>필터 적용</span></button>
-                          </div>
-                        </div>
-                        <!-- //pop-cont -->
-                      </div>
-                      <!-- //popContent -->
-                      <!--  -->
-                      <button type="button" onclick="modalControl('c')" class="btn_close"><span class="hidden">닫기</span></button>
-                  </div>
-              </div>
-          </div>
-        </section>        
-        <!-- // 모달 -->
+            <div class="mypage_rbox_blue_line">
+                <ul>
+                    <li>
+                        <div class="item_tit">이번달 주문건</div>
+                        <div class="item_cont"><span>3</span>건</div>
+                    </li>
+                    <li>
+                        <div class="item_tit">이번달 주문금액</div>
+                        <div class="item_cont"><span>2,589,000</span>건</div>
+                    </li> 
+                    <li>
+                        <div class="item_tit">이번달 반품금액</div>
+                        <div class="item_cont"><span>2,589,000</span>건</div>
+                    </li>                                            
+                </ul>
+                <ul>
+                    <li>
+                        <div class="item_tit">예치금</div>
+                        <div class="item_cont"><span>2,589,000</span>건</div>
+                    </li>
+                    <li>
+                        <div class="item_tit">마이너스 잔고</div>
+                        <div class="item_cont"><span>2,589,000</span>건</div>
+                    </li> 
+                    <li>
+                        <div class="item_tit">마일리지</div>
+                        <div class="item_cont"><span>2,589,000</span>건</div>
+                    </li>                                            
+                </ul>
+                <ul>
+                    <li>
+                        <div class="item_tit">포인트</div>
+                        <div class="item_cont"><span>2,589,000</span>P</div>
+                    </li>
+                    <li>
+                        <div class="item_tit">보유쿠폰</div>
+                        <div class="item_cont"><span>15</span>매</div>
+                    </li>                                            
+                </ul>                
+            </div>
 
-        <!-- //컨텐츠 마크업 하는곳 -->
-      </div>
+            <div class="mypage_gray_rbox">
+              <dl>
+                <dt>주문정보</dt>
+                <dd>
+                    <ul class="mypg_slist">
+                      <li><a href="#">주문/배송 내역</a></li>
+                      <li><a href="#">최소/반품 내역</a></li>
+                      <li><a href="#">반품신청</a></li>
+                      <li><a href="#">거래원장</a></li>
+                    </ul>
+                </dd>
+              </dl>
+              <dl>
+                <dt>결제정보</dt>
+                <dd>
+                  <ul class="mypg_slist two_col">
+                    <li><a href="#">예치금 구매</a></li>
+                    <li><a href="#">마일리지 내역</a></li>
+                    <li><a href="#">예치금 내역</a></li>
+                    <li><a href="#">간편결제카드 관리</a></li>
+
+                    <li><a href="#">마이너스잔고 내역</a></li>
+                    <li><a href="#">포인트 내역</a></li>
+                    <li><a href="#">여신결제내역</a></li>
+                    <li><a href="#">쿠폰 내역</a></li>
+                  </ul>
+                </dd>
+              </dl>      
+              <ul class="menu_list">
+                  <li><a href="#">관심상품</a></li>
+                  <li><a href="#">주거래약정</a></li>
+                  <li><a href="#">주문상품 재구매</a></li>
+                  <li><a href="#">약가인하보상</a></li>
+              </ul>       
+              <ul class="menu_list">
+                <li><a href="#">회원정보</a></li>
+                <li><a href="#">멤버십 안내</a></li>
+              </ul>     
+              <ul class="menu_list has-count">
+                <li><a href="#">1:1 문의</a> <div class="count"><strong>4</strong> 건</div></li>
+                <li><a href="#">재입고알림 내역</a>  <div class="count"><strong>4</strong> 건</div></li>
+              </ul>                                              
+            </div>
+
+
+               
+        <!-- //컨텐츠 마크업 하는곳 -->      
+        </div> 
     </div>
   </div>
 

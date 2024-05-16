@@ -8,7 +8,7 @@
 .dropdown_menu_wrap .btn-dropdown {border:1px solid #D8DDE9;height: 30px;padding: 0px 12px 0px 12px;border-radius: 4px;gap: 8px; display:flex;align-items: center;justify-content: center;font-size: 14px;font-weight: 300;line-height: 14px;}
 .dropdown_menu_wrap .btn-dropdown::after {content: '';width:12px;height: 7px;background: url('../img/common/ico/ico_arrow_down.png') no-repeat center;}
 .dropdown_menu_wrap .btn-dropdown.is-active::after {transform: rotate(180deg);}
-.dropdown_menu_wrap .dropdown_list {position: absolute;left:0;top: 29px;background-color: #fff; width: 100%;border: 1px solid #D8DDE9;padding: 5px 0;display: none;}
+.dropdown_menu_wrap .dropdown_list {position: absolute;left:0;top: 29px;background-color: #fff; width: 100%;border: 1px solid #D8DDE9;padding: 5px 0;display: none;z-index: 20;}
 .dropdown_menu_wrap .dropdown_list.is-active {display: block;}
 .dropdown_menu_wrap .dropdown_list li button {font-size: 14px;font-weight: 300;line-height: 14px;width: 100%;height: 100%;padding: 5px 10px;}
 .dropdown_menu_wrap .dropdown_list li:hover button {background-color: #D8DDE9;}
@@ -32,7 +32,7 @@
 .btn_store_info::before {content: '';display: inline-flex; width:16px;height: 16px;background: url('../img/common/ico/ico_filter.png') no-repeat center;}
 
 
-/* 카테고리 검색 결과 없음 */
+/* 페이지 상단 타이틀 */
 .category_title_area {display: flex;justify-content: space-between;align-items: center;}
 .category_title_area .category_title {display: flex;align-items: flex-end; gap: 8px;}
 .category_title_area .category_title .tit {font-size: 24px;font-weight: 800;line-height: 24px;color:#0072BC;}
@@ -45,6 +45,12 @@
 .category_title_area .category_search_wrap .input_wrap_search .btn_search {width: 24px;height:22px;background: url('../img/common/ico/ico_search_24.png') no-repeat center;}
 .category_title_area .category_search_wrap .input_wrap_search input::placeholder{font-size: 15px;font-weight: 300;line-height: 15px;color:#717B8A;}
 
+.category_title_area .mypage_title {font-size: 24px;font-weight: 300;line-height: 24px;color:#222;}
+.category_title_area .mypage_title strong {color:#0072BC;font-weight: 700;}
+.category_title_area .mypage_title .tit {display: flex;align-items: center;}
+.category_title_area .member_level {display:inline-block;vertical-align: middle;margin-right: 8px; width:32px;height: 32px;background: url('../img/common/ico/ico_membership_vip.png') no-repeat center;}
+
+/* 카테고리 검색 결과 없음 */
 .category_list_wrap {margin-top: 32px;}
 .category_list_wrap .product_list_wrap {margin-top: 8px;border-top: 1px solid #222;}
 .category_view_option {display: flex;justify-content: flex-start;gap: 10px;align-items: center;position: relative;}
@@ -138,6 +144,7 @@
 .product_summary_top {width:268px;}
 
 .tit_ft18 {font-size: 18px;font-weight: 600;line-height: 18px;color:#222;}
+.tit_ft28 {font-size: 28px;font-weight: 600;line-height: 28px;color:#222}
 
 .buy_history {flex:1;}
 .history_tit_area .history_tit {font-size: 16px;font-weight: 600;line-height: 16px;color:#1293E7;}
@@ -366,3 +373,16 @@
 .btn_pagination_next::before,
 .btn_pagination_last::before {transform: rotate(180deg);}
 
+/* 브랜드관 */
+.brand_section {padding: 64px 0;overflow: hidden;position: relative;}
+.brand_section:nth-child(odd) {background-color: #F7F8FA;}
+.brand_section .tit_ft28 {margin-bottom: 40px;}
+.brand_slide_box {width: 1200px;position: relative; margin:32px auto 0;padding: 24px 40px 24px 40px;border-radius: 12px;background: #F7F8FA;}
+.brand_slide_box .swiper-slide {display: flex;flex-direction: column;gap: 16px; }
+.brand_slide_box .swiper-slide .logo {background-color: #fff;border-radius: 8px;height: 56px;width: 100%;border: 2px solid #fff;}
+.brand_slide_box .swiper-slide .name {font-size: 16px;font-weight: 300;line-height: 16px;color:#000;}
+.brand_slide_box .swiper-button-prev::before,
+.brand_slide_box .swiper-button-next::before {display: none;}
+.brand_slide_box .swiper-button-prev {display: block; position: absolute;width: 32px;height: 32px;border: 0;left: -15px;top: 50%;margin-left: 0 !important;}
+.brand_slide_box .swiper-button-next {display: block; position: absolute;width: 32px;height: 32px;border: 0;right: -15px;top: 50%;margin-right: 0 !important;}
+.brand_slide_box .swiper-slide.active .logo {border: 2px solid #1293E7;} 

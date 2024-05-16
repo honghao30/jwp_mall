@@ -1,0 +1,31 @@
+@charset "UTF-8";
+@import url('base.css');
+@import url('prod.css');
+
+/* 마이페이지 메인 */
+.mypage_rbox_blue_line {display: flex;justify-content: space-between; margin-top: 32px;padding: 40px; background-color: #fff;border: 2px solid #32B6BD99; border-radius: 12px;box-shadow: 0px 6px 6px 0px #32B6BD33;}
+.mypage_rbox_blue_line ul {display: flex;flex-direction: column;width: calc(100% / 3);gap: 25px;padding-right: 40px;}
+.mypage_rbox_blue_line ul:last-child {padding-right: 0;}
+.mypage_rbox_blue_line ul + ul {border-left: 1px solid #E1E3E9;padding-left: 40px;}
+.mypage_rbox_blue_line ul li {display: flex;justify-content: space-between;align-items: center;}
+.mypage_rbox_blue_line ul li .item_tit {font-size: 18px;font-weight: 300;line-height: 18px;color:#222;}
+.mypage_rbox_blue_line ul li .item_tit::before {content: '';display: inline-flex;width:4px;height: 4px;background-color: #222;border-radius: 50%;vertical-align: middle; margin-right: 7px;}
+.mypage_rbox_blue_line ul li .item_cont {font-size: 20px;font-weight: 300;line-height: 20px;color:#222;}
+.mypage_rbox_blue_line ul li .item_cont span {font-weight:600;font-family: 'Montserrat';}
+
+.mypage_gray_rbox {background-color: #F7F8FA;border-radius: 12px;padding: 40px;margin-top: 32px;display: flex;justify-content: space-between;}
+.mypage_gray_rbox dl {display: flex;padding-right: 40px;border-right: 1px solid #E1E3E9;}
+.mypage_gray_rbox dl dt {width: 74px;}
+.mypage_gray_rbox .menu_list {display: flex;flex-direction: column;gap: 12px;align-items: center;border-right: 1px solid #E1E3E9;padding-right: 40px;}
+.mypage_gray_rbox .menu_list.has-count {padding-right: 0;border-right: 0;align-items: flex-start;width: 145px;}
+.mypage_gray_rbox .menu_list.has-count li {display: flex;justify-content: space-between;width: 100%;}
+.mypage_gray_rbox .menu_list.has-count li .count {color:#717B8A;font-size: 15px;font-weight: 300;line-height: 15px;}
+.mypage_gray_rbox .menu_list.has-count li .count strong {font-weight: 600;}
+.mypage_gray_rbox .menu_list li a {font-size: 16px;font-weight: 600;line-height: 16px;color:#222;}
+.mypage_gray_rbox dl dt {font-size: 16px;font-weight: 600;line-height: 16px;color:#222;}
+.mypage_gray_rbox .mypg_slist {display: flex;gap: 12px;flex-direction: column;}
+.mypage_gray_rbox .mypg_slist li {position: relative;padding-left: 6px;}
+.mypage_gray_rbox .mypg_slist li::before {content: '';display: block;width: 2px;height: 2px;background-color: #717B8A;position: absolute;left: 0;top: 5px;}
+.mypage_gray_rbox .mypg_slist li a {font-size: 15px;font-weight: 300;line-height: 15px;color:#717B8A;}
+.mypage_gray_rbox .mypg_slist.two_col {flex-wrap: wrap;width: 230px;flex-direction: row;flex:1;}
+.mypage_gray_rbox .mypg_slist.two_col li {width: 109px;}
