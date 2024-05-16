@@ -32,7 +32,7 @@
 .btn_store_info::before {content: '';display: inline-flex; width:16px;height: 16px;background: url('../img/common/ico/ico_filter.png') no-repeat center;}
 
 
-/* 카테고리 검색 결과 없음 */
+/* 페이지 상단 타이틀 */
 .category_title_area {display: flex;justify-content: space-between;align-items: center;}
 .category_title_area .category_title {display: flex;align-items: flex-end; gap: 8px;}
 .category_title_area .category_title .tit {font-size: 24px;font-weight: 800;line-height: 24px;color:#0072BC;}
@@ -45,6 +45,12 @@
 .category_title_area .category_search_wrap .input_wrap_search .btn_search {width: 24px;height:22px;background: url('../img/common/ico/ico_search_24.png') no-repeat center;}
 .category_title_area .category_search_wrap .input_wrap_search input::placeholder{font-size: 15px;font-weight: 300;line-height: 15px;color:#717B8A;}
 
+.category_title_area .mypage_title {font-size: 24px;font-weight: 300;line-height: 24px;color:#222;}
+.category_title_area .mypage_title strong {color:#0072BC;font-weight: 700;}
+.category_title_area .mypage_title .tit {display: flex;align-items: center;}
+.category_title_area .member_level {display:inline-block;vertical-align: middle;margin-right: 8px; width:32px;height: 32px;background: url('../img/common/ico/ico_membership_vip.png') no-repeat center;}
+
+/* 카테고리 검색 결과 없음 */
 .category_list_wrap {margin-top: 32px;}
 .category_list_wrap .product_list_wrap {margin-top: 8px;border-top: 1px solid #222;}
 .category_view_option {display: flex;justify-content: flex-start;gap: 10px;align-items: center;position: relative;}
