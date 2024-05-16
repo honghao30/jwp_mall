@@ -1468,6 +1468,7 @@
 .product_list.mode02 .products{
   position:relative;
   padding-left:170px;
+  padding-top:5px;
   height:144px;
 }
 .product_list.type02.mode02 .products .info_box .tit{
@@ -1537,8 +1538,6 @@
   margin: 0 1px;
   border-radius: 0;
 }
-.product_list.type02.mode02{}
-
 
 .medical_cont .btn_area{
   position:absolute;
@@ -1551,8 +1550,55 @@
   text-align:right;
 }
 .medical_cont .btn_area button{padding:5px;}
-.medical_cont .tab-content .tab-pane{height:522px;padding-bottom:55px;position:relative;}
+/* .medical_cont .tab-content .tab-pane{height:522px;padding-bottom:55px;position:relative;} */
+.medical_cont .tab-content .tab-pane{height:532px;position:relative;}
 .medical_cont .img_banner_cont{border-radius: 12px 12px 0 0;overflow:hidden;}
+
+
+
+
+
+
+
+
+/* .medical_cont .tab-pane .swiper{position:relative;padding-bottom:100px;} */
+.medical_cont .tab-content .tab-pane .swiper_wrap{height:100%;}
+.medical_cont .tab-content .tab-pane .btn_area{height:50px;}
+.medical_cont .tab-content .tab-pane .btn_area button{padding:0}
+.medical_cont .tab-content .tab-pane .swiper-slide{
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.medical_cont .tab-content .tab-pane .edge_tag_box{height:auto !important;}
+.medical_cont .tab-content .tab-pane .product_list+.product_list{margin-top:15px;}
+
+#main_new .edge_tag_box
+.medical_cont{}
+.medical_cont{}
+.medical_cont{}
+.medical_cont{}
+.medical_cont{}
+
+
+.medical_cont .tab-content .tab-pane .swiper .swiper-button-prev{right:40px;bottom:0;}
+.medical_cont .tab-content .tab-pane .swiper .swiper-button-next{right:0;bottom:0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 베스트 상품, 지역별 인기상품 */
 .best_area .tab-menu{

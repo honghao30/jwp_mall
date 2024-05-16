@@ -1,25 +1,25 @@
 // 탭
-$(document).ready(function () {
-    $(".tab-item").click(function () {
-        // 부모 요소인 .tab-group 내에서만 검색
-        var $tabGroup = $(this).closest('.tab-group');
+// $(document).ready(function () {
+//     $(".tab-item").click(function () {
+//         // 부모 요소인 .tab-group 내에서만 검색
+//         var $tabGroup = $(this).closest('.tab-group');
 
-        // 해당 탭 그룹 내에서만 'active' 클래스 제어
-        $tabGroup.find(".tab-item").removeClass("active");
-        $(this).addClass("active");
+//         // 해당 탭 그룹 내에서만 'active' 클래스 제어
+//         $tabGroup.find(".tab-item").removeClass("active");
+//         $(this).addClass("active");
 
-        // 해당 탭 그룹 내에서만 탭 내용 표시/숨김
-        var index = $(this).index();
-        $tabGroup.find(".tab-pane").hide();
-        $tabGroup.find(".tab-pane:eq(" + index + ")").show();
-    });
+//         // 해당 탭 그룹 내에서만 탭 내용 표시/숨김
+//         var index = $(this).index();
+//         $tabGroup.find(".tab-pane").hide();
+//         $tabGroup.find(".tab-pane:eq(" + index + ")").show();
+//     });
 
-    // 페이지 로드시 각 탭 그룹의 첫 번째 탭 메뉴 항목과 탭 내용을 활성화
-    $(".tab-group").each(function () {
-        $(this).find(".tab-item:first").addClass("active");
-        $(this).find(".tab-pane:first").show();
-    });
-});
+//     // 페이지 로드시 각 탭 그룹의 첫 번째 탭 메뉴 항목과 탭 내용을 활성화
+//     $(".tab-group").each(function () {
+//         $(this).find(".tab-item:first").addClass("active");
+//         $(this).find(".tab-pane:first").show();
+//     });
+// });
 
 //javascript
 function openWindowPop(url, name){
