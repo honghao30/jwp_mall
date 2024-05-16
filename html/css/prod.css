@@ -368,10 +368,15 @@
 .btn_pagination_last::before {transform: rotate(180deg);}
 
 /* 브랜드관 */
-.brand_section {padding: 64px 0;overflow: hidden;}
+.brand_section {padding: 64px 0;overflow: hidden;position: relative;}
 .brand_section:nth-child(odd) {background-color: #F7F8FA;}
 .brand_section .tit_ft28 {margin-bottom: 40px;}
-.brand_slide_box {width: 1200px;margin:32px auto 0;padding: 24px 40px 24px 40px;border-radius: 12px;background: #F7F8FA;}
+.brand_slide_box {width: 1200px;position: relative; margin:32px auto 0;padding: 24px 40px 24px 40px;border-radius: 12px;background: #F7F8FA;}
 .brand_slide_box .swiper-slide {display: flex;flex-direction: column;gap: 16px; }
-.brand_slide_box .swiper-slide .logo {background-color: #fff;border-radius: 8px;height: 56px;width: 100%;}
+.brand_slide_box .swiper-slide .logo {background-color: #fff;border-radius: 8px;height: 56px;width: 100%;border: 2px solid #fff;}
 .brand_slide_box .swiper-slide .name {font-size: 16px;font-weight: 300;line-height: 16px;color:#000;}
+.brand_slide_box .swiper-button-prev::before,
+.brand_slide_box .swiper-button-next::before {display: none;}
+.brand_slide_box .swiper-button-prev {display: block; position: absolute;width: 32px;height: 32px;border: 0;left: -15px;top: 50%;margin-left: 0 !important;}
+.brand_slide_box .swiper-button-next {display: block; position: absolute;width: 32px;height: 32px;border: 0;right: -15px;top: 50%;margin-right: 0 !important;}
+.brand_slide_box .swiper-slide.active .logo {border: 2px solid #1293E7;} 

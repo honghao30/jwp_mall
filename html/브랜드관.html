@@ -1622,20 +1622,20 @@
                         <div class="name">JW바이오사이언스</div>                        
                     </li>                                                                                                                     
                   </ul>
-                  <div class="swiper-button-next"><img src="img/common/brand/btn_brand_right.png" alt=""></div>
-                  <div class="swiper-button-prev"><img src="img/common/brand/btn_brand_left.png" alt=""></div>
-                  <div class="swiper-pagination"></div>
                 </div>
+                <div class="swiper-button-next"><img src="img/common/btn_right_b.png" alt=""></div>
+                <div class="swiper-button-prev"><img src="img/common/btn_left_b.png" alt=""></div>
+                <div class="swiper-pagination"></div>                
               </div>
               <script>
                 // 전용 브랜드관 스와이프
                 var sw_brand_logo = new Swiper(".sw_brand_logo.swiper", {
-                  slidesPerView: 7,
+                  slidesPerView: '7',
                   slidesPerGroup: 1,
                   spaceBetween: 32,
                   navigation: {
-                    nextEl: ".sw_brand_logo .swiper-button-next",
-                    prevEl: ".sw_brand_logo .swiper-button-prev",
+                    nextEl: ".swiper_wrap .swiper-button-next",
+                    prevEl: ".swiper_wrap .swiper-button-prev",
                   },
                   // autoplay: {
                   //   delay: 3000, // 슬라이드 간 시간 간격 (밀리초)
