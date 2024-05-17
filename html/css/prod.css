@@ -48,6 +48,7 @@
 .category_title_area .mypage_title {font-size: 24px;font-weight: 300;line-height: 24px;color:#222;}
 .category_title_area .mypage_title strong {color:#0072BC;font-weight: 700;}
 .category_title_area .mypage_title .tit {display: flex;align-items: center;}
+.category_title_area .mypage_title .tit.blue_type {color:#0072BC;font-weight: 700;}
 .category_title_area .member_level {display:inline-block;vertical-align: middle;margin-right: 8px; width:32px;height: 32px;background: url('../img/common/ico/ico_membership_vip.png') no-repeat center;}
 
 /* 카테고리 검색 결과 없음 */

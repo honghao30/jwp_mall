@@ -29,3 +29,35 @@
 .mypage_gray_rbox .mypg_slist li a {font-size: 15px;font-weight: 300;line-height: 15px;color:#717B8A;}
 .mypage_gray_rbox .mypg_slist.two_col {flex-wrap: wrap;width: 230px;flex-direction: row;flex:1;}
 .mypage_gray_rbox .mypg_slist.two_col li {width: 109px;}
+
+.mypage_gray_rbox.search_option {padding: 20px 40px;align-items: center;}
+.mypage_gray_rbox.search_option .tit { font-size: 15px;font-weight: 700;line-height: 15px;color:#000;width: 70px;}
+.mypage_gray_rbox.search_option .data_period {border: 1px solid #E1E0E5;}
+.mypage_gray_rbox.search_option .data_period button {height: 35px;width: 60px;line-height: 35px;text-align: center;font-size: 14px;font-weight: 400;color:#979797;}
+.mypage_gray_rbox.search_option .data_period button+button {border-left:1px solid #E1E0E5 }
+.mypage_gray_rbox.search_option .data_period_picker {display: flex;justify-content: space-between;align-items: center;margin: 0 28px;}
+.mypage_gray_rbox.search_option .data_period_picker input {height: 35px;line-height: 35px;width: 128px;border: 1px solid #E1E0E5;font-size: 14px;font-weight: 400;color:#000;text-indent: 10px;}
+.mypage_gray_rbox.search_option .data_period_picker  img {margin-left: -20px;}
+.mypage_gray_rbox.search_option .data_period_picker span {margin: 0 10px;}
+
+.ui-datepicker-title {display: flex;align-items: center;justify-content: center;margin:0;}
+.ui-datepicker-title select {padding-top: 0;padding-bottom: 0;height: 35px;}
+.mypage_gray_rbox.search_option .search_form {flex:1;display: flex;align-items: center;justify-content: space-between;gap: 28px;}
+.mypage_gray_rbox.search_option .search_form input {border: 1px solid #E1E0E5;height: 35px;font-size: 14px;font-weight: 400;color:#979797;}
+.mypage_gray_rbox.search_option .search_form button {text-align: center; background: #0072BC;line-height: 35px;border-radius: 4px;width:56px;height:35px;font-size: 14px;font-weight: 600;color:#fff;}
+
+/* 예치금 */
+.credit_info {font-size: 15px;font-weight: 300;line-height: 15px;color:#222;display: flex;align-items: center;}
+.credit_info strong {color:#FF4949;font-weight: 700;font-size: 18px;}
+.btn_buy_credit {border: 1px solid #FF4949;border-radius: 16px;font-size: 14px;font-weight: 300;line-height: 32px;color:#FF4949;text-align: center;width: 94px;height: 32px;margin-left: 8px;}
+
+.mypage_table_wrap {border-top: 1px solid #222;}
+.mypage_table_wrap .no_line {border-bottom: 0;}
+.mypage_table_wrap .button_wrap_center {display: flex;justify-content: center;}
+.mypage_table_wrap th {font-weight: 700;}
+.mypage_table_wrap td .price span {font-family: 'Noto Sans CJK KR';font-size: 15px;font-weight: 900;line-height: 15px;}
+.mypage_table_wrap .button_wrap_center .btn_blue {background: #0072BC;line-height: 48px;border-radius: 12px;width:240px;height:48px;font-size: 16px;font-weight: 600;color:#fff;}
+.reason_text {color:#FF4949;}
+
+.btn_gray_line {height: 36px;width: 79px;text-align: center; border-radius: 4px;border: 1px solid #D8DDE9;font-size: 14px;font-weight: 600;line-height: 36px;color:#222;}
+.pagination.pos1 {margin-top: 24px;padding-bottom: 80px;}
