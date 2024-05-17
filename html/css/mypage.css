@@ -73,4 +73,4 @@
 .mypage_table_wrap .table_default td.text-l {text-align: left;}
 .mypage_table_wrap .table_default td.text-r {text-align: right;}
 .mypage_table_wrap .table_default tfoot td {font-weight: 700;}
-
+.mypage_table_wrap .table_default td.before_search {text-align: center;height:370px;font-size: 14px;font-weight: 400;line-height: 14px;}
