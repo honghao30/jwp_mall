@@ -51,6 +51,10 @@
 .credit_info strong {color:#FF4949;font-weight: 700;font-size: 18px;}
 .btn_buy_credit {border: 1px solid #FF4949;border-radius: 16px;font-size: 14px;font-weight: 300;line-height: 32px;color:#FF4949;text-align: center;width: 94px;height: 32px;margin-left: 8px;}
 
+.view_option_top {margin: 32px 0 0px 0;}
+.check_item_box {gap: 32px;display: flex;}
+.btn_excel_black {color:#fff;font-size: 13px;font-weight: 700;line-height: 35px;border-radius: 4px;height: 35px;background:#535E78;width: 108px;text-align: center;}
+
 .mypage_table_wrap {border-top: 1px solid #222;}
 .mypage_table_wrap .no_line {border-bottom: 0;}
 .mypage_table_wrap .button_wrap_center {display: flex;justify-content: center;}
@@ -61,3 +65,4 @@
 
 .btn_gray_line {height: 36px;width: 79px;text-align: center; border-radius: 4px;border: 1px solid #D8DDE9;font-size: 14px;font-weight: 600;line-height: 36px;color:#222;}
 .pagination.pos1 {margin-top: 24px;padding-bottom: 80px;}
+
