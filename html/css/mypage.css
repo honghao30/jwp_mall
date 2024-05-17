@@ -30,13 +30,16 @@
 .mypage_gray_rbox .mypg_slist.two_col {flex-wrap: wrap;width: 230px;flex-direction: row;flex:1;}
 .mypage_gray_rbox .mypg_slist.two_col li {width: 109px;}
 
-.mypage_gray_rbox.search_option {padding: 20px 40px;align-items: center;}
-.mypage_gray_rbox.search_option .tit { font-size: 15px;font-weight: 700;line-height: 15px;color:#000;width: 70px;}
-.mypage_gray_rbox.search_option .data_period {border: 1px solid #E1E0E5;}
-.mypage_gray_rbox.search_option .data_period button {height: 35px;width: 60px;line-height: 35px;text-align: center;font-size: 14px;font-weight: 400;color:#979797;}
+.mypage_gray_rbox.search_option {padding: 20px 40px;flex-direction: column;gap: 12px;}
+.mypage_gray_rbox.search_option .search_option_items {display: flex;align-items: center;}
+.mypage_gray_rbox.search_option .search_option_items .dropdown_menu_wrap {height: 35px;background-color: #fff;width: 296px;}
+.mypage_gray_rbox.search_option .search_option_items .dropdown_menu_wrap button {width: 100%;height: 100%;text-align: left;display: flex; justify-content: space-between;}
+.mypage_gray_rbox.search_option .search_option_items .tit { font-size: 15px;font-weight: 700;line-height: 15px;color:#000;width: 70px;}
+.mypage_gray_rbox.search_option .data_period {border: 1px solid #E1E0E5;display: flex;}
+.mypage_gray_rbox.search_option .data_period button {height: 35px;width: 59px;line-height: 35px;text-align: center;font-size: 14px;font-weight: 400;color:#979797;background-color: #fff;}
 .mypage_gray_rbox.search_option .data_period button+button {border-left:1px solid #E1E0E5 }
 .mypage_gray_rbox.search_option .data_period_picker {display: flex;justify-content: space-between;align-items: center;margin: 0 28px;}
-.mypage_gray_rbox.search_option .data_period_picker input {height: 35px;line-height: 35px;width: 128px;border: 1px solid #E1E0E5;font-size: 14px;font-weight: 400;color:#000;text-indent: 10px;}
+.mypage_gray_rbox.search_option .data_period_picker input {background-color: #fff;height: 35px;line-height: 35px;width: 128px;border: 1px solid #E1E0E5;font-size: 14px;font-weight: 400;color:#000;text-indent: 10px;}
 .mypage_gray_rbox.search_option .data_period_picker  img {margin-left: -20px;}
 .mypage_gray_rbox.search_option .data_period_picker span {margin: 0 10px;}
 
@@ -51,7 +54,7 @@
 .credit_info strong {color:#FF4949;font-weight: 700;font-size: 18px;}
 .btn_buy_credit {border: 1px solid #FF4949;border-radius: 16px;font-size: 14px;font-weight: 300;line-height: 32px;color:#FF4949;text-align: center;width: 94px;height: 32px;margin-left: 8px;}
 
-.view_option_top {margin: 32px 0 0px 0;}
+.view_option_top {margin: 32px 0 24px 0;}
 .check_item_box {gap: 32px;display: flex;}
 .btn_excel_black {color:#fff;font-size: 13px;font-weight: 700;line-height: 35px;border-radius: 4px;height: 35px;background:#535E78;width: 108px;text-align: center;}
 
@@ -65,4 +68,9 @@
 
 .btn_gray_line {height: 36px;width: 79px;text-align: center; border-radius: 4px;border: 1px solid #D8DDE9;font-size: 14px;font-weight: 600;line-height: 36px;color:#222;}
 .pagination.pos1 {margin-top: 24px;padding-bottom: 80px;}
+.mypage_table_wrap .table_default th,
+.mypage_table_wrap .table_default td {padding-left: 6px;padding-right: 6px;}
+.mypage_table_wrap .table_default td.text-l {text-align: left;}
+.mypage_table_wrap .table_default td.text-r {text-align: right;}
+.mypage_table_wrap .table_default tfoot td {font-weight: 700;}
 
