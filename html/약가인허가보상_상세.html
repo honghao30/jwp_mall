@@ -1522,210 +1522,172 @@
         </script>
         <ul id="navi">
           <li class="home"><a href="https://www.jwpmall.co.kr/main/index.do">HOME</a></li>   
-          <li><button class="ctg">마이페이지</button></li>         
-          <li><button class="ctg">결제정보</button></li>      
-          <li><button class="ctg">예치금 내역</button></li>      
+          <li><button class="ctg" cate="1637">마이페이지</button></li>         
         </ul>
        
 
             <div class="category_title_area">            
                 <div class="mypage_title">
-                    <div class="tit"><strong>예치금 내역</strong></div>                                   
-                </div>
-                <div class="credit_info">
-                    사용 가능한 예치금 <strong>4,900,000</strong> 원
-                    <button type="button" class="btn_buy_credit">예치금 구매</button>
+                    <div class="tit"><span class="member_level vip"></span><strong>제이더블유중외제약주식회사</strong>님의 쇼핑정보</div>                    
                 </div>
             </div>
-            
-            <div class="mypage_gray_rbox search_option">                                            
-                <script>
-        
-                    $(function() {
-                            fn_default_datepicker();
-                    });
-                            
-                    function fn_default_datepicker()
-                    {
-                        var start = $( "#datepicker_start" ).datepicker({
-                            dateFormat: 'yy-mm-dd' //Input Display Format 변경
-                            ,showOtherMonths: true //빈 공간에 현재월의 앞뒤월의 날짜를 표시
-                            ,showMonthAfterYear:true //년도 먼저 나오고, 뒤에 월 표시
-                            ,changeYear: true //콤보박스에서 년 선택 가능
-                            ,changeMonth: true //콤보박스에서 월 선택 가능                
-                            ,showOn: "both" //button:버튼을 표시하고,버튼을 눌러야만 달력 표시 ^ both:버튼을 표시하고,버튼을 누르거나 input을 클릭하면 달력 표시
-                            ,buttonImage: "img/common/ico/ico_calendar.png" //버튼 이미지 경로
-                            ,buttonImageOnly: true //기본 버튼의 회색 부분을 없애고, 이미지만 보이게 함
-                            ,buttonText: "선택" //버튼에 마우스 갖다 댔을 때 표시되는 텍스트                
-                            ,yearSuffix: "년" //달력의 년도 부분 뒤에 붙는 텍스트
-                            ,monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 텍스트
-                            ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip 텍스트
-                            ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 부분 텍스트
-                            ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
-                            ,minDate: "-6M" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
-                            ,maxDate: "0M" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)                
-                        });
-                            
-                        var end = $( "#datepicker_end" ).datepicker({
-                            dateFormat: 'yy-mm-dd' //Input Display Format 변경
-                            ,showOtherMonths: true //빈 공간에 현재월의 앞뒤월의 날짜를 표시
-                            ,showMonthAfterYear:true //년도 먼저 나오고, 뒤에 월 표시
-                            ,changeYear: true //콤보박스에서 년 선택 가능
-                            ,changeMonth: true //콤보박스에서 월 선택 가능                
-                            ,showOn: "both" //button:버튼을 표시하고,버튼을 눌러야만 달력 표시 ^ both:버튼을 표시하고,버튼을 누르거나 input을 클릭하면 달력 표시  
-                            ,buttonImage: "img/common/ico/ico_calendar.png" //버튼 이미지 경로
-                            ,buttonImageOnly: true //기본 버튼의 회색 부분을 없애고, 이미지만 보이게 함
-                            ,buttonText: "선택" //버튼에 마우스 갖다 댔을 때 표시되는 텍스트                
-                            ,yearSuffix: "년" //달력의 년도 부분 뒤에 붙는 텍스트
-                            ,monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 텍스트
-                            ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip 텍스트
-                            ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 부분 텍스트
-                            ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
-                            ,minDate: "-6M" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
-                            ,maxDate: "0M" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)
-                               ,defaultDate: "+1w"
-                          });
-                        
-                        //초기값을 오늘 날짜로 설정
-                        $('#datepicker_start').datepicker('setDate', '-7D'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)
-                        $('#datepicker_end').datepicker('setDate', 'today'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)
-                    }
-                     
-                    function getDate( element ) {
-                        var date;
-                        var dateFormat = "yy-mm-dd";
-                        try {
-                          date = $.datepicker.parseDate( dateFormat, element.value );
-                        } catch( error ) {
-                          date = null;
-                        }
-                        return date;
-                     }
-                     
-                </script>     
-                <div class="search_option_items">
-                  <div class="tit">기간</div>
-                  <div class="data_period">
-                      <button type="button">7일</button>
-                      <button type="button">1개월</button>
-                      <button type="button">3개월</button>
-                      <button type="button">6개월</button>
-                      <button type="button">1년</button>
-                  </div>
-                  <div class="data_period_picker">
-                      <input type="text" class="datepicker-input" id="datepicker_start" /> 
-                      <span>~</span>
-                      <input type="text" class="datepicker-input"  id="datepicker_end" />
-                  </div>       
-                  <div class="search_form">
-                      <input type="text" placeholder="" />
-                      <button type="button">검색</button>
-                  </div>
-                </div>              
+
+            <div class="mypage_rbox_blue_line">
+                <ul>
+                    <li>
+                        <div class="item_tit">이번달 주문건</div>
+                        <div class="item_cont"><span>3</span>건</div>
+                    </li>
+                    <li>
+                        <div class="item_tit">이번달 주문금액</div>
+                        <div class="item_cont"><span>2,589,000</span>건</div>
+                    </li> 
+                    <li>
+                        <div class="item_tit">이번달 반품금액</div>
+                        <div class="item_cont"><span>2,589,000</span>건</div>
+                    </li>                                            
+                </ul>
+                <ul>
+                    <li>
+                        <div class="item_tit">예치금</div>
+                        <div class="item_cont"><span>2,589,000</span>건</div>
+                    </li>
+                    <li>
+                        <div class="item_tit">마이너스 잔고</div>
+                        <div class="item_cont"><span>2,589,000</span>건</div>
+                    </li> 
+                    <li>
+                        <div class="item_tit">마일리지</div>
+                        <div class="item_cont"><span>2,589,000</span>건</div>
+                    </li>                                            
+                </ul>
+                <ul>
+                    <li>
+                        <div class="item_tit">포인트</div>
+                        <div class="item_cont"><span>2,589,000</span>P</div>
+                    </li>
+                    <li>
+                        <div class="item_tit">보유쿠폰</div>
+                        <div class="item_cont"><span>15</span>매</div>
+                    </li>                                            
+                </ul>                
+            </div>
+
+            <div class="mypage_gray_rbox">
+                <dl>
+                    <dt>주문정보</dt>
+                    <dd>
+                        <ul class="mypg_slist">
+                        <li><a href="#">주문/배송 내역</a></li>
+                        <li><a href="#">최소/반품 내역</a></li>
+                        <li><a href="#">반품신청</a></li>
+                        <li><a href="#">거래원장</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>결제정보</dt>
+                    <dd>
+                    <ul class="mypg_slist two_col">
+                        <li><a href="#">예치금 구매</a></li>
+                        <li><a href="#">마일리지 내역</a></li>
+                        <li><a href="#">예치금 내역</a></li>
+                        <li><a href="#">간편결제카드 관리</a></li>
+
+                        <li><a href="#">마이너스잔고 내역</a></li>
+                        <li><a href="#">포인트 내역</a></li>
+                        <li><a href="#">여신결제내역</a></li>
+                        <li><a href="#">쿠폰 내역</a></li>
+                    </ul>
+                    </dd>
+                </dl>      
+                <ul class="menu_list">
+                    <li><a href="#">관심상품</a></li>
+                    <li><a href="#">주거래약정</a></li>
+                    <li><a href="#">주문상품 재구매</a></li>
+                    <li><a href="#">약가인하보상</a></li>
+                </ul>       
+                <ul class="menu_list">
+                    <li><a href="#">회원정보</a></li>
+                    <li><a href="#">멤버십 안내</a></li>
+                </ul>     
+                <ul class="menu_list has-count">
+                    <li><a href="#">1:1 문의</a> <div class="count"><strong>4</strong> 건</div></li>
+                    <li><a href="#">재입고알림 내역</a>  <div class="count"><strong>4</strong> 건</div></li>
+                </ul>                                              
+            </div>
+
+            <div class="tit_single_tab gray_type">
+                약가인하 상세
+            </div>
+            <div class="detail_page_tit">약가인하 상세</div>
+            <div class="mypage_gray_rbox search_option"> 
+                <div class="search_option_items drug_ price_box">
+                    <ul class="drug_price_detail_list">
+                      <li>
+                        <div class="tit">주문금액</div>
+                        <div class="price"><strong>000,000</strong> 원</div>
+                      </li>
+                      <li>
+                        <div class="tit">반품금액</div>
+                        <div class="price"><strong class="reason_text">000,000</strong> 원</div>
+                      </li> 
+                      <li>
+                        <div class="tit">대상금액</div>
+                        <div class="price"><strong>000,000</strong> 원</div>
+                      </li> 
+                      <li>
+                        <div class="tit">보상금액</div>
+                        <div class="price"><strong>000,000</strong> 원</div>
+                      </li>                                                                  
+                    </ul>                                
+                </div>                                                       
             </div>
 
             <div class="mypage_table_wrap mt40">
                 <table class="table_default">
-                  <colgroup>
-                    <col style="width:15%">
+                <colgroup>
+                    <col style="width:10%">                    
+                    <col style="width:13%">
+                    <col style="width:13%">
                     <col>
-                    <col style="width:15%">
-                    <col style="width:15%">
-                    <col style="width:15%">
-                    <col style="width:15%">                    
-                  </colgroup>
-                  <thead>
+                    <col style="width:13%">
+                    <col style="width:13%">                    
+                </colgroup>
+                <thead>
                     <tr>
-                      <th>날짜</th>
-                      <th>내용</th>
-                      <th>구매번호</th>
-                      <th>구매금액</th>
-                      <th>잔액</th>
-                      <th>구매취소</th>
+                        <th>구분</th>
+                        <th>주문번호</th>
+                        <th>일시</th>
+                        <th>상품정보</th>
+                        <th>주문금액</th>
+                        <th>반품금액</th>
                     </tr>
-                  </thead>
-                  <tbody>
+                </thead>
+                <tbody>
                     <tr>
-                      <td>2024-03-27 14:00</td>
-                      <td>구매</td> 
-                      <td>A1234567</td>                     
+                        <td>반품  </td>
+                        <td>A00000000000</td> 
+                        <td>2024.01.01 00:00:00</td>                     
+                        <td>리바로정2mg/PTP</td>  
+                        <td>-</td>  
+                        <td><div class="price"><span class="reason_text">5,000,000</span>원</div></td>  
+                    </tr>
+                    <tr>
+                      <td>주문 </td>
+                      <td>A00000000000</td> 
+                      <td>2024.01.01 00:00:00</td>                     
+                      <td>리바로정2mg/PTP</td>                        
                       <td><div class="price"><span>5,000,000</span>원</div></td>  
-                      <td><div class="price"><span>5,000,000</span>원</div></td>  
-                      <td>
-                        <button type="button" class="btn_gray_line size_sm">구매취소</button>
-                      </td>  
-                    </tr>
-                    <tr>
-                        <td>2024-03-27 14:00</td>
-                        <td>구매</td> 
-                        <td>A1234567</td>                     
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td>
-                          <span class="reason_text">취소불가</span>
-                        </td>  
-                    </tr>
-                    <tr>
-                        <td>2024-03-27 14:00</td>
-                        <td>구매</td> 
-                        <td>A1234567</td>                     
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td>
-                            <button type="button" class="btn_gray_line size_sm">구매취소</button>
-                        </td>  
-                    </tr>  
-                    <tr>
-                        <td>2024-03-27 14:00</td>
-                        <td>구매</td> 
-                        <td>A1234567</td>                     
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td>
-                            <button type="button" class="btn_gray_line size_sm">구매취소</button>
-                        </td>  
-                    </tr>    
-                    <tr>
-                        <td>2024-03-27 14:00</td>
-                        <td>구매</td> 
-                        <td>A1234567</td>                     
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td>
-                            <button type="button" class="btn_gray_line size_sm">구매취소</button>
-                        </td>  
-                    </tr>    
-                    <tr>
-                        <td>2024-03-27 14:00</td>
-                        <td>구매</td> 
-                        <td>A1234567</td>                     
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td>
-                            <button type="button" class="btn_gray_line size_sm">구매취소</button>
-                        </td>  
-                    </tr>                                                                                                        
-                  </tbody>
+                      <td>-</td>  
+                  </tr>                                                                                                                                            
+                </tbody>
                 </table>
-              </div>
-              <div class="pagination pos1">
-                <a href="#" class="btn_pagination_first"><span class="ir-text">처음으로</span></a>
-                <a href="#" class="btn_pagination_prev"><span class="ir-text">이전페이지</span></a>
-                <a href="#">1</a>
-                <a class="active" href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
-                <a href="#">7</a>
-                <a href="#">8</a>
-                <a href="#">9</a>
-                <a href="#">10</a>
-                <a href="#" class="btn_pagination_next"><span class="ir-text">다음으로</span></a>
-                <a href="#" class="btn_pagination_last"><span class="ir-text">마지막페이지</span></a>                                    
-              </div>
-
-
+            </div>
+            <div class="order_button_wrap flex_center mypage">
+              <button type="button" class="btn_gray_line size_small">목록으로</button>
+          </div>
+               
         <!-- //컨텐츠 마크업 하는곳 -->      
         </div> 
     </div>

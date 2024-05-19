@@ -11,10 +11,12 @@
   <!-- main_new css -->
   <link rel="stylesheet" href="css/main_new.css">
   <link rel="stylesheet" href="css/mypage.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
   <!-- mCustomScrollbar css -->
   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.sw.css">
   <!-- REQUIRED SCRIPTS -->
   <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/jquery-ui.js"></script>
   <!-- mCustomScrollbar JS -->
   <script src="js/jquery.mCustomScrollbar.js"></script>
   <!-- Swiper JS -->
@@ -1615,10 +1617,210 @@
                 </ul>                                              
             </div>
 
-            <div class=""></div>
+            <div class="tit_ft24 mt60">약가인하 보상</div>
 
+            <div class="tit_single_tab">
+                <strong>보상 목록</strong>
+            </div>
+            <div class="mypage_gray_rbox search_option">  
+                <div class="search_option_items">
+                    <script>
+            
+                        $(function() {
+                                fn_default_datepicker();
+                        });
+                                
+                        function fn_default_datepicker()
+                        {
+                            var start = $( "#datepicker_start" ).datepicker({
+                                dateFormat: 'yy-mm-dd' //Input Display Format 변경
+                                ,showOtherMonths: true //빈 공간에 현재월의 앞뒤월의 날짜를 표시
+                                ,showMonthAfterYear:true //년도 먼저 나오고, 뒤에 월 표시
+                                ,changeYear: true //콤보박스에서 년 선택 가능
+                                ,changeMonth: true //콤보박스에서 월 선택 가능                
+                                ,showOn: "both" //button:버튼을 표시하고,버튼을 눌러야만 달력 표시 ^ both:버튼을 표시하고,버튼을 누르거나 input을 클릭하면 달력 표시
+                                ,buttonImage: "img/common/ico/ico_calendar.png" //버튼 이미지 경로
+                                ,buttonImageOnly: true //기본 버튼의 회색 부분을 없애고, 이미지만 보이게 함
+                                ,buttonText: "선택" //버튼에 마우스 갖다 댔을 때 표시되는 텍스트                
+                                ,yearSuffix: "년" //달력의 년도 부분 뒤에 붙는 텍스트
+                                ,monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 텍스트
+                                ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip 텍스트
+                                ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 부분 텍스트
+                                ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
+                                ,minDate: "-6M" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
+                                ,maxDate: "0M" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)                
+                            });
+                                
+                            var end = $( "#datepicker_end" ).datepicker({
+                                dateFormat: 'yy-mm-dd' //Input Display Format 변경
+                                ,showOtherMonths: true //빈 공간에 현재월의 앞뒤월의 날짜를 표시
+                                ,showMonthAfterYear:true //년도 먼저 나오고, 뒤에 월 표시
+                                ,changeYear: true //콤보박스에서 년 선택 가능
+                                ,changeMonth: true //콤보박스에서 월 선택 가능                
+                                ,showOn: "both" //button:버튼을 표시하고,버튼을 눌러야만 달력 표시 ^ both:버튼을 표시하고,버튼을 누르거나 input을 클릭하면 달력 표시  
+                                ,buttonImage: "img/common/ico/ico_calendar.png" //버튼 이미지 경로
+                                ,buttonImageOnly: true //기본 버튼의 회색 부분을 없애고, 이미지만 보이게 함
+                                ,buttonText: "선택" //버튼에 마우스 갖다 댔을 때 표시되는 텍스트                
+                                ,yearSuffix: "년" //달력의 년도 부분 뒤에 붙는 텍스트
+                                ,monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 텍스트
+                                ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip 텍스트
+                                ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 부분 텍스트
+                                ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
+                                ,minDate: "-6M" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
+                                ,maxDate: "0M" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)
+                                ,defaultDate: "+1w"
+                            });
+                            
+                            //초기값을 오늘 날짜로 설정
+                            $('#datepicker_start').datepicker('setDate', '-7D'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)
+                            $('#datepicker_end').datepicker('setDate', 'today'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)
+                        }
+                        
+                        function getDate( element ) {
+                            var date;
+                            var dateFormat = "yy-mm-dd";
+                            try {
+                            date = $.datepicker.parseDate( dateFormat, element.value );
+                            } catch( error ) {
+                            date = null;
+                            }
+                            return date;
+                        }
+                        
+                    </script>                  
+                    <div class="tit">조회기간</div>
+                    <div class="data_period">
+                        <button type="button">7일</button>
+                        <button type="button">1개월</button>
+                        <button type="button">3개월</button>
+                        <button type="button">6개월</button>
+                        <button type="button">1년</button>
+                    </div>
+                    <div class="data_period_picker">
+                        <input type="text" class="datepicker-input" id="datepicker_start" /> 
+                        <span>~</span>
+                        <input type="text" class="datepicker-input"  id="datepicker_end" />
+                    </div>
+                    <button type="button" class="btn_excel_black pos_right">품목 다운로드</button>
+                </div>
+                <div class="search_option_items">
+                    <div class="tit">조회기간</div>
+                    <div class="dropdown_menu_wrap">
+                        <button type="button" class="btn-dropdown">선택</button>
+                        <ul class="dropdown_list">
+                            <li><button type="button" data-option="JW중외제약1">JW중외제약1</button></li>
+                            <li class="is-active"><button type="button" data-option="JW중외제약2">JW중외제약2</button></li>
+                            <li><button type="button" data-option="JW중외제약3">JW중외제약3</button></li>
+                        </ul>
+                    </div>
+                    <div class="tit ml28">상품구분</div>
+                    <div class="dropdown_menu_wrap">
+                        <button type="button" class="btn-dropdown">선택</button>
+                        <ul class="dropdown_list">
+                            <li><button type="button" data-option="JW중외제약1">JW중외제약1</button></li>
+                            <li class="is-active"><button type="button" data-option="JW중외제약2">JW중외제약2</button></li>
+                            <li><button type="button" data-option="JW중외제약3">JW중외제약3</button></li>
+                        </ul>
+                    </div>       
+                    <div class="tit ml28">상품명</div>
+                    <div class="search_form">
+                        <input type="text" placeholder="" />                        
+                    </div>                                  
+                </div>                                                       
+            </div>
+            <div class="order_button_wrap flex_center mypage">
+                <button type="button" class="btn_blue">검색</button>
+                <button type="button" class="btn_blue_line">초기화</button>
+            </div>
 
-               
+            <div class="mypage_search_result_box">
+                <p class="result_text">총 00개의 정보가 검색되었습니다.</p>
+            </div>
+                <div class="mypage_table_wrap mt20">
+                    <table class="table_default">
+                    <colgroup>
+                        <col style="width:10%">
+                        <col>
+                        <col style="width:13%">
+                        <col style="width:13%">
+                        <col style="width:13%">
+                        <col style="width:13%">                    
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>
+                                <span class="cs_check_box">
+                                    <input type="checkbox" checked id="check0">
+                                    <label for="check0"><span class="ir-text">전체선택</span></label>
+                                </span>                                      
+                            </th>
+                            <th>입점 업체</th>
+                            <th>적용일시</th>
+                            <th>총주문금액</th>
+                            <th>반품금액</th>
+                            <th>보상금액</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="cs_check_box">
+                                    <input type="checkbox" checked id="check0">
+                                    <label for="check0"><span class="ir-text">OO약품</span></label>
+                                </span>                                  
+                            </td>
+                            <td><a href="#">OO약품</a></td> 
+                            <td>2024.01.01</td>                     
+                            <td><div class="price"><span>5,000,000</span>원</div></td>  
+                            <td><div class="price"><span class="reason_text">5,000,000</span>원</div></td>  
+                            <td><div class="price"><span>5,000,000</span>원</div></td>  
+                        </tr>  
+                        <tr>
+                            <td>
+                                <span class="cs_check_box">
+                                    <input type="checkbox" checked id="check1">
+                                    <label for="check1"><span class="ir-text">OO약품</span></label>
+                                </span>                                  
+                            </td>
+                            <td><a href="#">OO약품</a></td> 
+                            <td>2024.01.01</td>                     
+                            <td><div class="price"><span>5,000,000</span>원</div></td>  
+                            <td><div class="price"><span class="reason_text">5,000,000</span>원</div></td>  
+                            <td><div class="price"><span>5,000,000</span>원</div></td>  
+                        </tr>    
+                        <tr>
+                            <td>
+                                <span class="cs_check_box">
+                                    <input type="checkbox" checked id="check3">
+                                    <label for="check3"><span class="ir-text">OO약품</span></label>
+                                </span>                                  
+                            </td>
+                            <td><a href="#">OO약품</a></td> 
+                            <td>2024.01.01</td>                     
+                            <td><div class="price"><span>5,000,000</span>원</div></td>  
+                            <td><div class="price"><span class="reason_text">5,000,000</span>원</div></td>  
+                            <td><div class="price"><span>5,000,000</span>원</div></td>  
+                        </tr>                                                                                                                                                   
+                    </tbody>
+                    </table>
+                </div>
+                <div class="pagination pos1">
+                    <button type="button" class="btn_excel_black btn_pos_left">일괄승인</button>
+                    <a href="#" class="btn_pagination_first"><span class="ir-text">처음으로</span></a>
+                    <a href="#" class="btn_pagination_prev"><span class="ir-text">이전페이지</span></a>
+                    <a href="#">1</a>
+                    <a class="active" href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                    <a href="#" class="btn_pagination_next"><span class="ir-text">다음으로</span></a>
+                    <a href="#" class="btn_pagination_last"><span class="ir-text">마지막페이지</span></a>                                    
+                </div>
         <!-- //컨텐츠 마크업 하는곳 -->      
         </div> 
     </div>
