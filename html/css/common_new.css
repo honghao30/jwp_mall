@@ -2207,6 +2207,7 @@ input {
 
 .btn_logo_JWPmall{
   vertical-align: middle !important;
+  width:136px;
 }
 
 
@@ -2852,7 +2853,7 @@ input {
 .btn_w{
   width:100%;
   text-align: center;
-  height: 36px;
+  /* height: 36px; */
   padding: 16px;
   border-radius: 12px;
   background: #fff;
@@ -2861,21 +2862,22 @@ input {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 16px; /* 100% */
+  line-height: 36px; /* 100% */
   letter-spacing: -0.64px;
 }
 .btn_b{
   width:100%;
   text-align: center;
-  height: 36px;
+  /* height: 36px; */
   padding: 16px;
   border-radius: 12px;
   background: #0072BC;
+  border:1px solid #0072BC;
   color: #FFF;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 16px; /* 100% */
+  line-height: 36px; /* 100% */
   letter-spacing: -0.64px;
 }
 .btn.type02{border-radius: 6px;}
@@ -3221,7 +3223,7 @@ input {
 .search_list_box .interest_list:first-child li:nth-child(3) .txt strong{color:#FF4949;}
 .search_list_box .interest_list_box:after{content:'';display:block;clear:both;}
 .search_list_box .interest_list_box .interest_list{float:left;width:50%;}
-.search_list_box .interest_list{padding-left:12px;}
+.search_list_box .interest_list{padding:0 12px;}
 .search_list_box .interest_list+.interest_list{border-left:1px solid #E1E3E9;}
 .search_list_box .interest_list li{color:#717B8A;}
 .search_list_box .interest_list li+li{margin-top:12px;}
@@ -3340,10 +3342,42 @@ input {
 .sub_list.sub_list .bar:after{right:0;}
 
 /* content_detail_cont */
-.content_detail_cont .tit{}
-.content_detail_cont .info_cont{}
-.content_detail_cont .info_cont .date{}
-.content_detail_cont .info_cont .count{}
+.content_detail_cont .tit{
+  color: #222;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: -0.96px;
+}
+.content_detail_cont .info_cont{
+  color: #717B8A;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 38px; /* 100% */
+  letter-spacing: -0.6px;
+  position: relative;
+  margin-top:16px;
+}
+.content_detail_cont .info_cont .date,
+.content_detail_cont .info_cont .count{
+  position:relative;
+  padding-left:10px;
+}
+.content_detail_cont .info_cont .count{margin-left:15px;}
+.content_detail_cont .info_cont .date:before,
+.content_detail_cont .info_cont .count:before{
+  content:'';
+  width:4px;
+  height:4px;
+  background:#717B8A;
+  border-radius: 50%;
+  position: absolute;
+  top:50%;
+  left:0;
+  margin-top:-2px;
+}
 .content_detail_cont .content_cont{
   padding:40px;
   margin:16px 0 16px 0;
@@ -3351,11 +3385,82 @@ input {
   border-top:1px solid #E1E3E9;
   border-bottom:1px solid #E1E3E9;
 }
-.content_detail_cont{}
-.content_detail_cont{}
-.content_detail_cont{}
-.content_detail_cont{}
-.content_detail_cont{}
+.content_detail_cont .info_cont>.btns{
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+/* 기획전 */
+.planning_cont{padding-top:40px;border-top:1px solid #E1E3E9;}
+.sub_info_cont{
+  padding:32px 0;
+  color: #717B8A;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 35px; /* 100% */
+  letter-spacing: -0.6px;
+}
+.sub_info_cont:after{content:'';display:block;clear:both;}
+.sub_info_cont .l_cont{float:left;}
+.sub_info_cont .r_cont{float:right;}
+
+.space_type .product_list{padding-top:0 !important;}
+.space_type .product_list .products li{margin-top:0 !important;}
+.space_type  .category_search_wrap label{width:100%;}
+
+.category_wrap .category_title .tit{width:760px;line-height:35px}
+.category_wrap .category_title .tit .prod_count{display: inline-block;}
+
+/* table */
+.table_typez02{border-top:1px solid #222;}
+.table_type02 thead{background:#F7F7F7;}
+.table_type02 tbody{}
+.table_type02 th{
+  color: #000;
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px; /* 100% */
+  letter-spacing: -0.6px;
+  height:50px;
+  line-height:50px;
+}
+.table_type02 td{
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 100% */
+  letter-spacing: -0.56px;
+  height:50px;
+  border-bottom:1px solid #E8E8E8;
+}
+.table_type02 .btns .btn{padding:0 20px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

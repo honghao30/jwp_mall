@@ -1557,26 +1557,268 @@
           <li><button class="ctg" cate="1637">철분주사</button></li>        
         </ul>
 
-        <div class="content_detail_cont">
-          <div class="tit"><strong>[웹세미나] 위너프페리주 217mL의 임상활용</strong></div>
-          <div class="info_cont">
-            <span class="date">등록일 : YYYY-MM-DD</span>
-            <span class="count">조회수 : 5,280</span>
-
-            <div class="txt_right btns">
-              <button class="btn btn_w type02">인쇄하기</button>
-              <button class="btn btn_b type02">다운로드</button>
-            </div>
+        <!-- 카테고리 타이틀 -->
+        <div class="category_title_area">
+          <div class="category_title">
+              <div class="tit">JW중외제약 온라인몰 회원을 위한 KB가온비즈 티타늄 카드</div>
+              <div class="prod_count">상품<strong>15</strong>개</div>
           </div>
-          <div class="content_cont">
-            <div>
-              <img src="img/sample/sample_cont_detail.png" alt="">
-            </div>
-          </div>
-          <div class="border_top mt20 btns txt_right">
-            <button class="btn btn_default type02">목록으로</button>
+          <div class="category_search_wrap">
+              <label for="" id="search">기획전 내 검색</label>
+              <span class="input_wrap_search">
+                  <input type="text" placeholder="입점사를 검색해 보세요." />
+                  <button type="button" class="btn_search"><span class="ir-text">검색</span></button>
+              </span>
           </div>
         </div>
+        <!-- // 카테고리 타이틀 -->
+        
+        <!-- sub_info_cont -->
+        <div class="sub_info_cont">
+          <div class="l_cont">
+            <span class="date">2024-03-01 ~ 2024-03-31</span>
+          </div>
+          <div class="r_cont">
+            <span class="txt">해당 기획전에서 <strong class="colorR">113</strong>개의 상품이 판매되었습니다.</span>
+          </div>
+        </div>
+        
+        <!-- 기획안 body -->
+        <div class="planning_cont">
+          <!-- 지워도됨 -->
+          <div style="min-height:640px;text-align:center;background:#F2F5FA;display:flex;align-items: center;justify-content: center;">#기획안 body</div>
+          <!-- //지워도됨 -->
+        </div>
+
+        <!-- 탭영역 -->        
+        <!-- 상품 기본 정보 -->
+        <div class="product_detail_info">
+          <div class="product_detail_tab_menu flex_between">
+            <button type="button" go="div_01" class="active" onclick="detailtab(this)">분류1</button>
+            <button type="button" go="div_02" onclick="detailtab(this)">분류2</button>
+            <button type="button" go="div_03" onclick="detailtab(this)">분류3</button>
+            <button type="button" go="div_04" onclick="detailtab(this)">분류4</button>
+          </div>
+          <div class="tab-content">
+            <div class="product_detail_tab_cont active" id="div_01">
+              <!-- 탭 내용 -->
+              <div class="find_product_area space_type">
+                <div class="product_list">
+                  <ul class="products">
+                    <li>
+                      <div class="img_box">
+                        <div class="edge_tag_box">
+                          <img class="img" src="img/sample/sample_product_01.png" alt="">
+                          <div class="tag_box">
+                            <span class="edge_tag bgG">세일</span>
+                            <span class="edge_tag bgB">금융할인</span>
+                            <span class="edge_tag bgR">베스트</span>
+                          </div>
+                          <div class="wish_box">
+                            <span class="ico_wish"></span>
+                          </div>
+                          <div class="over">
+                            <div class="linkbox">
+                              <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
+                              <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
+                            </div>
+                            <div class="amountbox">
+                              <dl>
+                                <dt>수량 (주문단위 10개)</dt>
+                                <dd class="num_nav_box">
+                                  <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
+                                    <a href="#" class="up">up</a>
+                                    <a href="#" class="dn">dn</a>
+                                  </span>
+                                  <input type="text" class="value" value="10">
+                                </dd>
+                              </dl>
+                            </div>
+                            <div class="orderbox">
+                              <a href="#" class="n_btn">장바구니</a>
+                              <a href="#" class="n_btn">바로구매</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="info_box">
+                        <div class="product_txt">
+                          <p class="tit"><a href="#">프리베나13주 0.5ml</a></p>
+                        </div>
+                        <div class="price_cont">
+                          <p class="price">132,000원</p>
+                          <span class="sale">45%</span>
+                          <p class="marketPrice">33,000원</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="img_box">
+                        <div class="edge_tag_box">
+                          <img class="img" src="img/sample/sample_product_01.png" alt="">
+                          <div class="tag_box">
+                            <span class="edge_tag bgG">세일</span>
+                            <span class="edge_tag bgB">금융할인</span>
+                            <span class="edge_tag bgR">베스트</span>
+                          </div>
+                          <div class="wish_box">
+                            <span class="ico_wish"></span>
+                          </div>
+                          <div class="over">
+                            <div class="linkbox">
+                              <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
+                              <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
+                            </div>
+                            <div class="amountbox">
+                              <dl>
+                                <dt>수량 (주문단위 10개)</dt>
+                                <dd class="num_nav_box">
+                                  <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
+                                    <a href="#" class="up">up</a>
+                                    <a href="#" class="dn">dn</a>
+                                  </span>
+                                  <input type="text" class="value" value="10">
+                                </dd>
+                              </dl>
+                            </div>
+                            <div class="orderbox">
+                              <a href="#" class="n_btn">장바구니</a>
+                              <a href="#" class="n_btn">바로구매</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="info_box">
+                        <div class="product_txt">
+                          <p class="tit"><a href="#">프리베나13주 0.5ml</a></p>
+                        </div>
+                        <div class="price_cont">
+                          <p class="price">132,000원</p>
+                          <span class="sale">45%</span>
+                          <p class="marketPrice">33,000원</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="img_box">
+                        <div class="edge_tag_box">
+                          <img class="img" src="img/sample/sample_product_01.png" alt="">
+                          <div class="tag_box">
+                            <span class="edge_tag bgG">세일</span>
+                            <span class="edge_tag bgB">금융할인</span>
+                            <span class="edge_tag bgR">베스트</span>
+                          </div>
+                          <div class="wish_box">
+                            <span class="ico_wish"></span>
+                          </div>
+                          <div class="over">
+                            <div class="linkbox">
+                              <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
+                              <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
+                            </div>
+                            <div class="amountbox">
+                              <dl>
+                                <dt>수량 (주문단위 10개)</dt>
+                                <dd class="num_nav_box">
+                                  <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
+                                    <a href="#" class="up">up</a>
+                                    <a href="#" class="dn">dn</a>
+                                  </span>
+                                  <input type="text" class="value" value="10">
+                                </dd>
+                              </dl>
+                            </div>
+                            <div class="orderbox">
+                              <a href="#" class="n_btn">장바구니</a>
+                              <a href="#" class="n_btn">바로구매</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="info_box">
+                        <div class="product_txt">
+                          <p class="tit"><a href="#">프리베나13주 0.5ml</a></p>
+                        </div>
+                        <div class="price_cont">
+                          <p class="price">132,000원</p>
+                          <span class="sale">45%</span>
+                          <p class="marketPrice">33,000원</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="img_box">
+                        <div class="edge_tag_box">
+                          <img class="img" src="img/sample/sample_product_01.png" alt="">
+                          <div class="tag_box">
+                            <span class="edge_tag bgG">세일</span>
+                            <span class="edge_tag bgB">금융할인</span>
+                            <span class="edge_tag bgR">베스트</span>
+                          </div>
+                          <div class="wish_box">
+                            <span class="ico_wish"></span>
+                          </div>
+                          <div class="over">
+                            <div class="linkbox">
+                              <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
+                              <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
+                            </div>
+                            <div class="amountbox">
+                              <dl>
+                                <dt>수량 (주문단위 10개)</dt>
+                                <dd class="num_nav_box">
+                                  <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
+                                    <a href="#" class="up">up</a>
+                                    <a href="#" class="dn">dn</a>
+                                  </span>
+                                  <input type="text" class="value" value="10">
+                                </dd>
+                              </dl>
+                            </div>
+                            <div class="orderbox">
+                              <a href="#" class="n_btn">장바구니</a>
+                              <a href="#" class="n_btn">바로구매</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="info_box">
+                        <div class="product_txt">
+                          <p class="tit"><a href="#">프리베나13주 0.5ml</a></p>
+                        </div>
+                        <div class="price_cont">
+                          <p class="price">132,000원</p>
+                          <span class="sale">45%</span>
+                          <p class="marketPrice">33,000원</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- //탭 내용 -->
+            </div>
+            <div class="product_detail_tab_cont" id="div_02">
+              #분류2
+            </div>
+            <div class="product_detail_tab_cont" id="div_03">
+              #분류3
+            </div>  
+            <div class="product_detail_tab_cont" id="div_04">
+              #분류4
+            </div>                                 
+          </div>
+        </div>
+        <script>
+            function detailtab(target){
+              var id = $(target).attr('go');
+              $('.product_detail_info .product_detail_tab_menu button').removeClass('active');
+              $('.product_detail_info .product_detail_tab_cont').removeClass('active');
+              $(target).addClass('active');
+              $('#'+id).addClass('active');
+            }
+        </script>
+
         <!-- //컨텐츠 마크업 하는곳 -->
       </div>
     </div>
