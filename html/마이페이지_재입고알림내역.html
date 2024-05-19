@@ -1524,190 +1524,152 @@
           <li class="home"><a href="https://www.jwpmall.co.kr/main/index.do">HOME</a></li>   
           <li><button class="ctg">마이페이지</button></li>         
           <li><button class="ctg">결제정보</button></li>      
-          <li><button class="ctg">예치금 내역</button></li>      
+          <li><button class="ctg">재입고알림 내역</button></li>      
         </ul>
        
 
             <div class="category_title_area">            
                 <div class="mypage_title">
-                    <div class="tit"><strong>예치금 내역</strong></div>                                   
-                </div>
-                <div class="credit_info">
-                    사용 가능한 예치금 <strong>4,900,000</strong> 원
-                    <button type="button" class="btn_buy_credit">예치금 구매</button>
+                    <div class="tit"><strong>재입고알림 내역</strong></div>                                   
                 </div>
             </div>
             
-            <div class="mypage_gray_rbox search_option">                                            
-                <script>
-        
-                    $(function() {
-                            fn_default_datepicker();
-                    });
-                            
-                    function fn_default_datepicker()
-                    {
-                        var start = $( "#datepicker_start" ).datepicker({
-                            dateFormat: 'yy-mm-dd' //Input Display Format 변경
-                            ,showOtherMonths: true //빈 공간에 현재월의 앞뒤월의 날짜를 표시
-                            ,showMonthAfterYear:true //년도 먼저 나오고, 뒤에 월 표시
-                            ,changeYear: true //콤보박스에서 년 선택 가능
-                            ,changeMonth: true //콤보박스에서 월 선택 가능                
-                            ,showOn: "both" //button:버튼을 표시하고,버튼을 눌러야만 달력 표시 ^ both:버튼을 표시하고,버튼을 누르거나 input을 클릭하면 달력 표시
-                            ,buttonImage: "img/common/ico/ico_calendar.png" //버튼 이미지 경로
-                            ,buttonImageOnly: true //기본 버튼의 회색 부분을 없애고, 이미지만 보이게 함
-                            ,buttonText: "선택" //버튼에 마우스 갖다 댔을 때 표시되는 텍스트                
-                            ,yearSuffix: "년" //달력의 년도 부분 뒤에 붙는 텍스트
-                            ,monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 텍스트
-                            ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip 텍스트
-                            ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 부분 텍스트
-                            ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
-                            ,minDate: "-6M" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
-                            ,maxDate: "0M" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)                
-                        });
-                            
-                        var end = $( "#datepicker_end" ).datepicker({
-                            dateFormat: 'yy-mm-dd' //Input Display Format 변경
-                            ,showOtherMonths: true //빈 공간에 현재월의 앞뒤월의 날짜를 표시
-                            ,showMonthAfterYear:true //년도 먼저 나오고, 뒤에 월 표시
-                            ,changeYear: true //콤보박스에서 년 선택 가능
-                            ,changeMonth: true //콤보박스에서 월 선택 가능                
-                            ,showOn: "both" //button:버튼을 표시하고,버튼을 눌러야만 달력 표시 ^ both:버튼을 표시하고,버튼을 누르거나 input을 클릭하면 달력 표시  
-                            ,buttonImage: "img/common/ico/ico_calendar.png" //버튼 이미지 경로
-                            ,buttonImageOnly: true //기본 버튼의 회색 부분을 없애고, 이미지만 보이게 함
-                            ,buttonText: "선택" //버튼에 마우스 갖다 댔을 때 표시되는 텍스트                
-                            ,yearSuffix: "년" //달력의 년도 부분 뒤에 붙는 텍스트
-                            ,monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 텍스트
-                            ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip 텍스트
-                            ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 부분 텍스트
-                            ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
-                            ,minDate: "-6M" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
-                            ,maxDate: "0M" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)
-                               ,defaultDate: "+1w"
-                          });
-                        
-                        //초기값을 오늘 날짜로 설정
-                        $('#datepicker_start').datepicker('setDate', '-7D'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)
-                        $('#datepicker_end').datepicker('setDate', 'today'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)
-                    }
-                     
-                    function getDate( element ) {
-                        var date;
-                        var dateFormat = "yy-mm-dd";
-                        try {
-                          date = $.datepicker.parseDate( dateFormat, element.value );
-                        } catch( error ) {
-                          date = null;
-                        }
-                        return date;
-                     }
-                     
-                </script>     
+            <div class="mypage_gray_rbox search_option">  
                 <div class="search_option_items">
-                  <div class="tit">기간</div>
-                  <div class="data_period">
-                      <button type="button">7일</button>
-                      <button type="button">1개월</button>
-                      <button type="button">3개월</button>
-                      <button type="button">6개월</button>
-                      <button type="button">1년</button>
-                  </div>
-                  <div class="data_period_picker">
-                      <input type="text" class="datepicker-input" id="datepicker_start" /> 
-                      <span>~</span>
-                      <input type="text" class="datepicker-input"  id="datepicker_end" />
-                  </div>       
-                  <div class="search_form">
-                      <input type="text" placeholder="" />
-                      <button type="button">검색</button>
-                  </div>
-                </div>              
+                    <script>
+            
+                        $(function() {
+                                fn_default_datepicker();
+                        });
+                                
+                        function fn_default_datepicker()
+                        {
+                            var start = $( "#datepicker_start" ).datepicker({
+                                dateFormat: 'yy-mm-dd' //Input Display Format 변경
+                                ,showOtherMonths: true //빈 공간에 현재월의 앞뒤월의 날짜를 표시
+                                ,showMonthAfterYear:true //년도 먼저 나오고, 뒤에 월 표시
+                                ,changeYear: true //콤보박스에서 년 선택 가능
+                                ,changeMonth: true //콤보박스에서 월 선택 가능                
+                                ,showOn: "both" //button:버튼을 표시하고,버튼을 눌러야만 달력 표시 ^ both:버튼을 표시하고,버튼을 누르거나 input을 클릭하면 달력 표시
+                                ,buttonImage: "img/common/ico/ico_calendar.png" //버튼 이미지 경로
+                                ,buttonImageOnly: true //기본 버튼의 회색 부분을 없애고, 이미지만 보이게 함
+                                ,buttonText: "선택" //버튼에 마우스 갖다 댔을 때 표시되는 텍스트                
+                                ,yearSuffix: "년" //달력의 년도 부분 뒤에 붙는 텍스트
+                                ,monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 텍스트
+                                ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip 텍스트
+                                ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 부분 텍스트
+                                ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
+                                ,minDate: "-6M" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
+                                ,maxDate: "0M" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)                
+                            });
+                                
+                            var end = $( "#datepicker_end" ).datepicker({
+                                dateFormat: 'yy-mm-dd' //Input Display Format 변경
+                                ,showOtherMonths: true //빈 공간에 현재월의 앞뒤월의 날짜를 표시
+                                ,showMonthAfterYear:true //년도 먼저 나오고, 뒤에 월 표시
+                                ,changeYear: true //콤보박스에서 년 선택 가능
+                                ,changeMonth: true //콤보박스에서 월 선택 가능                
+                                ,showOn: "both" //button:버튼을 표시하고,버튼을 눌러야만 달력 표시 ^ both:버튼을 표시하고,버튼을 누르거나 input을 클릭하면 달력 표시  
+                                ,buttonImage: "img/common/ico/ico_calendar.png" //버튼 이미지 경로
+                                ,buttonImageOnly: true //기본 버튼의 회색 부분을 없애고, 이미지만 보이게 함
+                                ,buttonText: "선택" //버튼에 마우스 갖다 댔을 때 표시되는 텍스트                
+                                ,yearSuffix: "년" //달력의 년도 부분 뒤에 붙는 텍스트
+                                ,monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 텍스트
+                                ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip 텍스트
+                                ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 부분 텍스트
+                                ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
+                                ,minDate: "-6M" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
+                                ,maxDate: "0M" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)
+                                ,defaultDate: "+1w"
+                            });
+                            
+                            //초기값을 오늘 날짜로 설정
+                            $('#datepicker_start').datepicker('setDate', '-7D'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)
+                            $('#datepicker_end').datepicker('setDate', 'today'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)
+                        }
+                        
+                        function getDate( element ) {
+                            var date;
+                            var dateFormat = "yy-mm-dd";
+                            try {
+                            date = $.datepicker.parseDate( dateFormat, element.value );
+                            } catch( error ) {
+                            date = null;
+                            }
+                            return date;
+                        }
+                        
+                    </script>                  
+                    <div class="tit">기간</div>
+                    <div class="data_period">
+                        <button type="button">7일</button>
+                        <button type="button">1개월</button>
+                        <button type="button">3개월</button>
+                        <button type="button">6개월</button>
+                        <button type="button">1년</button>
+                    </div>
+                    <div class="data_period_picker">
+                        <input type="text" class="datepicker-input" id="datepicker_start" /> 
+                        <span>~</span>
+                        <input type="text" class="datepicker-input"  id="datepicker_end" />
+                    </div>       
+                    <div class="search_form">
+                        <input type="text" placeholder="" />
+                        <button type="button">검색</button>
+                    </div> 
+                </div>                                                       
             </div>
 
             <div class="mypage_table_wrap mt40">
                 <table class="table_default">
-                  <colgroup>
-                    <col style="width:15%">
-                    <col>
-                    <col style="width:15%">
-                    <col style="width:15%">
-                    <col style="width:15%">
-                    <col style="width:15%">                    
-                  </colgroup>
-                  <thead>
-                    <tr>
-                      <th>날짜</th>
-                      <th>내용</th>
-                      <th>구매번호</th>
-                      <th>구매금액</th>
-                      <th>잔액</th>
-                      <th>구매취소</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>2024-03-27 14:00</td>
-                      <td>구매</td> 
-                      <td>A1234567</td>                     
-                      <td><div class="price"><span>5,000,000</span>원</div></td>  
-                      <td><div class="price"><span>5,000,000</span>원</div></td>  
-                      <td>
-                        <button type="button" class="btn_gray_line size_sm">구매취소</button>
-                      </td>  
-                    </tr>
-                    <tr>
-                        <td>2024-03-27 14:00</td>
-                        <td>구매</td> 
-                        <td>A1234567</td>                     
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td>
-                          <span class="reason_text">취소불가</span>
-                        </td>  
-                    </tr>
-                    <tr>
-                        <td>2024-03-27 14:00</td>
-                        <td>구매</td> 
-                        <td>A1234567</td>                     
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td>
-                            <button type="button" class="btn_gray_line size_sm">구매취소</button>
-                        </td>  
-                    </tr>  
-                    <tr>
-                        <td>2024-03-27 14:00</td>
-                        <td>구매</td> 
-                        <td>A1234567</td>                     
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td>
-                            <button type="button" class="btn_gray_line size_sm">구매취소</button>
-                        </td>  
-                    </tr>    
-                    <tr>
-                        <td>2024-03-27 14:00</td>
-                        <td>구매</td> 
-                        <td>A1234567</td>                     
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td>
-                            <button type="button" class="btn_gray_line size_sm">구매취소</button>
-                        </td>  
-                    </tr>    
-                    <tr>
-                        <td>2024-03-27 14:00</td>
-                        <td>구매</td> 
-                        <td>A1234567</td>                     
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td>
-                            <button type="button" class="btn_gray_line size_sm">구매취소</button>
-                        </td>  
-                    </tr>                                                                                                        
-                  </tbody>
+                    <colgroup>
+                        <col style="width: 25%;">
+                        <col style="width: 25%;">
+                        <col style="width: 25%;">
+                        <col style="width: 25%;">                                  
+                    </colgroup>
+                    <thead>
+                        <tr>
+                        <th>신청일시</th>
+                        <th>입점사</th>
+                        <th>상품명</th>
+                        <th>알림해제</th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                            <tr>
+                                <td>2024-03-27 14:00</td>
+                                <td class="text-l">입점사명 최대 한 줄 노출...</td>                       
+                                <td class="text-l">입점사명 최대 한 줄 노출...</td>        
+                                <td><button type="button" class="btn_gray_line size_sm">알림해제</button></td>           
+                            </tr>
+                            <tr>
+                                <td>2024-03-27 14:00</td>
+                                <td class="text-l">입점사명 최대 한 줄 노출...</td>                       
+                                <td class="text-l">입점사명 최대 한 줄 노출...</td>        
+                                <td><button type="button" class="btn_gray_line size_sm">알림해제</button></td>           
+                            </tr>
+                            <tr>
+                                <td>2024-03-27 14:00</td>
+                                <td class="text-l">입점사명 최대 한 줄 노출...</td>                       
+                                <td class="text-l">입점사명 최대 한 줄 노출...</td>        
+                                <td><button type="button" class="btn_gray_line size_sm">알림해제</button></td>           
+                            </tr>
+                            <tr>
+                                <td>2024-03-27 14:00</td>
+                                <td class="text-l">입점사명 최대 한 줄 노출...</td>                       
+                                <td class="text-l">입점사명 최대 한 줄 노출...</td>        
+                                <td><button type="button" class="btn_gray_line size_sm">알림해제</button></td>           
+                            </tr>
+                            <tr>
+                                <td>2024-03-27 14:00</td>
+                                <td class="text-l">입점사명 최대 한 줄 노출...</td>                       
+                                <td class="text-l">입점사명 최대 한 줄 노출...</td>        
+                                <td><button type="button" class="btn_gray_line size_sm">알림해제</button></td>           
+                            </tr>
+                        </tbody>
                 </table>
-              </div>
+            </div>
               <div class="pagination pos1">
                 <a href="#" class="btn_pagination_first"><span class="ir-text">처음으로</span></a>
                 <a href="#" class="btn_pagination_prev"><span class="ir-text">이전페이지</span></a>
@@ -1725,7 +1687,7 @@
                 <a href="#" class="btn_pagination_last"><span class="ir-text">마지막페이지</span></a>                                    
             </div>
 
-
+               
         <!-- //컨텐츠 마크업 하는곳 -->      
         </div> 
     </div>

@@ -155,6 +155,7 @@
 
 .tit_ft18 {font-size: 18px;font-weight: 600;line-height: 18px;color:#222;}
 .tit_ft28 {font-size: 28px;font-weight: 600;line-height: 28px;color:#222}
+.tit_ft16 {font-family: 'NotoSans'; font-size: 16px;font-weight: 500;line-height: 16px;color:#000}
 
 .buy_history {flex:1;}
 .history_tit_area .history_tit {font-size: 16px;font-weight: 600;line-height: 16px;color:#1293E7;}

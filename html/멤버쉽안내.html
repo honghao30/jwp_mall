@@ -1522,209 +1522,219 @@
         </script>
         <ul id="navi">
           <li class="home"><a href="https://www.jwpmall.co.kr/main/index.do">HOME</a></li>   
-          <li><button class="ctg">마이페이지</button></li>         
-          <li><button class="ctg">결제정보</button></li>      
-          <li><button class="ctg">예치금 내역</button></li>      
+          <li><button class="ctg">배송/결제 안내</button></li>         
         </ul>
        
 
             <div class="category_title_area">            
                 <div class="mypage_title">
-                    <div class="tit"><strong>예치금 내역</strong></div>                                   
-                </div>
-                <div class="credit_info">
-                    사용 가능한 예치금 <strong>4,900,000</strong> 원
-                    <button type="button" class="btn_buy_credit">예치금 구매</button>
+                    <div class="tit"><strong>멤버십 안내</strong></div>                                   
                 </div>
             </div>
             
-            <div class="mypage_gray_rbox search_option">                                            
-                <script>
-        
-                    $(function() {
-                            fn_default_datepicker();
-                    });
-                            
-                    function fn_default_datepicker()
-                    {
-                        var start = $( "#datepicker_start" ).datepicker({
-                            dateFormat: 'yy-mm-dd' //Input Display Format 변경
-                            ,showOtherMonths: true //빈 공간에 현재월의 앞뒤월의 날짜를 표시
-                            ,showMonthAfterYear:true //년도 먼저 나오고, 뒤에 월 표시
-                            ,changeYear: true //콤보박스에서 년 선택 가능
-                            ,changeMonth: true //콤보박스에서 월 선택 가능                
-                            ,showOn: "both" //button:버튼을 표시하고,버튼을 눌러야만 달력 표시 ^ both:버튼을 표시하고,버튼을 누르거나 input을 클릭하면 달력 표시
-                            ,buttonImage: "img/common/ico/ico_calendar.png" //버튼 이미지 경로
-                            ,buttonImageOnly: true //기본 버튼의 회색 부분을 없애고, 이미지만 보이게 함
-                            ,buttonText: "선택" //버튼에 마우스 갖다 댔을 때 표시되는 텍스트                
-                            ,yearSuffix: "년" //달력의 년도 부분 뒤에 붙는 텍스트
-                            ,monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 텍스트
-                            ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip 텍스트
-                            ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 부분 텍스트
-                            ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
-                            ,minDate: "-6M" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
-                            ,maxDate: "0M" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)                
-                        });
-                            
-                        var end = $( "#datepicker_end" ).datepicker({
-                            dateFormat: 'yy-mm-dd' //Input Display Format 변경
-                            ,showOtherMonths: true //빈 공간에 현재월의 앞뒤월의 날짜를 표시
-                            ,showMonthAfterYear:true //년도 먼저 나오고, 뒤에 월 표시
-                            ,changeYear: true //콤보박스에서 년 선택 가능
-                            ,changeMonth: true //콤보박스에서 월 선택 가능                
-                            ,showOn: "both" //button:버튼을 표시하고,버튼을 눌러야만 달력 표시 ^ both:버튼을 표시하고,버튼을 누르거나 input을 클릭하면 달력 표시  
-                            ,buttonImage: "img/common/ico/ico_calendar.png" //버튼 이미지 경로
-                            ,buttonImageOnly: true //기본 버튼의 회색 부분을 없애고, 이미지만 보이게 함
-                            ,buttonText: "선택" //버튼에 마우스 갖다 댔을 때 표시되는 텍스트                
-                            ,yearSuffix: "년" //달력의 년도 부분 뒤에 붙는 텍스트
-                            ,monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 텍스트
-                            ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip 텍스트
-                            ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 부분 텍스트
-                            ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
-                            ,minDate: "-6M" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
-                            ,maxDate: "0M" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)
-                               ,defaultDate: "+1w"
-                          });
-                        
-                        //초기값을 오늘 날짜로 설정
-                        $('#datepicker_start').datepicker('setDate', '-7D'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)
-                        $('#datepicker_end').datepicker('setDate', 'today'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)
-                    }
-                     
-                    function getDate( element ) {
-                        var date;
-                        var dateFormat = "yy-mm-dd";
-                        try {
-                          date = $.datepicker.parseDate( dateFormat, element.value );
-                        } catch( error ) {
-                          date = null;
-                        }
-                        return date;
-                     }
-                     
-                </script>     
-                <div class="search_option_items">
-                  <div class="tit">기간</div>
-                  <div class="data_period">
-                      <button type="button">7일</button>
-                      <button type="button">1개월</button>
-                      <button type="button">3개월</button>
-                      <button type="button">6개월</button>
-                      <button type="button">1년</button>
+            <div class="mypage_rbox_blue_line member_ship_status">
+                <div class="member_ship_text">
+                  <div class="mem_label">
+                    <span class="level_icon family"></span>
                   </div>
-                  <div class="data_period_picker">
-                      <input type="text" class="datepicker-input" id="datepicker_start" /> 
-                      <span>~</span>
-                      <input type="text" class="datepicker-input"  id="datepicker_end" />
-                  </div>       
-                  <div class="search_form">
-                      <input type="text" placeholder="" />
-                      <button type="button">검색</button>
+                  <strong class="name">제이더블유중외제약주식회사</strong> 님 4월 멤버십 등급은
+                  <strong class="level">FAMILY</strong> 입니다. 
+                </div>
+                <div class="member_level_status_board">
+                  <div class="level_step_box">
+                    <div class="level_bar">
+                      <div class="level_bar_in" style="width: 10%;"></div>
+                    </div>
+                    <ul class="level_list">
+                      <li class="active">
+                        <div class="mem_label">
+                          <span class="level_icon family"></span>
+                        </div>
+                        <div class="mem_label_name">FAMILY</div>                          
+                      </li>
+                      <li>
+                        <div class="mem_label">
+                          <span class="level_icon silver"></span>
+                        </div>
+                        <div class="mem_label_name">SILVER</div>                          
+                      </li>  
+                      <li>
+                        <div class="mem_label">
+                          <span class="level_icon gold"></span>
+                        </div>
+                        <div class="mem_label_name">GOLD</div>                          
+                      </li> 
+                      <li>
+                        <div class="mem_label">
+                          <span class="level_icon diamond"></span>
+                        </div>
+                        <div class="mem_label_name">DIAMOND</div>                          
+                      </li>
+                      <li>
+                        <div class="mem_label">
+                          <span class="level_icon vip"></span>
+                        </div>
+                        <div class="mem_label_name">VIP</div>                          
+                      </li>                                                                                                
+                    </ul>
                   </div>
-                </div>              
+                  <ul class="lebel_point_box">
+                    <li>
+                      <p class="text">다음 분기 예상 등급</p>
+                      <p class="next_lebel">SILVER</p>
+                    </li>
+                    <li>
+                      <p class="text">이번 분기 주문금액</p>
+                      <p class="next_lebel">2,500,000<span>원</span></p>                      
+                    </li>
+                  </ul>
+                </div>
             </div>
 
-            <div class="mypage_table_wrap mt40">
+            <div class="tit_ft16 mt40">등급별 멤버십 혜택</div>
+            <div class="mypage_table_wrap membership_guide">
                 <table class="table_default">
-                  <colgroup>
-                    <col style="width:15%">
-                    <col>
-                    <col style="width:15%">
-                    <col style="width:15%">
-                    <col style="width:15%">
-                    <col style="width:15%">                    
-                  </colgroup>
-                  <thead>
-                    <tr>
-                      <th>날짜</th>
-                      <th>내용</th>
-                      <th>구매번호</th>
-                      <th>구매금액</th>
-                      <th>잔액</th>
-                      <th>구매취소</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>2024-03-27 14:00</td>
-                      <td>구매</td> 
-                      <td>A1234567</td>                     
-                      <td><div class="price"><span>5,000,000</span>원</div></td>  
-                      <td><div class="price"><span>5,000,000</span>원</div></td>  
-                      <td>
-                        <button type="button" class="btn_gray_line size_sm">구매취소</button>
-                      </td>  
-                    </tr>
-                    <tr>
-                        <td>2024-03-27 14:00</td>
-                        <td>구매</td> 
-                        <td>A1234567</td>                     
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td>
-                          <span class="reason_text">취소불가</span>
-                        </td>  
-                    </tr>
-                    <tr>
-                        <td>2024-03-27 14:00</td>
-                        <td>구매</td> 
-                        <td>A1234567</td>                     
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td>
-                            <button type="button" class="btn_gray_line size_sm">구매취소</button>
-                        </td>  
-                    </tr>  
-                    <tr>
-                        <td>2024-03-27 14:00</td>
-                        <td>구매</td> 
-                        <td>A1234567</td>                     
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td>
-                            <button type="button" class="btn_gray_line size_sm">구매취소</button>
-                        </td>  
-                    </tr>    
-                    <tr>
-                        <td>2024-03-27 14:00</td>
-                        <td>구매</td> 
-                        <td>A1234567</td>                     
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td>
-                            <button type="button" class="btn_gray_line size_sm">구매취소</button>
-                        </td>  
-                    </tr>    
-                    <tr>
-                        <td>2024-03-27 14:00</td>
-                        <td>구매</td> 
-                        <td>A1234567</td>                     
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td><div class="price"><span>5,000,000</span>원</div></td>  
-                        <td>
-                            <button type="button" class="btn_gray_line size_sm">구매취소</button>
-                        </td>  
-                    </tr>                                                                                                        
-                  </tbody>
+                    <colgroup>
+                        <col style="width:17%">
+                        <col style="width:16%">
+                        <col style="width:16%">
+                        <col>         
+                        <col style="width:16%">                                            
+                        <col style="width:16%"> 
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>등급</th>
+                            <th>선정기준</th>
+                            <th>선정기간</th>
+                            <th>혜택 1</th>
+                            <th>혜택 2</th>
+                            <th>혜택 3</th>                                
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>
+                                <div class="mem_label">
+                                    <span class="level_icon new"></span> 가입 시
+                                </div>
+                            </th>
+                            <td>신규 가입 시</td>  
+                            <td class="text-c order_line" rowspan="6">
+                                분기별 말일 산정<br>
+                                1분기 : 1~3월<br>
+                                2분기 : 4~6월<br>
+                                3분기 : 7~9월<br>
+                                4분기 : 10~12월
+                            </td>                 
+                            <td>
+                                <dl>
+                                    <dt>주문할인 쿠폰 총 5만원 지급</dt>
+                                    <dd>첫 가입 축하 2만원</dd>
+                                    <dd>첫 주문할인 2만원</dd>
+                                    <dd>1차 재주문 할인 1만원</dd>
+                                </dl>
+                            </td>  
+                            <td class="text-c order_line">무료 반품쿠폰</td>  
+                            <td rowspan="6"  class="text-c order_line">
+                                예치금 선구매 정책 <br>
+                                확정 후<br>
+                                내용 추가 예정                                    
+                            </td>  
+                        </tr>    
+                        <tr>
+                            <th>
+                                <div class="mem_label">
+                                    <span class="level_icon family"></span> FAMILY
+                                </div>
+                            </th>                                                        
+                            <td>주문금액 300만원 이상</td>                  
+                            <td>
+                                <dl>
+                                    <dt>주문할인 쿠폰 총 5만원 지급</dt>
+                                    <dd>승급 첫 주문할인 3만원</dd>
+                                    <dd>1차 재주문 할인 2만원</dd>                                            
+                                </dl>
+                            </td>  
+                            <td  rowspan="5"  class="text-c order_line">
+                                월 1회 무료 반품<br>
+                                쿠폰 지급<br>
+                                (공급사 제품만 가능)                                        
+                            </td>  
+                        </tr>  
+                        <tr>
+                            <th>
+                                <div class="mem_label">
+                                    <span class="level_icon silver"></span> SILVER
+                                </div>
+                            </th>                                                        
+                            <td>주문금액 500만원 이상</td>                
+                            <td>
+                                <dl>
+                                    <dt>주문할인 쿠폰 총 5만원 지급</dt>
+                                    <dd>승급 첫 주문할인 3만원</dd>
+                                    <dd>1차 재주문 할인 2만원</dd>                                            
+                                </dl>
+                            </td> 
+                        </tr>  
+                        <tr>
+                            <th>
+                                <div class="mem_label">
+                                    <span class="level_icon gold"></span> GOLD
+                                </div>
+                            </th>                                                         
+                            <td>주문금액 1,000만원 이상</td>              
+                            <td>
+                                <dl>
+                                    <dt>주문할인 쿠폰 총 5만원 지급</dt>
+                                    <dd>승급 첫 주문할인 3만원</dd>
+                                    <dd>1차 재주문 할인 2만원</dd>   
+                                    <dt>2차 재주문 할인 2만원</dt>                                         
+                                </dl>
+                            </td> 
+                        </tr> 
+                        <tr>
+                            <th>
+                                <div class="mem_label">
+                                    <span class="level_icon diamond"></span> DIAMOND
+                                </div>
+                            </th>                                                           
+                            <td>주문금액 1,500만원 이상</td>                 
+                            <td>
+                                <dl>
+                                    <dt>주문할인 쿠폰 총 5만원 지급</dt>
+                                    <dd>승급 첫 주문할인 3만원</dd>
+                                    <dd>1차 재주문 할인 2만원</dd>   
+                                    <dt>2차 재주문 할인 2만원</dt>                                         
+                                </dl>
+                            </td> 
+                        </tr>  
+                        <tr>
+                            <th>
+                                <div class="mem_label">
+                                    <span class="level_icon vip"></span> VIP
+                                </div>
+                            </th>                                                         
+                            <td>주문금액 2,000만원 이상</td>                  
+                            <td>
+                                <dl>
+                                    <dt>주문할인 쿠폰 총 5만원 지급</dt>
+                                    <dd>승급 첫 주문할인 3만원</dd>
+                                    <dd>1차 재주문 할인 2만원</dd>   
+                                    <dt>2차 재주문 할인 2만원</dt>                                         
+                                </dl>
+                            </td> 
+                        </tr>                                                                                                                                                                                                                                                                                                                                                                                                     
+                    </tbody>
                 </table>
-              </div>
-              <div class="pagination pos1">
-                <a href="#" class="btn_pagination_first"><span class="ir-text">처음으로</span></a>
-                <a href="#" class="btn_pagination_prev"><span class="ir-text">이전페이지</span></a>
-                <a href="#">1</a>
-                <a class="active" href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
-                <a href="#">7</a>
-                <a href="#">8</a>
-                <a href="#">9</a>
-                <a href="#">10</a>
-                <a href="#" class="btn_pagination_next"><span class="ir-text">다음으로</span></a>
-                <a href="#" class="btn_pagination_last"><span class="ir-text">마지막페이지</span></a>                                    
             </div>
-
+            
+            <div class="mypage_gray_rbox mb100">
+              <ul class="delivery_list_dot only_ul ">
+                <li>멤버십 등급은 분기별 주문금액을 기준으로 산정됩니다.</li>
+                <li>멤버십 등급 기준을 충족하지 못할 경우 등급이 하향될 수 있으며, 등급별 혜택은 당사 정책에 따라 변동될 수 있습니다.</li>
+              </ul>
+            </div>
 
         <!-- //컨텐츠 마크업 하는곳 -->      
         </div> 

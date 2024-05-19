@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url('base.css');
 @import url('prod.css');
 
 /* 마이페이지 메인 */
@@ -30,7 +29,7 @@
 .mypage_gray_rbox .mypg_slist.two_col {flex-wrap: wrap;width: 230px;flex-direction: row;flex:1;}
 .mypage_gray_rbox .mypg_slist.two_col li {width: 109px;}
 
-.mypage_gray_rbox.search_option {padding: 20px 40px;flex-direction: column;gap: 12px;}
+.mypage_gray_rbox.search_option {padding: 20px 40px;gap: 12px;flex-direction: column;}
 .mypage_gray_rbox.search_option .search_option_items {display: flex;align-items: center;}
 .mypage_gray_rbox.search_option .search_option_items .dropdown_menu_wrap {height: 35px;background-color: #fff;width: 296px;}
 .mypage_gray_rbox.search_option .search_option_items .dropdown_menu_wrap button {width: 100%;height: 100%;text-align: left;display: flex; justify-content: space-between;}
@@ -62,7 +61,7 @@
 .mypage_table_wrap .no_line {border-bottom: 0;}
 .mypage_table_wrap .button_wrap_center {display: flex;justify-content: center;}
 .mypage_table_wrap th {font-weight: 700;}
-.mypage_table_wrap td .price span {font-family: 'Noto Sans CJK KR';font-size: 15px;font-weight: 900;line-height: 15px;}
+.mypage_table_wrap td .price span {font-family: 'NotoSans';font-size: 15px;font-weight: 900;line-height: 15px;}
 .mypage_table_wrap .button_wrap_center .btn_blue {background: #0072BC;line-height: 48px;border-radius: 12px;width:240px;height:48px;font-size: 16px;font-weight: 600;color:#fff;}
 .reason_text {color:#FF4949;}
 
@@ -74,3 +73,70 @@
 .mypage_table_wrap .table_default td.text-r {text-align: right;}
 .mypage_table_wrap .table_default tfoot td {font-weight: 700;}
 .mypage_table_wrap .table_default td.before_search {text-align: center;height:370px;font-size: 14px;font-weight: 400;line-height: 14px;}
+
+.delivery_tab {margin-top: 32px;}
+.delivery_cont {padding-top: 40px;}
+.delivery_cont .mypage_gray_rbox {padding: 17px 64px;flex-direction: column;margin-top: 12px;}
+.delivery_cont .mypage_gray_rbox table {width: 100%;font-family: 'NotoSans';}
+.delivery_cont .mypage_gray_rbox table tbody th {text-align: left;font-size: 15px;font-weight: 400;line-height: 15px;color:#000;padding: 7px 0;}
+.delivery_cont .mypage_gray_rbox table tbody td {text-align: left;font-size: 15px;font-weight: 400;line-height: 15px;color:#717B8A;padding: 7px 0;}
+
+.delivery_cont .mypage_gray_rbox .delivery_time_list {flex-direction: column;}
+.delivery_cont .mypage_gray_rbox .delivery_time_list dt {font-family: NotoSans;font-size: 15px;font-weight: 400;line-height: 15px;color:#000000;width: auto;}
+.delivery_cont .mypage_gray_rbox .delivery_time_list dd .delivery_list_dot {border-top: 0;margin-top: 0;padding-top: 0;}
+.delivery_cont .mypage_gray_rbox .delivery_time_list dd {border-bottom: 1px solid #E1E3E9;}
+.delivery_cont .mypage_gray_rbox .delivery_time_list dd {padding: 14px 0;margin-bottom: 24px;}
+.delivery_cont .mypage_gray_rbox .delivery_time_list dd:last-child {padding-bottom: 0;border-bottom: 0;}
+
+.delivery_list_dot {border-top: 1px solid #E1E3E9;padding-top: 24px;margin-top: 20px;}
+.delivery_list_dot.only_ul {border-top: 0;padding-top:0;margin-top: 0;}
+.delivery_list_dot li {font-family: 'NotoSans';font-size: 15px;font-weight: 400;line-height: 15px;color:#979797;position: relative;padding-left:7px;}
+.delivery_list_dot li+li {margin-top: 12px;}
+.delivery_list_dot li::before {content: '';width: 2px;height:2px;background-color: #979797;position: absolute;left:0;top: 50%;transform: translateY(-50%);}
+.delivery_cont .tit_ft16 + .mypage_gray_rbox {margin-bottom: 24px;}
+
+/* 멤버쉽 */
+.mypage_table_wrap.membership_guide {margin-top: 16px;}
+.mypage_table_wrap.membership_guide table {border-top: 1px solid #000000;font-family: 'NotoSans';}
+.mypage_table_wrap.membership_guide table thead th {background-color: #fff;font-size: 18px;font-weight: 700;line-height: 18px;color:#000;height: 72px; text-align: left;padding: 0 16px;border-bottom: 1px solid #F0F0F0;}
+.mypage_table_wrap.membership_guide table thead th:first-child {border-left: 0;}
+.mypage_table_wrap.membership_guide table tbody th {background-color: #fff;text-align: left;font-family: 'Montserrat';font-size: 16px;font-weight: 600;line-height: 16px;color:#000;padding-left: 16px;border-bottom: 1px solid #F0F0F0;}
+.mypage_table_wrap.membership_guide table tbody td {font-size: 15px;font-weight: 400;line-height: 15px;color:#000;padding: 16px; border-left: 1px solid #F0F0F0;text-align: left;}
+.mypage_table_wrap.membership_guide table tbody td.text-c {text-align: center;}
+.mypage_table_wrap.membership_guide table tbody td.order_line {line-height: 18px;}
+.mypage_table_wrap.membership_guide table tbody td dl {display: flex;flex-direction: column;gap: 8px;}
+.mypage_table_wrap.membership_guide table tbody td dt {font-size: 15px;font-weight: 400;line-height: 15px;color:#000;}
+.mypage_table_wrap.membership_guide table tbody td dd {font-size: 15px;font-weight: 400;line-height: 15px;color:#979797;position: relative;padding-left: 7px;}
+.mypage_table_wrap.membership_guide table tbody td dd::before {content: '';width: 2px;height:2px;background-color: #979797;position: absolute;left:0;top: 50%;transform: translateY(-50%);}
+.mem_label {display: flex;align-items: center;gap: 9px;}
+.mem_label .level_icon {width: 33px;height:34px;}
+.mem_label .level_icon.new {background: url('../img/common/ico/ico_level_basic.png') no-repeat center;}
+.mem_label .level_icon.family {background: url('../img/common/ico/ico_level_family.png') no-repeat center;}
+.mem_label .level_icon.silver {background: url('../img/common/ico/ico_level_silver.png') no-repeat center;}
+.mem_label .level_icon.gold {background: url('../img/common/ico/ico_level_gold.png') no-repeat center;}
+.mem_label .level_icon.diamond {background: url('../img/common/ico/ico_level_diamond.png') no-repeat center;}
+.mem_label .level_icon.vip {background: url('../img/common/ico/ico_level_vip.png') no-repeat center;}
+
+.mypage_rbox_blue_line.member_ship_status {flex-direction: column;}
+.mypage_rbox_blue_line.member_ship_status .member_ship_text {display: flex;align-items: center;padding-bottom: 32px; border-bottom: 1px solid #E1E3E9;font-size: 24px;font-weight: 300;line-height: 24px;color:#222;}
+.mypage_rbox_blue_line.member_ship_status .member_ship_text .name {font-weight: 700;}
+.mypage_rbox_blue_line.member_ship_status .member_ship_text .level {font-weight: 700;font-family: 'Montserrat';font-weight: 600;color:#FF4949;}
+.mypage_rbox_blue_line.member_ship_status .mem_label {margin-right: 4px;}
+.mypage_rbox_blue_line.member_ship_status .mem_label .level_icon {width: 42px;height: 42px;background-size: 42px auto;}
+.member_level_status_board {display: flex;justify-content: space-between;gap: 40px;padding-top: 40px;}
+.member_level_status_board .level_step_box {width: 526px;margin:0 auto;position: relative;}
+.member_level_status_board .level_step_box .level_bar {background-color: #F2F5FA;height: 8px;border-radius: 4px;width: 100%;position: relative;overflow: hidden;}
+.member_level_status_board .level_step_box .level_bar .level_bar_in {background-color: #D8DDE9;height: 8px;border-radius: 4px;position: absolute;left:0;top:0;}
+.member_level_status_board .level_list {display: flex;justify-content: space-between;width: 100%;flex-direction: row;margin-top: 16px;}
+.member_level_status_board .level_list li {display: flex;flex-direction: column;gap: 17px;}
+.member_level_status_board .level_list li .mem_label .level_icon {width: 21px;height: 21px;background-size: 21px auto;opacity: 0.5;}
+.member_level_status_board .level_list li .mem_label_name {font-size: 16px;font-weight: 600;line-height: 16px;color:#AEB7C6;}
+.member_level_status_board .level_list li.active .mem_label .level_icon {opacity: 1;}
+.member_level_status_board .level_list li.active .mem_label_name {color:#222;}
+.member_level_status_board .lebel_point_box {display: flex;justify-content: center;flex-direction: row;}
+.member_level_status_board .lebel_point_box li {position: relative; display: flex;flex-direction: column;justify-content: center;gap: 8px;padding: 0 20px;width: 160px;}
+.member_level_status_board .lebel_point_box li:first-child {padding-left: 0;}
+.member_level_status_board .lebel_point_box li:first-child::after {content:'';width:1px;height: 46px;position: absolute;top: 50%;transform: translateY(-50%);right: -20px;background-color: #E1E3E9;}
+.member_level_status_board .lebel_point_box li:last-child {padding-right: 0;}
+.member_level_status_board .lebel_point_box li .text {font-size: 18px;font-weight: 300;line-height: 18px;color:#222;}
+.member_level_status_board .lebel_point_box li .next_lebel {font-family: 'Montserrat';font-size: 20px;font-weight: 600;line-height: 20px;color:#222;}
