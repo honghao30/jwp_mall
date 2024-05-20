@@ -10,9 +10,8 @@
   <link rel="stylesheet" href="css/common_new.css">
   <!-- main_new css -->
   <link rel="stylesheet" href="css/main_new.css">
-  <!-- 주거래 약정 css -->
-  <link rel="stylesheet" href="css/agreement.css">
-  <!-- mCustomScrollbar css -->
+  <link rel="stylesheet" href="css/mypage.css">
+      <!-- mCustomScrollbar css -->
   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.sw.css">
   <!-- REQUIRED SCRIPTS -->
   <script src="js/jquery-3.2.1.js"></script>
@@ -1419,6 +1418,97 @@
           </li>          
         </ul>
 
+        <div class="category_title_area">            
+            <div class="mypage_title">
+                <div class="tit"><span class="member_level vip"></span><strong>제이더블유중외제약주식회사</strong>님의 쇼핑정보</div>                    
+            </div>
+        </div>
+
+          <div class="mypage_rbox_blue_line">
+            <ul>
+                <li>
+                    <div class="item_tit">이번달 주문건</div>
+                    <div class="item_cont"><span>3</span>건</div>
+                </li>
+                <li>
+                    <div class="item_tit">이번달 주문금액</div>
+                    <div class="item_cont"><span>2,589,000</span>건</div>
+                </li> 
+                <li>
+                    <div class="item_tit">이번달 반품금액</div>
+                    <div class="item_cont"><span>2,589,000</span>건</div>
+                </li>                                            
+            </ul>
+            <ul>
+                <li>
+                    <div class="item_tit">예치금</div>
+                    <div class="item_cont"><span>2,589,000</span>건</div>
+                </li>
+                <li>
+                    <div class="item_tit">마이너스 잔고</div>
+                    <div class="item_cont"><span>2,589,000</span>건</div>
+                </li> 
+                <li>
+                    <div class="item_tit">주거래약정쿠폰</div>
+                    <div class="item_cont"><span>2,589,000</span>건</div>
+                </li>                                            
+            </ul>
+            <ul>
+                <li>
+                    <div class="item_tit">포인트</div>
+                    <div class="item_cont"><span>2,589,000</span>P</div>
+                </li>
+                <li>
+                    <div class="item_tit">보유쿠폰</div>
+                    <div class="item_cont"><span>15</span>매</div>
+                </li>                                            
+            </ul>                
+        </div>
+
+        <div class="mypage_gray_rbox">
+          <dl>
+            <dt>주문정보</dt>
+            <dd>
+                <ul class="mypg_slist">
+                  <li><a href="#">주문/배송 내역</a></li>
+                  <li><a href="#">최소/반품 내역</a></li>
+                  <li><a href="#">반품신청</a></li>
+                  <li><a href="#">거래원장</a></li>
+                </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>결제정보</dt>
+            <dd>
+              <ul class="mypg_slist two_col">
+                <li><a href="#">예치금 구매</a></li>
+                <li><a href="#">마일리지 내역</a></li>
+                <li><a href="#">예치금 내역</a></li>
+                <li><a href="#">간편결제카드 관리</a></li>
+
+                <li><a href="#">마이너스잔고 내역</a></li>
+                <li><a href="#">포인트 내역</a></li>
+                <li><a href="#">여신결제내역</a></li>
+                <li><a href="#">쿠폰 내역</a></li>
+              </ul>
+            </dd>
+          </dl>      
+          <ul class="menu_list">
+              <li><a href="#">관심상품</a></li>
+              <li><a href="#">주거래약정</a></li>
+              <li><a href="#">주문상품 재구매</a></li>
+              <li><a href="#">약가인하보상</a></li>
+          </ul>       
+          <ul class="menu_list">
+            <li><a href="#">회원정보</a></li>
+            <li><a href="#">멤버십 안내</a></li>
+          </ul>     
+          <ul class="menu_list has-count">
+            <li><a href="#">1:1 문의</a> <div class="count"><strong>4</strong> 건</div></li>
+            <li><a href="#">재입고알림 내역</a>  <div class="count"><strong>4</strong> 건</div></li>
+          </ul>                                              
+        </div>        
+
         <div class="agreement_wrap">
           <h3 class="agreement_title">주거래 약정 서비스</h3>
           <div class="agreement_guidebox">
@@ -1605,15 +1695,248 @@
                 
               </div>
               <div class="agree_detail_inner_tab_cont" id="detail_innertab02">
-                inner2
+                <div>
+                  <h4><span></span>약정현황 / 혜택안내</h4>
+                  <h6>약정 현황</h6>
+                  <div class="mypage_table_wrap mt16">
+                    <table class="table_default">
+                    <colgroup>
+                      <col style="width:25%">
+                      <col style="width:25%">
+                      <col style="width:25%">
+                      <col>
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>업체명</th>
+                        <th>월 약정금액</th>
+                        <th>월 최종결제금액</th>
+                        <th>미달성금액</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>OO약품</td>
+                        <td><div class="price"><span>5,000,000</span>원</div></td>
+                        <td><div class="price"><span>5,000,000</span>원</div></td>
+                        <td><div class="price"><span class="reason_text">5,000,000</span>원</div></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="mypage_gray_rbox">
+                  <ol>
+                    <li>1. 월 최종결제금액은 당월 주거래 도매의 총 주문 금액입니다.</li>
+                    <li>2. 혜택은 가장 최근 수정된 약정 내용을 기반으로 제공됩니다.</li>
+                    <li>3. 내용은 직접 수정 및 철회 가능합니다.</li>
+                    <li>4. 약정 내용을 직접 수정/철회하지 않는 경우 약정은 매월 자동 연장 됩니다.</li>
+                    <li>5. 약정을 철회하시는 경우 기존 신청한 주거래 약정 도매처의 주문금액은 초기화 되며 복구되지 않습니다.</li>
+                  </ol>
+                </div>
+                <h6 class="mt50">약정 금액별 혜택 안내</h6>
+                <div class="mypage_gray_rbox mt16">
+                  약정혜택 안내 (내용 미정)
+                </div>
+
+                </div>                
               </div>
               <div class="agree_detail_inner_tab_cont" id="detail_innertab03">
-                inner3
+                <div>
+                  <h4><span></span>약정 철회</h4>
+                  <h6 class="mt50">나의 약정 현황</h6>
+                  <div class="mypage_table_wrap mt16">
+                    <table class="table_default">
+                      <colgroup>
+                        <col style="width:25%">
+                        <col style="width:25%">
+                        <col style="width:25%">
+                        <col>
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>업체명</th>
+                          <th>월 약정금액</th>
+                          <th>약정 시작일</th>
+                          <th>약정 헤택</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>OO약품</td>
+                          <td><div class="price"><span>5,000,000</span>원</div></td>
+                          <td>2024.01.01</td>
+                          <td class="text-l">
+                            <p>1. 최저가 보상</p>
+                            <p>2. 약정달성 시 마일리지 지급</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <dl class="warning_box">
+                    <dt>주의사항</dt>
+                    <dd>
+                      <ol>
+                        <li>1. 약정 철회시 혜택은 모두 즉시 소멸되며, 복원되지 않습니다.</li>
+                        <li>2. 약정 철회는 취소가 불가능 합니다.</li>
+                        <li>3. 약정 철회 이후 동일 입점업체에 재약정 하더라도 기존 주문 달성 금액 등의 정보는 복원되지 않습니다.</li>
+                      </ol>
+                    </dd>
+                  </dl>      
+                  <h6 class="mt50">약정 철회</h6>  
+                  <table>
+                    <colgroup>
+                      <col width="208" />
+                      <col width="" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>약정 철회<span class="fcpoint3">*</span></th>
+                        <td>
+                          <span class="cs_check_box">
+                            <input type="checkbox" id="check1">
+                            <label for="check1">약정을 철회합니다.</label>
+                          </span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="btn_flx">
+                    <button class="btn btn_bg">확인</button>
+                    <button class="btn btn_bd">취소</button>
+                  </div>                            
+
+                </div>                
               </div>
             </div>
           </div>
           <div class="agree_detail_tab_cont" id="detail_product">
-            22222
+            <div class="agree_detail_inner_tab">
+              <button type="button" go="detail_innertab21" class="active" onclick="detailinnertab(this)">전체</button>
+              <button type="button" go="detail_innertab22" onclick="detailinnertab(this)">전문</button>
+              <button type="button" go="detail_innertab23" onclick="detailinnertab(this)">일반</button>
+              <button type="button" go="detail_innertab24" onclick="detailinnertab(this)">의약외품</button>
+              <button type="button" go="detail_innertab25" onclick="detailinnertab(this)">의료기기</button>
+              <button type="button" go="detail_innertab26" onclick="detailinnertab(this)">화장품</button>
+              <button type="button" go="detail_innertab27" onclick="detailinnertab(this)">부품외</button>
+              <button type="button" go="detail_innertab28" onclick="detailinnertab(this)">건식</button>
+              <button type="button" go="detail_innertab29" onclick="detailinnertab(this)">식품</button>
+              <button type="button" go="detail_innertab30" onclick="detailinnertab(this)">기타</button>
+              <button type="button" go="detail_innertab31" onclick="detailinnertab(this)">일반_금융할인비대상</button>
+            </div>
+            <div class="tab-content">
+              <div class="agree_detail_inner_tab_cont active" id="detail_innertab21">
+                <div>
+                  <h6>상품목록</h6>
+                  <div class="mypage_search_result_box mt16">
+                    <p class="result_text">총 00개의 정보가 검색되었습니다.</p>
+                  </div>    
+                  <div class="mypage_table_wrap mt20">
+                    <table class="table_default">
+                      <colgroup>
+                          <col>                          
+                          <col style="width:11%">
+                          <col style="width:11%">
+                          <col style="width:11%">
+                          <col style="width:11%">
+                          <col style="width:11%">                    
+                      </colgroup>
+                      <thead>
+                          <tr>
+                              <th>상품명</th>
+                              <th>포장단위</th>
+                              <th>제조사</th>
+                              <th>재고</th>
+                              <th>판매가</th>
+                              <th>수량</th>
+                              <th>담기</th>                              
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td class="product_thumb_img">
+                                <div class="products">
+                                  <div class="thumb">
+                                    <img src="./img/sample/sample_product_01.png" alt="" />
+                                  </div>
+                                  <div class="name">리바로정2mg/PTP</div>
+                                </div>
+                              </td>                              
+                              <td>PTP</td>                                                             
+                              <td>중외제약</td>      
+                              <td>10</td>   
+                              <td><div class="price"><span>5,000,000</span>원</div></td>  
+                              <td>
+                                  <div class="count_controller_wrap repurchase_counter">
+                                      <div class="count_controller">
+                                          <button type="button" class="btn_minus"></button>
+                                          <input type="text" title="구매수량" value="1" id="quantityInput">
+                                          <button type="button" class="btn_plus"></button>                            
+                                      </div>
+                                      <div class="order_count_text">구매단위 : 없음</div> 
+                                  </div>
+                              </td>  
+                              <td>
+                                <span class="cs_check_box">
+                                  <input type="checkbox" checked id="check0">
+                                  <label for="check0"><span class="ir-text">선택</span></label>
+                                </span>    
+                              </td>                                
+                          </tr>                                                                                                                                          
+                      </tbody>
+                    </table>
+                </div>                     
+                  <div class="pagination pos1">
+                    <a href="#" class="btn_pagination_first"><span class="ir-text">처음으로</span></a>
+                    <a href="#" class="btn_pagination_prev"><span class="ir-text">이전페이지</span></a>
+                    <a href="#">1</a>
+                    <a class="active" href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                    <a href="#" class="btn_pagination_next"><span class="ir-text">다음으로</span></a>
+                    <a href="#" class="btn_pagination_last"><span class="ir-text">마지막페이지</span></a>                                    
+                  </div>
+                  <div class="mypage_order_box">
+                    <ul class="calc_list">
+                      <li>
+                        <div class="tit">선택금액합계</div>
+                        <div class="price"><strong>0</strong> 원</div>
+                      </li>
+                      <li class="calc_sign">
+                        <img src="./img/common/ico/ico_calc_minus.png" alt="" />
+                      </li>
+                      <li class="dc_price">
+                        <div class="tit">예상금융할인</div>
+                        <div class="price"><strong>0</strong> 원</div>
+                      </li>  
+                      <li  class="calc_sign"><img src="./img/common/ico/ico_calc_end.png" alt="" /></li>
+                      <li class="end_price">
+                        <div class="tit">총 예상주문금액</div>
+                        <div class="price"><strong>000,000</strong> 원</div>                        
+                      </li>                    
+                    </ul>
+                    <div class="order_button_wrap">
+                        <button type="button" class="btn_blue">장바구니 담기</button>
+                        <button type="button" class="btn_blue_line">장바구니 보기</button>
+                    </div>                    
+                </div>
+
+                </div>
+              </div>
+              <div class="agree_detail_inner_tab_cont" id="detail_innertab22">
+                <div>
+                  2222
+                </div>
+              </div>
+
+
+            </div>
           </div>
         </div>
         <!-- //컨텐츠 마크업 하는곳 -->

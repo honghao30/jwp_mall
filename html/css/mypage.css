@@ -63,7 +63,7 @@
 .mypage_table_wrap th {font-weight: 700;}
 .mypage_table_wrap td .price span {font-family: 'NotoSans';font-size: 15px;font-weight: 900;line-height: 15px;color:#000;}
 .mypage_table_wrap .button_wrap_center .btn_blue {background: #0072BC;line-height: 48px;border-radius: 12px;width:240px;height:48px;font-size: 16px;font-weight: 600;color:#fff;}
-.reason_text {color:#FF4949;}
+.reason_text {color:#FF4949 !important;}
 
 .btn_gray_line {height: 36px;width: 79px;text-align: center; border-radius: 4px;border: 1px solid #D8DDE9;font-size: 14px;font-weight: 600;line-height: 36px;color:#222;}
 .pagination.pos1 {margin-top: 24px;padding-bottom: 80px;}
@@ -172,3 +172,341 @@
 .mypage_order_box .total_price .price_area strong {font-size: 26px;font-weight: 700;line-height: 26px;}
 .mypage_order_box .order_button_wrap {display: flex;align-items: center;justify-content: flex-end;gap:8px;}
 .mypage_order_box .order_button_wrap button {width: 160px;}
+
+/* 주거래 약정 */
+/* 주거래 약정 */
+.agreement_wrap {
+    margin-top: 72px;
+    font-family: "NotoSans", Dotum, sans-serif;
+  }
+  .agreement_wrap h3 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: -0.96px;
+  }
+  .agreement_wrap h4 {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: -0.8px;
+  }
+  .agreement_wrap h5 {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: -0.72px;
+  }
+  .agreement_wrap h6 {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: -0.64px;
+  }
+  .agreement_wrap ol li {
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 400;
+    letter-spacing: -0.6px;
+    color:#000;
+  }
+  .agreement_wrap dl {
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 400;
+    letter-spacing: -0.6px;
+  }
+  .agreement_wrap ol li + li {
+    margin-top: 14px;
+  }
+  .agreement_wrap .agreement_guidebox {
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    padding: 24px 40px;
+    margin: 28px 0;
+  }
+  .agreement_wrap .agreement_guidebox h4 {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #e1e3e9;
+  }
+  .agreement_wrap .agreement_guidebox ul {
+    margin-top: 14px;
+  }
+  .agreement_wrap .agreement_guidebox ul li {
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 400;
+    letter-spacing: -0.6px;
+    color: #979797;
+    position: relative;
+    padding-left: 6px;
+  }
+  .agreement_wrap .agreement_guidebox ul li::before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 2px;
+    background-color: #979797;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: inline-block;
+  }
+  .agreement_wrap .agreement_current {
+    border-top: 1px solid #000;
+    display: flex;
+    margin-bottom: 24px;
+  }
+  .agreement_wrap .agreement_current > div {
+    padding: 24px 30px;
+    width: calc(100% / 3);
+  }
+  .agreement_wrap .agreement_current > div h5 {
+    margin-bottom: 28px;
+  }
+  .agreement_wrap .agreement_current > div dl {
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 400;
+    letter-spacing: -0.6px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+  }
+  .agreement_wrap .agreement_current > div dt {
+    width: 60%;
+  }
+  .agreement_wrap .agreement_current > div dd {
+    width: 40%;
+    text-align: end;
+  }
+  .agreement_wrap .agreement_current > div dd.red {
+    font-weight: 400;
+  }
+  .agreement_wrap .agree_detail_tab {
+    width: 100%;
+    border-bottom: 1px solid #e1e3e9;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.64px;
+    font-weight: 600;
+    margin-bottom: 28px;
+  }
+  .agreement_wrap .agree_detail_tab > button {
+    width: 120px;
+    height: 48px;
+    text-align: center;
+  }
+  .agreement_wrap .agree_detail_tab > button.active {
+    color: #0072bc;
+    border-bottom: 4px solid #0072bc;
+  }
+  .agreement_wrap .agree_detail_tab_cont,
+  .agreement_wrap .agree_detail_inner_tab_cont {
+    display: none;
+  }
+  .agreement_wrap .agree_detail_tab_cont.active,
+  .agreement_wrap .agree_detail_inner_tab_cont.active {
+    display: block;
+  }
+  .agreement_wrap .agree_detail_inner_tab {
+    padding: 20px 40px;
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    display: flex;
+    width: 100%;
+    margin: 28px 0 50px;
+  }
+  .agreement_wrap .agree_detail_inner_tab > button {
+    position: relative;
+  }
+  .agreement_wrap .agree_detail_inner_tab > button + button {
+    margin-left: 33px;
+  }
+  .agreement_wrap .agree_detail_inner_tab > button + button::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 15px;
+    background-color: #d8dde9;
+    top: 50%;
+    left: -16px;
+    transform: translateY(-50%);
+    display: inline-block;
+  }
+  .agreement_wrap .agree_detail_inner_tab > button.active {
+    color: #1293e7;
+  }
+  .agreement_wrap .agree_detail_inner_tab_cont h4 {
+    margin-bottom: 28px;
+    color: #1293e7;
+    display: flex;
+    align-items: center;
+  }
+  .agreement_wrap .agree_detail_inner_tab_cont h4 > span {
+    width: 4px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 8px;
+    background-color: #1293e7;
+  }
+  .agreement_wrap .agree_detail_inner_tab_cont table:not(.table_default) {
+    border-top: 1px solid #ccc;
+    margin-top: 16px;
+  }
+  .agreement_wrap .agree_detail_inner_tab_cont table:not(.table_default) th {
+    padding: 26.5px 0 26.5px 24px;
+    text-align: start;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: -0.56px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  .agreement_wrap .agree_detail_inner_tab_cont table:not(.table_default) td {
+    padding: 16px 0 16px 24px;
+    text-align: start;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: -0.56px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  .agreement_wrap .agree_detail_inner_tab_cont table td .select_box {
+    width: 376px;
+    font-weight: 400;
+  }
+  .agreement_wrap input[type="checkbox"] + .label::before {
+    position: relative;
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    content: "";
+    vertical-align: top;
+    opacity: 1;
+  }
+  .agreement_wrap input[type="checkbox"] + .label {
+    line-height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #000;
+  }
+  .agreement_wrap input[type="checkbox"]:checked + .label::before {
+    background: #fff url(../img/common/ico/ico_check_agree.png) center center no-repeat;
+  }
+  .agreement_wrap .role-box {
+    padding: 31px 7px 31px 23px;
+    border: 1px solid #e1e1e3;
+    border-radius: 12px;
+    margin-top: 14px;
+  }
+  .agreement_wrap .role-box > div {
+    padding-right: 13px;
+    height: 120px;
+    overflow-y: auto;
+  }
+  .agreement_wrap .role-box > div p {
+    line-height: 24px;
+    color: #000;
+  }
+  .agreement_wrap .role-box > div::-webkit-scrollbar {
+    width: 6px;
+  }
+  .agreement_wrap .role-box > div::-webkit-scrollbar-thumb {
+    background-color: #e0e0e0;
+    border-radius: 3px;
+  }
+  .agreement_wrap .role-box > div::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  .agreement_wrap .btn_flx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 24px;
+  }
+  .agreement_wrap .btn_flx .btn {
+    width: 240px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 600;
+    letter-spacing: -0.64px;
+    border-radius: 12px;
+    padding: 16px 0;
+    text-align: center;
+  }
+  .agreement_wrap .btn_flx .btn.btn_bg {
+    background-color: #0072bc;
+    color: #fff;
+  }
+  .agreement_wrap .btn_flx .btn.btn_bd {
+    border: 1px solid #0072bc;
+    color: #0072bc;
+    background-color: #fff;
+  }
+  .agreement_wrap .warning_box {
+    background-color: #f7f7f7;
+    padding: 24px 0;
+    border-radius: 12px;
+    display: flex;
+    color: #000;
+    margin-top: 24px;
+  }
+  .agreement_wrap .warning_box dt {
+    width: 160px;
+    position: relative;
+    text-align: end;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: -0.8px;
+    padding-right: 24px;
+  }
+  .agreement_wrap .warning_box dt::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 73px;
+    background-color: #e1e3e9;
+    right: 0;
+    top: 0;
+  }
+  .agreement_wrap .warning_box dd {
+    padding-left: 24px;
+  }
+  .agreement_wrap .agree_recent {
+    margin-top: 50px;
+  }
+  .agreement_wrap .agree_recent h6 > span {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    letter-spacing: -0.56px;
+    color: #979797;
+    margin-left: 8px;
+  }
+  
+.mypage_table_wrap .table_default td.product_thumb_img {text-align: left;padding-left: 10px;}
+.mypage_table_wrap .table_default td.product_thumb_img .products {display: flex;align-items: center;gap: 10px;}
+.mypage_table_wrap .table_default td.product_thumb_img .thumb {width: 84px;height: 84px;border-radius: 4px;overflow: hidden;}
+.mypage_table_wrap .table_default td.product_thumb_img .name {font-size: 14px;font-weight: 400;line-height: 14px;color:#000;}
+.mypage_order_box .calc_list {display: flex;align-items: center;flex:1;justify-content:space-between;}
+.mypage_order_box .calc_list li {display: flex;flex-direction: column;align-items: center;justify-content: center;font-family: 'NotoSans';font-size: 15px;font-weight: 400;line-height: 15px;color:#000;gap: 12px;}
+.mypage_order_box .calc_list li .price strong {font-size: 20px;font-weight: 700;line-height: 20px;color:#000;}
+.mypage_order_box .calc_list li.calc_sign {width: 100px;text-align: center;}
+.mypage_order_box .calc_list li.dc_price,
+.mypage_order_box .calc_list li.dc_price strong {color:#FF5A63;}
+.mypage_order_box .calc_list li.end_price {flex:1;padding-right: 40px;border-right: 1px solid #F0F0F0;margin-right: 40px; justify-content: flex-end;align-items: flex-end;}
+.mypage_order_box .calc_list li.end_price .tit {color:#0072BC;}
+.mypage_order_box .calc_list li.end_price strong {font-size: 26px;line-height: 26px;font-weight: 700;}
