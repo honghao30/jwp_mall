@@ -1930,35 +1930,7 @@
 .user_info_wrap ul:after{content:'';display:block;clear:both;}
 .user_info_wrap ul li+li{margin-left:20px;}
 .user_info_wrap ul li{float:left;position:relative;}
-.user_info_wrap ul li .tip{
-  position:absolute;
-  top:-35px;
-  left:20px;
-  border:1px solid #FF4949;
-  border-radius:20px;
-  color: #FF4949;
-  text-align: center;
-  font-size: 13px;
-  letter-spacing: -0.52px;
-  display: flex;
-  width: 84px;
-  height: 24px;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.user_info_wrap ul li .tip:after{
-  position: absolute;
-  right:37px;
-  top: 19px; 
-  content: '';
-  width: 7px; /* 사이즈 */
-  height: 7px; /* 사이즈 */
-  border-top: 1px solid #FF4949; /* 선 두께 */
-  border-right: 1px solid #FF4949; /* 선 두께 */
-  transform: rotate(135deg); /* 각도 */
-  background:#F7F8FA;
-}
+
 .user_info_wrap .txt{
   color: #222;
   font-size: 15px;
