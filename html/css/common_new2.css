@@ -930,3 +930,68 @@
 .mypage_order_box .calc_list li.end_price {flex:1;padding-right: 40px;border-right: 1px solid #F0F0F0;margin-right: 40px; justify-content: flex-end;align-items: flex-end;}
 .mypage_order_box .calc_list li.end_price .tit {color:#0072BC;}
 .mypage_order_box .calc_list li.end_price strong {font-size: 26px;line-height: 26px;font-weight: 700;}
+/* 20240522 수정사항 */
+.product_order_table tbody th.more-th a {
+  font-family: Pretendard;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 13px;
+  letter-spacing: -0.52px;
+  display: block;
+  position: relative;
+  margin-top: 8px;
+  color: #717b8a;
+}
+.product_order_table tbody th.more-th a::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  background: url(../img/common/ico/ico_right_right_12.png) no-repeat right center;
+  width: 12px;
+  height: 12px;
+}
+.product_detail_popup_wrap .order_button_wrap button.whalf {
+  max-width: 100%;
+  width: 50%;
+}
+.product_detail_popup_wrap .order_button_wrap button.wfull {
+  max-width: 100%;
+  width: 100%;
+}
+.items_link_list.soldout-list .name {
+  color: #aeb7c6;
+}
+.items_link_list.soldout-list .price {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+  text-align: end;
+}
+.sales_info_detail .detail_title > a.btn_arrow_right {
+  display: block;
+  position: relative;
+  margin-top: 8px;
+  font-family: Pretendard;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 13px;
+  letter-spacing: -0.52px;
+  color: #717b8a;
+}
+.sales_info_detail .detail_title > a.btn_arrow_right::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  background: url(../img/common/ico/ico_right_right_12.png) no-repeat right center;
+  width: 12px;
+  height: 12px;
+}
+.order_floating_bottom {
+  bottom: -79px;
+}
+.sales_info_scroll {
+  padding-bottom: 0;
+}
+.sales_info_scroll li {
+  cursor: pointer;
+}

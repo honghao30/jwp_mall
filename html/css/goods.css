@@ -437,3 +437,62 @@ h2.event{text-align:center; color:#ff5a63; border-bottom:1px solid #e0e0e0;paddi
 .inproductbox .total dd .won {display:inline-block;vertical-align:middle;line-height:30px;}
 .inproductbox .total dd strong {font-size:30px;}
 .inproductbox .total .order {display:block;width:145px;margin:20px auto 0;text-align:center;height:38px;font-weight:700;line-height:38px;color:#fff;border-radius:20px;border:solid 1px #0072bc;background-color:#0072bc;}
+/* 20240522 수정사항 반영 */
+#navi.none_arrow > li {
+}
+
+#navi.none_arrow button.ctg {
+  background: none;
+  padding-right: 0;
+}
+.category_title_area.prod_type .category_title {
+}
+.category_title_area.prod_type .category_title .tit {
+  width: auto;
+  line-height: 24px;
+}
+.find_product_area .find_product_title {
+  font-family: Pretendard;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.72px;
+  padding: 40px 0 16px;
+  border-top: 1px solid #e1e3e9;
+}
+.find_product_area.choice-area .choice-top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e1e3e9;
+}
+.find_product_area.choice-area .choice-top > span {
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 14px;
+  letter-spacing: -0.56pxs;
+}
+.find_product_area.choice-area .find_product_title {
+  border-top: 0;
+}
+.find_product_area.choice-area .tab-menu {
+  margin-bottom: 40px;
+}
+.find_product_area.choice-area .tab-menu li {
+  position: relative;
+  margin-right: 16px;
+}
+.find_product_area.choice-area .choice-remove {
+  width: 16px;
+  height: 16px;
+  background: url(../img/common/ico/btn_del.png) 50% no-repeat;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: -16px;
+}
+.find_product_area.choice-area .clear-all {
+  color: #717b8a;
+}
