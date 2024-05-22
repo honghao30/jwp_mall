@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url('base.css');
 @import url('jquery.mCustomScrollbar.min.css');
-@import url('prod.css');
+@import url('common_new2.css');
 
 /* 공통 */
 /* box-sizing */
@@ -3693,6 +3693,8 @@ position:relative;
   width: auto;
   margin:0;
 }
+
+
 .floating_cont.type03 .calc_list .price{font-size:15px;margin:15px 0 0 0;}
 .floating_cont.type03 .calc_list .price strong{font-size:20px;}
 .floating_cont.type03 .calc_list:after{content:'';display:block;clear: both;} 
@@ -3731,6 +3733,25 @@ position:relative;
 
 
 
+
+
+/* 즉시할인 */
+.fixedbox .tit{
+  color: #FFF;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  height: 24px;
+  line-height: 24px; /* 100% */
+  padding: 0px 8px;
+  text-align: center;
+  background: #AEB7C6;
+  margin:-1px -25px;
+  position: relative;
+}
+.order_list_box.simpleList dl dd .product{position:relative;}
+.order_list_box.simpleList dl dd .product .btn_round{position:absolute;top:13px;right:29px;}
+.payment_select_box .paymethod li label.radio .btn_round{position:absolute;top:16px;left:50%;margin-left:-36px;z-index:2;}
 
 /* footer */
 #footer{padding-bottom:40px;background:#EFF3F9;}

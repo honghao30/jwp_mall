@@ -297,7 +297,7 @@
 .modal_n_body.filter_modal .pop_cont_inner {padding: 40px 0 16px;}
 .modal_n_body.filter_modal .btn-area {margin-top: 40px;border-top: 1px solid #E1E3E9;padding-top: 40px;display: flex;justify-content: center;}
 .modal_n_body.filter_modal .btn-area .btn_blue_line {width: 240px;border: 1px solid #0072BC;color:#0072BC;font-size: 16px;font-weight: 600;line-height: 16px;text-align: center;height: 48px;border-radius: 16px;}
-.tab-menu.filter-option {padding-right: 0;}
+.tab-menu.filter-option {padding-right: 0 !important;}
 .find_product_area .filter-option .tab-item {margin-right: 4px;padding: 13px 16px;}
 
 /* 필터 */

@@ -340,27 +340,3 @@
 .finishbox .finishpayinfo ul li.total .sum dd {color:#0cabef;}
 .finishbox .finishpayinfo ul li .sum {height:60px;border-bottom:solid 1px #f0f0f0;}
 .finishbox .finishpayinfo ul li .sum dd strong {font-size:20px;}
-
-
-
-
-
-
-/* 2024 고도화 추가 css */
-.fixedbox .tit{
-    color: #FFF;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
-    height: 24px;
-    line-height: 24px; /* 100% */
-    padding: 0px 8px;
-    text-align: center;
-    background: #AEB7C6;
-    margin:-1px -25px;
-    position: relative;
-}
-.order_list_box.simpleList dl dd .product{position:relative;}
-.order_list_box.simpleList dl dd .product .btn_round{position:absolute;top:13px;right:29px;}
-
-.payment_select_box .paymethod li label.radio .btn_round{position:absolute;top:16px;left:50%;margin-left:-36px;z-index:2;}
