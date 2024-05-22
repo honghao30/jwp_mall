@@ -723,6 +723,7 @@
   }
   .agreement_wrap .agree_detail_inner_tab > button {
     position: relative;
+    color: #979797;
   }
   .agreement_wrap .agree_detail_inner_tab > button + button {
     margin-left: 33px;
@@ -897,7 +898,12 @@
     color: #979797;
     margin-left: 8px;
   }
-  
+  .agreement_wrap .agree_detail_inner_tab_cont .agree_recent table:not(.table_default) th {
+    text-align: center;
+  }
+    .agreement_wrap .agree_detail_inner_tab_cont .agree_recent table:not(.table_default) td {
+    text-align: center;
+  }
 .mypage_table_wrap .table_default td.product_thumb_img {text-align: left;padding-left: 10px;}
 .mypage_table_wrap .table_default td.product_thumb_img .products {display: flex;align-items: center;gap: 10px;}
 .mypage_table_wrap .table_default td.product_thumb_img .thumb {width: 84px;height: 84px;border-radius: 4px;overflow: hidden;}
