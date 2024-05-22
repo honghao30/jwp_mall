@@ -995,3 +995,14 @@
 .sales_info_scroll li {
   cursor: pointer;
 }
+.sales_info_scroll .btn_heart {
+  width: 24px;
+  height: 24px;
+  background: url("../img/common/ico/ico_heart_22.png") no-repeat center;
+}
+.sales_info_scroll .col1 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #222;
+}
