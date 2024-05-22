@@ -1522,9 +1522,9 @@
         </script>
         <ul id="navi">
           <li class="home"><a href="https://www.jwpmall.co.kr/main/index.do">HOME</a></li>   
-          <li><button class="ctg">마이페이지</button></li>         
-          <li><button class="ctg">결제정보</button></li>      
-          <li><button class="ctg">예치금 내역</button></li>      
+          <li><button>마이페이지</button></li>         
+          <li><button>결제정보</button></li>      
+          <li><button>예치금 내역</button></li>      
         </ul>
        
 
@@ -1606,11 +1606,11 @@
                 <div class="search_option_items">
                   <div class="tit">기간</div>
                   <div class="data_period">
-                      <button type="button">7일</button>
-                      <button type="button">1개월</button>
-                      <button type="button">3개월</button>
-                      <button type="button">6개월</button>
-                      <button type="button">1년</button>
+                      <button type="button" class="is-toggle is-active">7일</button>
+                      <button type="button" class="is-toggle">1개월</button>
+                      <button type="button" class="is-toggle">3개월</button>
+                      <button type="button" class="is-toggle">6개월</button>
+                      <button type="button" class="is-toggle">1년</button>
                   </div>
                   <div class="data_period_picker">
                       <input type="text" class="datepicker-input" id="datepicker_start" /> 
@@ -1631,8 +1631,7 @@
                   <col>
                   <col style="width:15%">
                   <col style="width:15%">
-                  <col style="width:15%">
-                  <col style="width:15%">                    
+                  <col style="width:15%">                                   
                 </colgroup>
                 <thead>
                   <tr>
@@ -1640,8 +1639,7 @@
                     <th>내용</th>
                     <th>구매번호</th>
                     <th>구매금액</th>
-                    <th>잔액</th>
-                    <th>구매취소</th>
+                    <th>잔액</th>                    
                   </tr>
                 </thead>
                 <tbody>
@@ -1650,10 +1648,7 @@
                     <td>구매</td> 
                     <td>A1234567</td>                     
                     <td><div class="price"><span>5,000,000</span>원</div></td>  
-                    <td><div class="price"><span>5,000,000</span>원</div></td>  
-                    <td>
-                      <button type="button" class="btn_gray_line size_sm">구매취소</button>
-                    </td>  
+                    <td><div class="price"><span>5,000,000</span>원</div></td>    
                   </tr>
                   <tr>
                       <td>2024-03-27 14:00</td>
@@ -1661,19 +1656,13 @@
                       <td>A1234567</td>                     
                       <td><div class="price"><span>5,000,000</span>원</div></td>  
                       <td><div class="price"><span>5,000,000</span>원</div></td>  
-                      <td>
-                        <span class="reason_text">취소불가</span>
-                      </td>  
                   </tr>
                   <tr>
                       <td>2024-03-27 14:00</td>
                       <td>구매</td> 
                       <td>A1234567</td>                     
                       <td><div class="price"><span>5,000,000</span>원</div></td>  
-                      <td><div class="price"><span>5,000,000</span>원</div></td>  
-                      <td>
-                          <button type="button" class="btn_gray_line size_sm">구매취소</button>
-                      </td>  
+                      <td><div class="price"><span>5,000,000</span>원</div></td> 
                   </tr>  
                   <tr>
                       <td>2024-03-27 14:00</td>
@@ -1681,29 +1670,20 @@
                       <td>A1234567</td>                     
                       <td><div class="price"><span>5,000,000</span>원</div></td>  
                       <td><div class="price"><span>5,000,000</span>원</div></td>  
-                      <td>
-                          <button type="button" class="btn_gray_line size_sm">구매취소</button>
-                      </td>  
                   </tr>    
                   <tr>
                       <td>2024-03-27 14:00</td>
                       <td>구매</td> 
                       <td>A1234567</td>                     
                       <td><div class="price"><span>5,000,000</span>원</div></td>  
-                      <td><div class="price"><span>5,000,000</span>원</div></td>  
-                      <td>
-                          <button type="button" class="btn_gray_line size_sm">구매취소</button>
-                      </td>  
+                      <td><div class="price"><span>5,000,000</span>원</div></td>
                   </tr>    
                   <tr>
                       <td>2024-03-27 14:00</td>
                       <td>구매</td> 
                       <td>A1234567</td>                     
                       <td><div class="price"><span>5,000,000</span>원</div></td>  
-                      <td><div class="price"><span>5,000,000</span>원</div></td>  
-                      <td>
-                          <button type="button" class="btn_gray_line size_sm">구매취소</button>
-                      </td>  
+                      <td><div class="price"><span>5,000,000</span>원</div></td>   
                   </tr>                                                                                                        
                 </tbody>
               </table>
