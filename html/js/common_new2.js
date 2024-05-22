@@ -51,6 +51,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const toggleButtons = document.querySelectorAll('.is-toggle');
         toggleButtons && toggleButtons.forEach(toggle => {
             toggle.addEventListener("click", function(e) {
+                const activeButton = document.querySelector('.is-toggle.is-active')
+                activeButton && activeButton.classList.remove('is-active')                
                 toggle.classList.toggle('is-active');
             });
         });
