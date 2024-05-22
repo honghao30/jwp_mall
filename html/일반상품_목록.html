@@ -1520,44 +1520,10 @@
         </script>
         <ul id="navi">
           <li class="home"><a href="https://www.jwpmall.co.kr/main/index.do">HOME</a></li>        
-          <li>
-            <button class="ctg" cate="1635">상품카테고리</button>
-            <div style="display: none;">
-              <ol>
-                <li>
-                  <a href="/goods/main.do?cate=1635" class="on">원내제품</a>
-                  <a href="/goods/main.do?cate=2263" class="">JW중외제약 ETC</a>
-                  <a href="/goods/main.do?cate=1854" class="">JW신약</a>
-                  <a href="/goods/main.do?cate=2245" class="">JW바이오사이언스</a>
-                  <a href="/goods/main.do?cate=2402" class="">JW생활건강</a>
-                  <a href="/goods/main.do?cate=1591" class="">내시경처치구</a>
-                  <a href="/goods/main.do?cate=2090" class="">피부/미용/성형</a>
-                  <a href="/goods/main.do?cate=2253" class="">산부인과제품</a>
-                  <a href="/goods/main.do?cate=1856" class="">비케이헬스케어</a>
-                  <a href="/goods/main.do?cate=1857" class="">구구상사</a>
-                </li>
-                <li>
-                  <a href="/goods/main.do?cate=1859" class="">에스이인터내셔널</a>
-                  <a href="/goods/main.do?cate=1903" class="">기영약품</a>
-                  <a href="/goods/main.do?cate=1905" class="">비케이헬스케어(택배배송)</a>
-                  <a href="/goods/main.do?cate=2237" class="">CMG제약</a>
-                  <a href="/goods/main.do?cate=1932" class="">엘스타</a>
-                  <a href="/goods/main.do?cate=1933" class="">남양약품</a>
-                  <a href="/goods/main.do?cate=1934" class="">해성약품</a>
-                  <a href="/goods/main.do?cate=1935" class="">복산나이스</a>
-                  <a href="/goods/main.do?cate=2137" class="">키트</a>
-                  <a href="/goods/main.do?cate=1662" class="">의료소모품</a>
-                </li>
-                <li class="last">
-                  <a href="/goods/main.do?cate=2281" class="">헬스&amp;라이프</a>
-                  <a href="/goods/main.do?cate=2401" class="">소모품업체</a>
-                </li>
-              </ol>
-            </div>
-          </li>          
-          <li><button class="ctg" cate="1637">의료용품</button></li> 
-          <li><button class="ctg" cate="1635">원내제품</button></li>  
-          <li><button class="ctg" cate="1637">철분주사</button></li>         
+          <li><button>상품카테고리</button></li>          
+          <li><button>의료용품</button></li> 
+          <li><button>원내제품</button></li>  
+          <li><button>철분주사</button></li>         
         </ul>
 
         <!-- 카테고리 타이틀 -->
@@ -1569,7 +1535,7 @@
             <div class="category_search_wrap">
                 <label for="" id="search">카테고리 내 검색</label>
                 <span class="input_wrap_search">
-                    <input type="text" placeholder="입점사를 검색해 보세요." />
+                    <input type="text" placeholder="" />
                     <button type="button" class="btn_search"><span class="ir-text">검색</span></button>
                 </span>
             </div>
@@ -2177,21 +2143,18 @@
                                       </div>
                                       <!-- // 상품정보 -->
                                       <div class="price_area">
-                                        <div class="sale_percentage">23%</div>
-                                        <div class="new_price">56,000 원~</div>
-                                        <div class="dc_price">26,000 원</div>
+                                        <div class="sold_out_msg">품절</div>
                                       </div>
                                       <!-- //가격 -->
                                       <div class="order_box">
                                         <div class="order_text">주문단위 : 50개</div>
-                                        <div class="count_controller">
-                                          <button type="button" class="btn_minus"></button>
+                                        <div class="count_controller sold_out">
+                                          <button type="button" class="btn_minus" disabled></button>
                                           <input type="text" title="구매수량" value="1" id="quantityInput">
-                                          <button type="button" class="btn_plus"></button>                            
+                                          <button type="button" class="btn_plus" disabled></button>                            
                                         </div>
                                         <div class="order_button_wrap flex_between">
-                                          <button type="button" class="btn_blue_line">장바구니</button>
-                                          <button type="button" class="btn_blue">바로구매</button>                                          
+                                          <button type="button" class="btn_blue_line">재입고 알림 해제</button>                                                                                  
                                         </div>                                        
                                       </div>
                                     </li>

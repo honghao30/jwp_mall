@@ -108,6 +108,8 @@
 .count_controller .btn_minus {width:16px;height: 16px;background: url('../img/common/ico/ico_minus_16.png') no-repeat center;}
 .count_controller input {border:0;flex:1;text-align: center;height: 30px;font-family: 'Montserrat';font-size: 20px;font-weight: 600;line-height: 20px;color:#222;}
 .count_controller .btn_plus {width:16px;height: 16px;background: url('../img/common/ico/ico_plus_16.png') no-repeat center;}
+.count_controller.sold_out input {opacity: 0.3;}
+.count_controller.sold_out button {opacity: 0.5;}
 
 /* 구매버튼 */
 .order_button_wrap {gap: 8px;margin-top: 16px;}
@@ -374,6 +376,7 @@
 .product_list.type-list ul li .order_box .order_text {text-align: center;font-size: 15px;font-weight: 300;line-height: 15px;color:#717B8A;}
 .product_list.type-list ul li .order_box .count_controller {margin: 0 auto;}
 .product_list.type-list ul li .order_box .order_button_wrap {margin-top: 0;}
+.sold_out_msg {font-size: 24px;font-weight: 600;line-height: 24px;color:#FF4949;;}
 
 /* 페이징 */
 .pagination { display: flex;align-items: center; justify-content: center;gap: 8px; margin-top: 48px} 
