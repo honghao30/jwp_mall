@@ -139,6 +139,8 @@ em{ color:#ff5a63;}
 /* margin */
 .mgt0{margin-top:0px !important}
 .mgt10{margin-top:10px !important}
+.mgt16{margin-top:16px !important}
+.mgt24{margin-top:24px !important}
 .mgt20{margin-top:20px !important}
 .mgt30{margin-top:30px !important}
 .mgt40{margin-top:40px !important}
@@ -148,6 +150,7 @@ em{ color:#ff5a63;}
 .mgb0{margin-bottom:0px !important}
 .mgb10{margin-bottom:10px !important}
 .mgb20{margin-bottom:20px !important}
+.mgb24{margin-bottom:24px !important}
 .mgb30{margin-bottom:30px !important}
 .mgb40{margin-bottom:30px !important}
 .mgr10{margin-right:10px !important}
@@ -398,7 +401,7 @@ body{min-width:1100px}
 
 
 /* container */
-#container{position:relative;width:1100px;min-height:540px;margin-top:30px}
+#container{position:relative;width:1200px;min-height:540px;margin-top:30px}
 #container:after{content:"";display:block;clear:both}
 
 /* contents */
@@ -1042,3 +1045,7 @@ body{min-width:1100px}
 .img_box .icons {position: absolute;top: 10px;left: 10px;width: 170px;text-align:left;}
 .img_box .icons img{width:auto !important;height:auto !important;}
 .productList .products li.big .img_box .finance{left: 3px;bottom: 15px;z-index: 0;border-radius: 0 0 0 10px;overflow: hidden;}
+
+/* 즉시 할인  */
+.instant_discount_mark { position: relative; width: 58px; height: 24px; display: flex; flex-direction: row; justify-content: center; align-items: center; padding: 6px 8px; box-sizing: border-box; border-radius: 12px; background-color: #ff4949; color: #ffffff; font-family: Pretendard; font-size: 12px; font-weight: 600; line-height: 12px;}
+.instant_discount_tooltip { position: absolute;  top: 24px; right:0; padding: 4px; background-color: rgba(0,0,0,0.4); color: #ffffff; }

@@ -1472,7 +1472,7 @@
 
     <!-- content_wrap -->
     <div class="content_wrap">
-      <div class="inner mt30">
+      <div class="inner mt30 mb80">
         <!-- 컨텐츠 마크업 하는곳 -->
         <script type="text/javascript">
           //<![CDATA[
@@ -1520,7 +1520,7 @@
         <ul id="navi">
           <li class="home"><a href="https://www.jwpmall.co.kr/main/index.do">HOME</a></li>        
           <li>
-            <button class="ctg" cate="1635">상품카테고리</button>
+            <button class="ctg" cate="1635">원내제품</button>
             <div style="display: none;">
               <ol>
                 <li>
@@ -1554,1507 +1554,344 @@
               </ol>
             </div>
           </li>          
-          <li><button class="ctg" cate="1637">의료용품</button></li> 
-          <li><button class="ctg" cate="1635">원내제품</button></li>  
-          <li><button class="ctg" cate="1637">철분주사</button></li>         
+          <li><button class="ctg" cate="1637">철분주사</button></li>        
         </ul>
-      </div>
 
-        
-        <div class="inner">
-          <div class="category_title_area prod_type">
-              <div class="category_title">
-                <div class="tit">JW중외제약</div>
-                <div class="prod_count"><strong>50</strong> 개의 상품</div>
+        <!-- 탭영역 -->        
+        <!-- 상품 기본 정보 -->
+        <div class="product_detail_info mt30">
+          <div class="product_detail_tab_menu flex_between">
+            <button type="button" go="div_01" class="active" onclick="detailtab(this)">진행중인 이벤트</button>
+            <button type="button" go="div_02" onclick="detailtab(this)">종료된 이벤트</button>
+            <button type="button" go="div_03" onclick="detailtab(this)">당첨자 발표</button>
+          </div>
+          <div class="tab-content">
+            <div class="product_detail_tab_cont active" id="div_01">
+              <!-- no data -->
+              <div class="no_data_cont">
+                <div class="pt200 pb200">
+                  <p class="no_txt">진행중인 이벤트가 없습니다.</p>
+                </div>
               </div>
-              <div class="category_search_wrap">
-                <label for="" id="search">JW중외제약관명 내 재 검색</label>
-                  <span class="input_wrap_search">
-                      <input type="text" placeholder="">
-                      <button type="button" class="btn_search"><span class="ir-text">검색</span></button>
-                  </span>
+              <!-- //no data -->
+
+              <!-- 탭 내용 -->
+              <div class="find_product_area space_type">
+                <div class="pt10">
+                  <div class="event_list_cont">
+                    <ul>
+                      <li>
+                        <a href="#none">
+                          <div class="img_cont">
+                            <img src="img/common/event/img_event_01.png" alt="">
+                          </div>
+                          <strong class="tit">JW중외제약 온라인몰 회원을 위한 KB가온비즈 티타늄 카드</strong>
+                          <div class="info_cont">
+                            <span class="date">2024-04-05</span>
+                            <span class="count"><span class="num">D-9</span></span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#none">
+                          <div class="img_cont">
+                            <img src="img/common/event/img_event_02.png" alt="">
+                          </div>
+                          <strong class="tit">3월의 특별한 특가 이벤트 의료기기/안마의자 기획전</strong>
+                          <div class="info_cont">
+                            <span class="date">2024-04-05</span>
+                            <span class="count"><span class="num">D-9</span></span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#none">
+                          <div class="img_cont">
+                            <img src="img/common/event/img_event_03.png" alt="">
+                          </div>
+                          <strong class="tit">자료에 관련된 제목이 노출됩니다. 한 줄 노출 텍스트 텍스트 텍스트 텍스트 텍스트</strong>
+                          <div class="info_cont">
+                            <span class="date">2024-04-05</span>
+                            <span class="count"><span class="num">D-9</span></span>
+                          </div>
+                        </a>                            
+                      </li>
+                      <li>
+                        <a href="#none">
+                          <div class="img_cont">
+                            <img src="img/common/event/img_event_04.png" alt="">
+                          </div>
+                          <strong class="tit">[웹세미나] 위너프페리주 217mL의 임상활용</strong>
+                          <div class="info_cont">
+                            <span class="date">2024-04-05</span>
+                            <span class="count"><span class="num">D-9</span></span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#none">
+                          <div class="img_cont">
+                            <img src="img/common/event/img_event_05.png" alt="">
+                          </div>
+                          <strong class="tit">자료에 관련된 제목이 노출됩니다. 한 줄 노출 텍스트 텍스트 텍스트 텍스트 텍스트</strong>
+                          <div class="info_cont">
+                            <span class="date">2024-04-05</span>
+                            <span class="count"><span class="num">D-9</span></span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#none">
+                          <div class="img_cont">
+                            <img src="img/common/event/img_event_06.png" alt="">
+                          </div>
+                          <strong class="tit">자료에 관련된 제목이 노출됩니다. 한 줄 노출 텍스트 텍스트 텍스트 텍스트 텍스트</strong>
+                          <div class="info_cont">
+                            <span class="date">2024-04-05</span>
+                            <span class="count"><span class="num">D-9</span></span>
+                          </div>
+                        </a>
+                      </li> 
+                    </ul>
+                  </div>
+                  
+                  <!-- pagination -->
+                  <div class="pagination">
+                    <a href="#" class="btn_pagination_first"><span class="ir-text">처음으로</span></a>
+                    <a href="#" class="btn_pagination_prev"><span class="ir-text">이전페이지</span></a>
+                    <a href="#">1</a>
+                    <a class="active" href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                    <a href="#" class="btn_pagination_next"><span class="ir-text">다음으로</span></a>
+                    <a href="#" class="btn_pagination_last"><span class="ir-text">마지막페이지</span></a>                                    
+                  </div>
+                </div>
               </div>
+              <!-- //탭 내용 -->
+            </div>
+            <div class="product_detail_tab_cont" id="div_02">
+              <!-- no data -->
+              <div class="no_data_cont">
+                <div class="pt200 pb200">
+                  <p class="no_txt">종료된 이벤트가 없습니다.</p>
+                </div>
+              </div>
+              <!-- //no data -->
+
+              <!-- 탭 내용 -->
+              <div class="find_product_area space_type">
+                <div class="pt10">
+                  <div class="event_list_cont">
+                    <ul>
+                      <li>
+                        <a href="#none">
+                          <div class="img_cont">
+                            <img src="img/common/event/img_event_01.png" alt="">
+                          </div>
+                          <strong class="tit">JW중외제약 온라인몰 회원을 위한 KB가온비즈 티타늄 카드</strong>
+                          <div class="info_cont">
+                            <span class="date">2024-04-05</span>                            
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#none">
+                          <div class="img_cont">
+                            <img src="img/common/event/img_event_02.png" alt="">
+                          </div>
+                          <strong class="tit">3월의 특별한 특가 이벤트 의료기기/안마의자 기획전</strong>
+                          <div class="info_cont">
+                            <span class="date">2024-04-05</span>                            
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#none">
+                          <div class="img_cont">
+                            <img src="img/common/event/img_event_03.png" alt="">
+                          </div>
+                          <strong class="tit">자료에 관련된 제목이 노출됩니다. 한 줄 노출 텍스트 텍스트 텍스트 텍스트 텍스트</strong>
+                          <div class="info_cont">
+                            <span class="date">2024-04-05</span>                            
+                          </div>
+                        </a>                            
+                      </li>
+                      <li>
+                        <a href="#none">
+                          <div class="img_cont">
+                            <img src="img/common/event/img_event_04.png" alt="">
+                          </div>
+                          <strong class="tit">[웹세미나] 위너프페리주 217mL의 임상활용</strong>
+                          <div class="info_cont">
+                            <span class="date">2024-04-05</span>                            
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#none">
+                          <div class="img_cont">
+                            <img src="img/common/event/img_event_05.png" alt="">
+                          </div>
+                          <strong class="tit">자료에 관련된 제목이 노출됩니다. 한 줄 노출 텍스트 텍스트 텍스트 텍스트 텍스트</strong>
+                          <div class="info_cont">
+                            <span class="date">2024-04-05</span>                            
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#none">
+                          <div class="img_cont">
+                            <img src="img/common/event/img_event_06.png" alt="">
+                          </div>
+                          <strong class="tit">자료에 관련된 제목이 노출됩니다. 한 줄 노출 텍스트 텍스트 텍스트 텍스트 텍스트</strong>
+                          <div class="info_cont">
+                            <span class="date">2024-04-05</span>                            
+                          </div>
+                        </a>
+                      </li> 
+                    </ul>
+                  </div>
+                  
+                  <!-- pagination -->
+                  <div class="pagination">
+                    <a href="#" class="btn_pagination_first"><span class="ir-text">처음으로</span></a>
+                    <a href="#" class="btn_pagination_prev"><span class="ir-text">이전페이지</span></a>
+                    <a href="#">1</a>
+                    <a class="active" href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                    <a href="#" class="btn_pagination_next"><span class="ir-text">다음으로</span></a>
+                    <a href="#" class="btn_pagination_last"><span class="ir-text">마지막페이지</span></a>                                    
+                  </div>
+                </div>
+              </div>
+              <!-- //탭 내용 -->
+            </div>
+            <div class="product_detail_tab_cont" id="div_03">
+              <!-- 탭 내용 -->
+              <table class="table_type02 line_top">
+                <colgroup>
+                  <col style="width:10%">
+                  <col>
+                  <col style="width:15%">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>등록일</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="3">
+                      <!-- no data -->
+                      <div class="no_data_cont">
+                        <div class="pt200 pb200">
+                          <p class="no_txt">당첨자 발표 목록이 없습니다.</p>
+                        </div>
+                      </div>
+                      <!-- //no data -->
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td class="txt_left"><a href="#none">당첨자 발표 제목 최대한 줄 노출 후 말줄임 처리</a></td>
+                    <td>2024-01-01</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td class="txt_left"><a href="#none">당첨자 발표 제목 최대한 줄 노출 후 말줄임 처리</a></td>
+                    <td>2024-01-01</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td class="txt_left"><a href="#none">당첨자 발표 제목 최대한 줄 노출 후 말줄임 처리</a></td>
+                    <td>2024-01-01</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td class="txt_left"><a href="#none">당첨자 발표 제목 최대한 줄 노출 후 말줄임 처리</a></td>
+                    <td>2024-01-01</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td class="txt_left"><a href="#none">당첨자 발표 제목 최대한 줄 노출 후 말줄임 처리</a></td>
+                    <td>2024-01-01</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td class="txt_left"><a href="#none">당첨자 발표 제목 최대한 줄 노출 후 말줄임 처리</a></td>
+                    <td>2024-01-01</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td class="txt_left"><a href="#none">당첨자 발표 제목 최대한 줄 노출 후 말줄임 처리</a></td>
+                    <td>2024-01-01</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td class="txt_left"><a href="#none">당첨자 발표 제목 최대한 줄 노출 후 말줄임 처리</a></td>
+                    <td>2024-01-01</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td class="txt_left"><a href="#none">당첨자 발표 제목 최대한 줄 노출 후 말줄임 처리</a></td>
+                    <td>2024-01-01</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td class="txt_left"><a href="#none">당첨자 발표 제목 최대한 줄 노출 후 말줄임 처리</a></td>
+                    <td>2024-01-01</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- pagination -->
+              <div class="pagination">
+                <a href="#" class="btn_pagination_first"><span class="ir-text">처음으로</span></a>
+                <a href="#" class="btn_pagination_prev"><span class="ir-text">이전페이지</span></a>
+                <a href="#">1</a>
+                <a class="active" href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">9</a>
+                <a href="#">10</a>
+                <a href="#" class="btn_pagination_next"><span class="ir-text">다음으로</span></a>
+                <a href="#" class="btn_pagination_last"><span class="ir-text">마지막페이지</span></a>                                    
+              </div>
+              <!-- //탭 내용 -->
+            </div>
           </div>
         </div>
-        <!-- // 카테고리 타이틀 -->
-        <div class="brand_slide_box">
-            <div class="swiper_wrap">
-                <div class="swiper mySwiper sw_brand_logo">
-                  <ul class="swiper-wrapper ">
-                    <li class="swiper-slide tab-item active">
-                        <div class="logo  flex_center"><img src="img/sample/partner_logo1.png" alt=""></div>
-                        <div class="name">JW바이오사이언스</div>
-                    </li>
-                    <li class="swiper-slide tab-item">
-                        <div class="logo  flex_center"><img src="img/sample/partner_logo2.png" alt=""></div>
-                        <div class="name">JW바이오사이언스</div>                        
-                    </li>
-                    <li class="swiper-slide tab-item">
-                        <div class="logo flex_center"><img src="img/sample/partner_logo3.png" alt=""></div>
-                        <div class="name">JW바이오사이언스</div>                        
-                    </li>
-                    <li class="swiper-slide tab-item">
-                        <div class="logo flex_center"><img src="img/sample/partner_logo4.png" alt=""></div>
-                        <div class="name">JW바이오사이언스</div>                        
-                    </li>
-                    <li class="swiper-slide tab-item">
-                        <div class="logo flex_center"><img src="img/sample/partner_logo1.png" alt=""></div>
-                        <div class="name">JW바이오사이언스</div>                        
-                    </li>
-                    <li class="swiper-slide tab-item">
-                        <div class="logo flex_center"><img src="img/sample/partner_logo2.png" alt=""></div>
-                        <div class="name">JW바이오사이언스</div>                        
-                    </li>
-                    <li class="swiper-slide tab-item">
-                        <div class="logo flex_center"><img src="img/sample/partner_logo3.png" alt=""></div>
-                        <div class="name">JW바이오사이언스</div>                        
-                    </li>      
-                    <li class="swiper-slide tab-item">
-                        <div class="logo flex_center"><img src="img/sample/partner_logo1.png" alt=""></div>
-                        <div class="name">JW바이오사이언스</div>                        
-                    </li>
-                    <li class="swiper-slide tab-item">
-                        <div class="logo flex_center"><img src="img/sample/partner_logo2.png" alt=""></div>
-                        <div class="name">JW바이오사이언스</div>                        
-                    </li>
-                    <li class="swiper-slide tab-item">
-                        <div class="logo flex_center"><img src="img/sample/partner_logo3.png" alt=""></div>
-                        <div class="name">JW바이오사이언스</div>                        
-                    </li>                                                                                                                     
-                  </ul>
-                </div>
-                <div class="swiper-button-next"><img src="img/common/btn_right_b.png" alt=""></div>
-                <div class="swiper-button-prev"><img src="img/common/btn_left_b.png" alt=""></div>
-                <div class="swiper-pagination"></div>                
-              </div>
-              <script>
-                // 전용 브랜드관 스와이프
-                var sw_brand_logo = new Swiper(".sw_brand_logo.swiper", {
-                  slidesPerView: '7',
-                  slidesPerGroup: 1,
-                  spaceBetween: 32,
-                  navigation: {
-                    nextEl: ".swiper_wrap .swiper-button-next",
-                    prevEl: ".swiper_wrap .swiper-button-prev",
-                  },
-                  // autoplay: {
-                  //   delay: 3000, // 슬라이드 간 시간 간격 (밀리초)
-                  //   disableOnInteraction: false, // 사용자 상호 작용 후에도 자동 슬라이드 유지
-                  // },
-                  // mousewheel: true,
-                });
-              </script>
-        </div>
-        <!-- // 로고 slide -->
-        <div class="brand_section">
-            <div class="inner">
-              <div class="tit_ft28">추천상품</div>
-              <!-- Swiper -->
-              <div class="swiper mySwiper product_list sw02">
-                <ul class="swiper-wrapper products">
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="img/sample/sample_product_01.png" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">신상품</span>
-                          <span class="edge_tag bgB">MD추천</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">프리베나13주 0.5ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">세일</span>
-                          <span class="edge_tag bgB">금융할인</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">JW생활건강 링셀 수분 단백질 크림 50ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">세일</span>
-                          <span class="edge_tag bgB">금융할인</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">JW생활건강 링셀 수분 단백질 크림 50ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="https://www.jwpmall.co.kr/data/base/goods/middle/페린젝트2케이스.jpg" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">세일</span>
-                          <span class="edge_tag bgB">금융할인</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">JW생활건강 링셀 수분 단백질 크림 50ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="https://www.jwpmall.co.kr/data/base/goods/middle/페린젝트2케이스.jpg" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">세일</span>
-                          <span class="edge_tag bgB">금융할인</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">JW생활건강 링셀 수분 단백질 크림 50ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="https://www.jwpmall.co.kr/data/base/goods/middle/페린젝트2케이스.jpg" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">세일</span>
-                          <span class="edge_tag bgB">금융할인</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">JW생활건강 링셀 수분 단백질 크림 50ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="https://www.jwpmall.co.kr/data/base/goods/middle/페린젝트2케이스.jpg" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">세일</span>
-                          <span class="edge_tag bgB">금융할인</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">JW생활건강 링셀 수분 단백질 크림 50ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <!-- <div class="swiper-scrollbar"></div> -->
-                
-                <div class="swiper-button-next"><img src="img/common/brand/btn_brand_right.png" alt=""></div>
-                <div class="swiper-button-prev"><img src="img/common/brand/btn_brand_left.png" alt=""></div>
-                <!-- <div class="swiper-pagination type01"></div>
-                <div class="swiper-autoplay-button">
-                  <img src="img/common/btn_pause.png" alt="" class="pause">
-                  <img src="img/common/btn_play.png" alt="" class="play">
-                </div> -->
-              </div>
-            </div>
-        </div>              
-        <div class="brand_section">
-            <div class="inner">
-              <div class="tit_ft28">신제품</div>
-              <!-- Swiper -->
-              <div class="swiper mySwiper product_list sw02">
-                <ul class="swiper-wrapper products">
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="img/sample/sample_product_01.png" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">신상품</span>
-                          <span class="edge_tag bgB">MD추천</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">프리베나13주 0.5ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">세일</span>
-                          <span class="edge_tag bgB">금융할인</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">JW생활건강 링셀 수분 단백질 크림 50ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">세일</span>
-                          <span class="edge_tag bgB">금융할인</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">JW생활건강 링셀 수분 단백질 크림 50ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="https://www.jwpmall.co.kr/data/base/goods/middle/페린젝트2케이스.jpg" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">세일</span>
-                          <span class="edge_tag bgB">금융할인</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">JW생활건강 링셀 수분 단백질 크림 50ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="https://www.jwpmall.co.kr/data/base/goods/middle/페린젝트2케이스.jpg" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">세일</span>
-                          <span class="edge_tag bgB">금융할인</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">JW생활건강 링셀 수분 단백질 크림 50ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="https://www.jwpmall.co.kr/data/base/goods/middle/페린젝트2케이스.jpg" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">세일</span>
-                          <span class="edge_tag bgB">금융할인</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">JW생활건강 링셀 수분 단백질 크림 50ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="https://www.jwpmall.co.kr/data/base/goods/middle/페린젝트2케이스.jpg" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">세일</span>
-                          <span class="edge_tag bgB">금융할인</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">JW생활건강 링셀 수분 단백질 크림 50ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <!-- <div class="swiper-scrollbar"></div> -->
-                
-                <div class="swiper-button-next"><img src="img/common/brand/btn_brand_right.png" alt=""></div>
-                <div class="swiper-button-prev"><img src="img/common/brand/btn_brand_left.png" alt=""></div>
-                <!-- <div class="swiper-pagination type01"></div>
-                <div class="swiper-autoplay-button">
-                  <img src="img/common/btn_pause.png" alt="" class="pause">
-                  <img src="img/common/btn_play.png" alt="" class="play">
-                </div> -->
-              </div>
-            </div>
-        </div>   
-        <div class="brand_section">
-            <div class="inner">
-              <div class="tit_ft28">인기제품</div>
-              <!-- Swiper -->
-              <div class="swiper mySwiper product_list sw02">
-                <ul class="swiper-wrapper products">
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="img/sample/sample_product_01.png" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">신상품</span>
-                          <span class="edge_tag bgB">MD추천</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">프리베나13주 0.5ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">세일</span>
-                          <span class="edge_tag bgB">금융할인</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">JW생활건강 링셀 수분 단백질 크림 50ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">세일</span>
-                          <span class="edge_tag bgB">금융할인</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">JW생활건강 링셀 수분 단백질 크림 50ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="https://www.jwpmall.co.kr/data/base/goods/middle/페린젝트2케이스.jpg" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">세일</span>
-                          <span class="edge_tag bgB">금융할인</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">JW생활건강 링셀 수분 단백질 크림 50ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="https://www.jwpmall.co.kr/data/base/goods/middle/페린젝트2케이스.jpg" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">세일</span>
-                          <span class="edge_tag bgB">금융할인</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">JW생활건강 링셀 수분 단백질 크림 50ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="https://www.jwpmall.co.kr/data/base/goods/middle/페린젝트2케이스.jpg" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">세일</span>
-                          <span class="edge_tag bgB">금융할인</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">JW생활건강 링셀 수분 단백질 크림 50ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="https://www.jwpmall.co.kr/data/base/goods/middle/페린젝트2케이스.jpg" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">세일</span>
-                          <span class="edge_tag bgB">금융할인</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">JW생활건강 링셀 수분 단백질 크림 50ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <!-- <div class="swiper-scrollbar"></div> -->
-                
-                <div class="swiper-button-next"><img src="img/common/brand/btn_brand_right.png" alt=""></div>
-                <div class="swiper-button-prev"><img src="img/common/brand/btn_brand_left.png" alt=""></div>
-                <!-- <div class="swiper-pagination type01"></div>
-                <div class="swiper-autoplay-button">
-                  <img src="img/common/btn_pause.png" alt="" class="pause">
-                  <img src="img/common/btn_play.png" alt="" class="play">
-                </div> -->
-              </div>
-            </div>
-        </div>   
-        <div class="brand_section">
-            <div class="inner">
-              <div class="tit_ft28">전체제품</div>
-              <!-- Swiper -->
-              <div class="swiper mySwiper product_list sw02">
-                <ul class="swiper-wrapper products">
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="img/sample/sample_product_01.png" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">신상품</span>
-                          <span class="edge_tag bgB">MD추천</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">프리베나13주 0.5ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">세일</span>
-                          <span class="edge_tag bgB">금융할인</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">JW생활건강 링셀 수분 단백질 크림 50ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">세일</span>
-                          <span class="edge_tag bgB">금융할인</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">JW생활건강 링셀 수분 단백질 크림 50ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="https://www.jwpmall.co.kr/data/base/goods/middle/페린젝트2케이스.jpg" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">세일</span>
-                          <span class="edge_tag bgB">금융할인</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">JW생활건강 링셀 수분 단백질 크림 50ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="https://www.jwpmall.co.kr/data/base/goods/middle/페린젝트2케이스.jpg" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">세일</span>
-                          <span class="edge_tag bgB">금융할인</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">JW생활건강 링셀 수분 단백질 크림 50ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="https://www.jwpmall.co.kr/data/base/goods/middle/페린젝트2케이스.jpg" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">세일</span>
-                          <span class="edge_tag bgB">금융할인</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">JW생활건강 링셀 수분 단백질 크림 50ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="img_box">
-                      <div class="edge_tag_box">
-                        <img class="img" src="https://www.jwpmall.co.kr/data/base/goods/middle/페린젝트2케이스.jpg" alt="">
-                        <div class="tag_box">
-                          <span class="edge_tag bgG">세일</span>
-                          <span class="edge_tag bgB">금융할인</span>
-                          <span class="edge_tag bgR">베스트</span>
-                        </div>
-                        <div class="wish_box">
-                          <span class="ico_wish"></span>
-                        </div>
-                        <div class="over">
-                          <div class="linkbox">
-                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                          </div>
-                          <div class="amountbox">
-                            <dl>
-                              <dt>수량 (주문단위 10개)</dt>
-                              <dd class="num_nav_box">
-                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                  <a href="#" class="up">up</a>
-                                  <a href="#" class="dn">dn</a>
-                                </span>
-                                <input type="text" class="value" value="10">
-                              </dd>
-                            </dl>
-                          </div>
-                          <div class="orderbox">
-                            <a href="#" class="n_btn">장바구니</a>
-                            <a href="#" class="n_btn">바로구매</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="info_box">
-                      <div class="product_txt">
-                        <p class="tit"><a href="#">JW생활건강 링셀 수분 단백질 크림 50ml</a></p>
-                      </div>
-                      <div class="price_cont">
-                        <p class="price">132,000원</p>
-                        <span class="sale">45%</span>
-                        <p class="marketPrice">33,000원</p>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <!-- <div class="swiper-scrollbar"></div> -->
-                
-                <div class="swiper-button-next"><img src="img/common/brand/btn_brand_right.png" alt=""></div>
-                <div class="swiper-button-prev"><img src="img/common/brand/btn_brand_left.png" alt=""></div>
-                <!-- <div class="swiper-pagination type01"></div>
-                <div class="swiper-autoplay-button">
-                  <img src="img/common/btn_pause.png" alt="" class="pause">
-                  <img src="img/common/btn_play.png" alt="" class="play">
-                </div> -->
-              </div>
-            </div>
-        </div> 
         <script>
-          var sw02 = new Swiper(".sw02.swiper", {
-          slidesPerView: 4,
-          slidesPerGroup: 1,
-          spaceBetween: 30,
-          pagination: {
-            el: ".swiper-pagination",
-            type: "fraction",
-          },
-          // loop: true,
-          navigation: {
-            nextEl: ".sw02 .swiper-button-next",
-            prevEl: ".sw02 .swiper-button-prev",
-          }
-        });
-        </script>                 
-        <!-- //컨텐츠 마크업 하는곳 -->      
+            function detailtab(target){
+              var id = $(target).attr('go');
+              $('.product_detail_info .product_detail_tab_menu button').removeClass('active');
+              $('.product_detail_info .product_detail_tab_cont').removeClass('active');
+              $(target).addClass('active');
+              $('#'+id).addClass('active');
+            }
+        </script>
+
+        <!-- //컨텐츠 마크업 하는곳 -->
+      </div>
     </div>
   </div>
 
