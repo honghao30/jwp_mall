@@ -88,14 +88,14 @@
 .badge_area {display: flex;flex-wrap: wrap;}
 .badge {color:#fff;border-radius: 12px;padding: 0 8px;height: 24px;font-size: 12px;font-weight: 700;line-height: 12px;display: flex;align-items: center;}
 .badge+.badge {margin-left: 4px;margin-bottom: 4px;}
-.badge.badge_best {background-color: #8CD2FF;}
-.badge.badge_md {background-color: #F3B174;}
-.badge.badge_new_prod {background-color: #74D69B;}
-.badge.quantity_discount {background-color: #8CD2FF;}
-.badge.financial_discount {background-color: #89B8FF;}
-.badge.spacial_price {background-color: #BEAFF8;}
-.badge.badge_promotion {background-color: #7BDDE2;}
-.badge.badge_time_sale {background-color: #FFA7A7;}
+.badge.badge_best {background-color: #8cd2ff;}
+.badge.badge_md {background-color: #ffb37b;}
+.badge.badge_new_prod {background-color: #74d69b;}
+.badge.quantity_discount {background-color: #f3be57;}
+.badge.financial_discount {background-color: #89b8ff;}
+.badge.spacial_price {background-color: #beaff8;}
+.badge.badge_promotion {background-color: #7bdde2;}
+.badge.badge_time_sale {background-color: #ffa7a7;}
 .badge.badge_coupon { margin-right: 12px; position: relative; background-color: #9AB2D8; border-radius: 3px; border-top-left-radius: 3px; border-bottom-left-radius: 3px; } 
 .badge.badge_coupon::after { content: ""; position: absolute; top: 50%; right: -23px; margin-top: -12px; border-width: 12px; border-style: solid; border-color: transparent transparent transparent #9AB2D8; }
 
@@ -949,7 +949,7 @@
   position: absolute;
   display: inline-block;
   content: "";
-  background: url(../img/common/ico/ico_right_right_12.png) no-repeat right center;
+  background: url("../img/common/ico/ico_right_right_12.png") no-repeat right center;
   width: 12px;
   height: 12px;
 }
@@ -985,7 +985,7 @@
   position: absolute;
   display: inline-block;
   content: "";
-  background: url(../img/common/ico/ico_right_right_12.png) no-repeat right center;
+  background: url("../img/common/ico/ico_right_right_12.png") no-repeat right center;
   width: 12px;
   height: 12px;
 }
@@ -1003,9 +1003,26 @@
   height: 24px;
   background: url("../img/common/ico/ico_heart_22.png") no-repeat center;
 }
+.sales_info_scroll .btn_heart.is-active {
+  background: url("../img/common/ico/ico_heart_on_22.png") no-repeat center;
+}
 .sales_info_scroll .col1 {
   display: flex;
   align-items: center;
   gap: 4px;
   color: #222;
+}
+.find_product_area .tab-item {
+  padding: 13px 16px !important;
+}
+.product_list.type-list ul li .img_box .over {
+  background: rgba(0, 0, 0, 0.8);
+}
+.product_list.type03.mode03 .badge_area {
+  position: absolute;
+  top: 8px;
+  left: 7px;
+}
+.product_list.mode03 .img_box .over {
+  background: rgba(0, 0, 0, 0.7);
 }
