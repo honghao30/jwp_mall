@@ -348,12 +348,13 @@
 
 /* 상품리스트 보기 방식 선택 */
 .product_view_type_button {position: absolute;right:0;top:0;}
-.product_view_type_button a {width: 32px;height: 32px;border: 1px solid #717B8A;border-radius: 4px 0px 0px 4px;}
-.product_view_type_button a.active {border: 1px solid #E1E3E9;background-color: #F7F8FA; border-radius: 0px 4px 4px 0px;}
+.product_view_type_button a {width: 32px;height: 32px;border: 1px solid #E1E3E9; background-color: #F7F8FA;}
+.product_view_type_button a.active {border: 1px solid #717B8A;}
+ .product_view_type_button a:nth-of-type(1){border-radius: 4px 0px 0px 4px;}
+ .product_view_type_button a:nth-of-type(2){border-radius: 0px 4px 4px 0px;}
 .product_view_type_button .btn_view_list_type {background: url('../img/common/ico/ico_view_type_list_off.png') no-repeat center;}
-.product_view_type_button .btn_view_thum_type {background: url('../img/common/ico/ico_view_type_thum_off.png') no-repeat center;}
-.product_view_type_button .btn_view_list_type.active {background: url('../img/common/ico/ico_view_type_list.png') no-repeat center;}
-.product_view_type_button .btn_view_thum_type.active {background: url('../img/common/ico/ico_view_type_thum.png') no-repeat center;}
+.product_view_type_button .btn_view_thum_type {background: url('../img/common/ico/ico_view_type_thum_off.png') no-repeat center; background-color: #F7F8FA;}
+.product_view_type_button .btn_view_list_type.active {background: url('../img/common/ico/ico_view_type_list.png') no-repeat center;  background-color:transparent;}
 .find_product_area .product_list_wrap .product_list {padding-top: 0;}
 .product_view_type {display: none;}
 .product_view_type.active {display: block;}
