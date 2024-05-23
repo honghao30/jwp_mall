@@ -1823,25 +1823,6 @@
                         </div>
                       </div>
                     </div>
-                    <script>
-                    // 하나 열리면 하나 닫히도록 
-                    document.addEventListener("DOMContentLoaded", function() {
-                        const saleAccs = document.querySelectorAll(".sales_info_scroll.sales_type2 ul > .sale_item.type2-item");
-                        
-                        saleAccs.forEach(acc => {
-                            acc.addEventListener("click", function(e) {
-                                // Close all items
-                                saleAccs.forEach(item => {
-                                    if (item !== acc) {
-                                        item.classList.remove('is-active');
-                                    } else if (item !== acc) {
-                                        item.classList.add('is-active');
-                                    }
-                                });
-                            });
-                        });
-                    });
-                    </script>
                     <div class="sales_info_list">                      
                       <div class="table_rows flex_between">
                         <span class="col1">입점사명</span>
@@ -1936,7 +1917,10 @@
                               <span class="badge badge_grain">낱알</span>
                             </div>
                             <div class="table_rows flex_between">
-                              <span class="col1">판매처1</span>
+                              <span class="col1">
+                                <button type="button" class="btn_heart is-toggle"><span class="ir-text">좋아요</span></button>
+                                판매처1
+                              </span>
                               <span class="col2">
                                 <button type="button" class="btn_open_sale_detail">
                                   <strong>오늘<span>15:00</span>마감</strong>
@@ -2007,7 +1991,10 @@
                               <span class="badge badge_grain">낱알</span>
                             </div>
                             <div class="table_rows flex_between">
-                              <span class="col1">판매처1</span>
+                              <span class="col1">
+                                <button type="button" class="btn_heart is-toggle"><span class="ir-text">좋아요</span></button>
+                                판매처1
+                              </span>
                               <span class="col2">
                                 <button type="button" class="btn_open_sale_detail">
                                   <strong>오늘<span>15:00</span>마감</strong>
@@ -2078,7 +2065,10 @@
                               <span class="badge badge_grain">낱알</span>
                             </div>
                             <div class="table_rows flex_between">
-                              <span class="col1">판매처1</span>
+                              <span class="col1">
+                                <button type="button" class="btn_heart is-toggle"><span class="ir-text">좋아요</span></button>
+                                판매처1
+                              </span>
                               <span class="col2">
                                 <button type="button" class="btn_open_sale_detail">
                                   <strong>오늘<span>15:00</span>마감</strong>
